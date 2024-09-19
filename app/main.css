@@ -1,0 +1,31 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  font-size: inherit;
+}
+
+button {
+  border: none;
+}
+
+.icon-button {
+  display: inline-block;
+  width: 3.65rem;
+  height: 3.65rem;
+  border-radius: 50%;
+  color: #fcfdfb;
+  background-color: #d1b06b;
+  font-size: 1.825rem;
+  transition: all 0.15s ease;
+  cursor: pointer;
+}
+.icon-button:hover {
+  transform: scale(1.2);
+}
+.icon-button:active {
+  transform: scale(0.9);
+}
+
+/*# sourceMappingURL=main.css.map */
