@@ -1,3 +1,5 @@
+import "./main.css";
+
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -13,6 +15,12 @@ export default function RootLayout({
 }>) {
 	return (
 		<html lang="pt">
+			<head>
+				<script
+					src="https://kit.fontawesome.com/1a62655504.js"
+					crossOrigin="anonymous"
+				></script>
+			</head>
 			<body>{children}</body>
 		</html>
 	);
