@@ -1,0 +1,4 @@
+@use "../abstracts/colors" as colors;
+html {
+	background-color: colors.$dark--1;
+}
