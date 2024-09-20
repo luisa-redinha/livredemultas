@@ -1,31 +1,190 @@
 * {
   box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
   margin: 0;
   padding: 0;
   scroll-behavior: smooth;
   font-size: inherit;
+  text-decoration: none;
+  color: inherit;
+  border: none;
+  background-color: transparent;
 }
 
-button {
-  border: none;
+label {
+  font-size: 1.2rem;
+  text-transform: capitalize;
+  color: #fcfdfb;
+}
+
+html {
+  background-color: #1f2732;
+}
+
+.button {
+  display: inline-block;
+  margin: 1rem;
+  font-size: 1.5rem;
+  color: #fcfdfb;
+  padding: 0.5em 1em;
+  transition: all 0.15s ease;
+  cursor: pointer;
+  box-shadow: 2px 2px 20px 2px rgba(31, 39, 50, 0.5);
+}
+.button--primary {
+  background-color: #d1b06b;
+}
+.button--secondary {
+  background-color: transparent;
+  border: 1px solid #fcfdfb;
+}
+.button:hover {
+  transform: scale(1.05);
+}
+.button:active {
+  transform: scale(0.97);
 }
 
 .icon-button {
-  display: inline-block;
   width: 3.65rem;
   height: 3.65rem;
   border-radius: 50%;
-  color: #fcfdfb;
-  background-color: #d1b06b;
   font-size: 1.825rem;
+  padding: 0;
+}
+
+.checkbox {
+  display: inline-flex;
+  place-content: center;
+  place-items: center;
+  text-align: center;
+  gap: 0.5em;
+  padding: 0.25em 0.5em;
+  user-select: none;
   transition: all 0.15s ease;
   cursor: pointer;
+  opacity: 0.75;
 }
-.icon-button:hover {
-  transform: scale(1.2);
+.checkbox:hover {
+  transform: scale(1.05);
 }
-.icon-button:active {
-  transform: scale(0.9);
+.checkbox:active {
+  transform: scale(0.97);
+}
+.checkbox__input {
+  accent-color: #d1b06b;
+  padding: 1em;
+  display: block;
+  visibility: hidden;
+  position: absolute;
+}
+.checkbox__toggle, .checkbox__toggle__inner {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  border-radius: 50%;
+  background-color: #d1b06b;
+}
+.checkbox__toggle__inner {
+  transform: scale(0.5);
+  filter: saturate(0%);
+  box-shadow: 0px 0px 20px 2px #1f2732;
+}
+.checkbox__input:checked ~ .checkbox__toggle__inner {
+  filter: saturate(100%);
+  box-shadow: 0px 0px 20px 2px #fcfdfb;
+}
+.checkbox * {
+  transition: all 0.25s ease;
+}
+.checkbox:has(.checkbox__input:checked) {
+  opacity: 1;
+}
+.checkbox:has(.checkbox__input:checked) .checkbox__label {
+  text-shadow: 0px 0px 1px rgba(252, 253, 251, 0.5);
+}
+
+.input {
+  position: relative;
+  width: 100%;
+  padding: 0.3em 0.5em;
+  background-color: #fcfdfb;
+  border-radius: 10px;
+  outline: 2px solid transparent;
+  transition: all 0.15s ease;
+  font-size: 1.1rem;
+  text-align: left;
+  /*
+  focus vs focus-within
+  focus within targets descendants
+  With forms, when the user tries to submit and missed a field, the missing one will be focused.
+  since the actual input is inside the .input wrapper, focus-within gets targeted as well
+  */
+}
+.input:focus-within {
+  box-shadow: inset 2px 2px 20px 2px rgba(31, 39, 50, 0.5);
+  outline: 1px solid #fcfdfb;
+}
+.input__invalid-text {
+  color: #fcfdfb;
+  position: absolute;
+  bottom: calc(100% + 0.2em);
+  right: 0em;
+  font-size: 0.75em;
+  padding: 0.2em 0.5em;
+  border-radius: 10px;
+  z-index: -1;
+  text-transform: capitalize;
+}
+.input__element {
+  padding: 0.25em 0.5em;
+  font-size: 1em;
+  background-color: transparent;
+  width: 100%;
+}
+.input__element:focus {
+  border: none;
+  outline: none;
+  background-color: transparent;
+}
+.input__label {
+  display: block;
+  position: absolute;
+  opacity: 0;
+  top: 0rem;
+  transform: translateY(50%);
+  color: #fcfdfb;
+  transition: 0.2s ease-in-out transform;
+  font-size: 0.95em;
+}
+.input__element:placeholder-shown + .input__label {
+  visibility: hidden;
+  z-index: -1;
+  transition: 0.2s ease-in-out;
+}
+.input__element:not(:placeholder-shown) + .input__label, .input__element:focus:not(:placeholder-shown) + .input__label {
+  visibility: visible;
+  z-index: 1;
+  opacity: 1;
+  transform: translateY(-120%);
+  transition: 0.2s ease-in-out transform;
+}
+.input:has(.input__element:disabled) {
+  opacity: 0.5;
+}
+.input__element:disabled {
+  opacity: 0.7;
+  pointer-events: none;
+}
+.input--outlined {
+  border: 1px solid #1f2732;
+}
+.textarea {
+  height: max-content;
+}
+.textarea__element {
+  height: 5em;
 }
 
 /*# sourceMappingURL=main.css.map */

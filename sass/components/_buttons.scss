@@ -1,14 +1,5 @@
 @use "../abstracts/colors" as colors;
-
-@mixin button-states() {
-	transition: all 0.15s ease;
-	&:hover {
-		transform: scale(1.2);
-	}
-	&:active {
-		transform: scale(0.9);
-	}
-}
+@use "../abstracts/mixins" as mixins;
 
 .button {
 	display: inline-block;
@@ -18,19 +9,19 @@
 
 	font-size: 1.5rem;
 	color: colors.$light;
+	background-color: colors.$gold;
 
 	padding: 0.5em 1em;
 
-	cursor: pointer;
-
 	&--primary {
-		background-color: colors.$gold;
+		color: colors.$dark--2;
 	}
 	&--secondary {
 		background-color: transparent;
+		border: 1px solid colors.$light;
 	}
 
-	@include button-states();
+	@include mixins.action-component-states();
 
 	box-shadow: 2px 2px 20px 2px rgba($color: colors.$dark--1, $alpha: 0.5);
 }

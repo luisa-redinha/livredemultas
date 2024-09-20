@@ -16,7 +16,7 @@ export type IconButtonProps = {
 export default function IconButton(props: IconButtonProps) {
 	return (
 		<button
-			className="button button--primary icon-button"
+			className="button icon-button"
 			onClick={() => props?.onClick && props.onClick()}
 		>
 			<i className={ICONS[props.icon]} />
