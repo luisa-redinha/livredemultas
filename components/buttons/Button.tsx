@@ -1,20 +1,16 @@
 "use client";
 
-import React from "react";
+import React, { ButtonHTMLAttributes } from "react";
 
-export type ButtonProps = {
-	onClick?: Function;
-	children: string;
+export interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
 	variant?: "primary" | "secondary";
-};
+}
 
 export default function Button({ variant = "primary", ...props }: ButtonProps) {
 	return (
 		<button
+			{...props}
 			className={`button button--${variant}`}
-			onClick={() => props?.onClick && props.onClick()}
-		>
-			{props.children}
-		</button>
+		/>
 	);
 }
