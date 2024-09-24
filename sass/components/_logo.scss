@@ -1,0 +1,13 @@
+@use "../abstracts/colors" as colors;
+
+.logo {
+	font-size: 3rem;
+	display: flex;
+	align-items: center;
+	gap: 0.75rem;
+	color: colors.$gold;
+
+	img {
+		height: 0.9em;
+	}
+}

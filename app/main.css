@@ -287,4 +287,15 @@ html {
   border: none !important;
 }
 
+.logo {
+  font-size: 3rem;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  color: #d1b06b;
+}
+.logo img {
+  height: 0.9em;
+}
+
 /*# sourceMappingURL=main.css.map */
