@@ -10,6 +10,7 @@
   color: inherit;
   border: none;
   background-color: transparent;
+  outline: none;
 }
 
 label {
@@ -280,6 +281,10 @@ html {
 .accordion-item__body > * {
   padding: 0.2em 0.5em;
   border-bottom: 1px solid #fcfdfb;
+}
+
+.combobox * {
+  border: none !important;
 }
 
 /*# sourceMappingURL=main.css.map */
