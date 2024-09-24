@@ -1,6 +1,7 @@
 import "./main.css";
 
 import { Metadata } from "next";
+import Contacts from "./sections/Contacts";
 
 export const metadata: Metadata = {
 	title: "Livre de Multas",
@@ -21,7 +22,11 @@ export default function RootLayout({
 					crossOrigin="anonymous"
 				></script>
 			</head>
-			<body>{children}</body>
+			<body>
+				<div id="bg" />
+				{children}
+				<Contacts />
+			</body>
 		</html>
 	);
 }

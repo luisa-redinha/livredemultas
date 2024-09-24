@@ -1,11 +1,17 @@
 @use "../abstracts/colors" as colors;
 
 .logo {
+	font-family: "EB Garamond", serif;
+	font-optical-sizing: auto;
+	font-weight: 500;
+	font-style: normal;
 	font-size: 3rem;
+
 	display: flex;
 	align-items: center;
 	gap: 0.75rem;
 	color: colors.$gold;
+	user-select: none;
 
 	img {
 		height: 0.9em;

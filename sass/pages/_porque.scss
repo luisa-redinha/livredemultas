@@ -1,0 +1,26 @@
+.porque {
+	display: grid;
+	grid-template-areas:
+		"title img"
+		"p1 img"
+		"p2 img"
+		"multas multas";
+
+	grid-template-columns: 40% 60%;
+	grid-template-rows: min-content min-content min-content auto;
+
+	h2 {
+		grid-area: title;
+	}
+	p:nth-child(0) {
+		grid-area: p1;
+	}
+	p:nth-child(1) {
+		grid-area: p2;
+	}
+	img {
+		grid-area: img;
+		max-height: 35vh;
+		justify-self: center;
+	}
+}

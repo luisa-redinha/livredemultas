@@ -1,0 +1,57 @@
+@use "../abstracts/colors" as colors;
+.hero {
+	position: relative;
+	height: 100svh;
+
+	display: grid;
+	grid-template-areas:
+		"logo logo"
+		"info img";
+
+	grid-template-columns: 1fr 1fr;
+
+	// &,
+	// & > * {
+	// 	border: 1px solid red;
+	// }
+	.logo {
+		grid-area: logo;
+		place-self: start;
+	}
+
+	&__info {
+		grid-area: info;
+		font-size: 1.5rem;
+		place-self: center;
+
+		padding-left: 3em;
+		padding-bottom: 6em;
+
+		&__title {
+			color: colors.$light;
+			font-size: 2em;
+			& > * {
+				display: block;
+			}
+		}
+
+		&__text {
+			color: colors.$gold;
+		}
+
+		button {
+			font-size: 1.25rem;
+			padding: 1em 2em;
+		}
+	}
+
+	&__lawyer {
+		grid-area: img;
+		// position: absolute;
+		// bottom: 0%;
+		// right: 0%;
+		width: 35vmax;
+		align-self: end;
+		justify-self: center;
+	}
+}

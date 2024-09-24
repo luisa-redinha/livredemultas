@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 * {
   box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -13,6 +14,45 @@
   outline: none;
 }
 
+* {
+  user-select: none;
+}
+
+body {
+  color: #fcfdfb;
+  font-family: Arial, Helvetica, sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "EB Garamond", serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  color: #d1b06b;
+}
+
+h2 {
+  font-size: 2.35rem;
+}
+
+h3 {
+  font-size: 1.75rem;
+}
+
+label,
+a,
+button {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
 label {
   font-size: 1.2rem;
   text-transform: capitalize;
@@ -23,10 +63,116 @@ html {
   background-color: #1f2732;
 }
 
+html,
+:root,
+body,
+#bg {
+  height: 100svh;
+  overflow: hidden;
+  border: none;
+  outline: none;
+  padding: 0;
+  margin: 0;
+}
+
+#bg {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  background: url("/bg.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#bg::after {
+  display: block;
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgb(21.2407407407, 26.7222222222, 34.2592592593);
+  opacity: 0.75;
+}
+
+.section {
+  position: relative;
+  height: 100svh;
+  padding: 4rem;
+  border: 1px solid red;
+}
+.section__content {
+  border: 1px solid red;
+  padding: 4rem;
+  height: 100%;
+}
+
+.frame-decor {
+  position: absolute;
+}
+.frame-decor__bar {
+  position: absolute;
+  display: block;
+  border: 1px solid #d1b06b;
+  background-color: transparent;
+}
+.frame-decor__bar--h {
+  width: 7rem;
+  height: 0.5rem;
+}
+.frame-decor__bar--v {
+  width: 0.5rem;
+  height: 4rem;
+}
+.frame-decor--top .frame-decor__bar--h--1 {
+  top: 1rem;
+  left: 0;
+  background-color: #d1b06b;
+}
+.frame-decor--top .frame-decor__bar--h--2 {
+  top: 2rem;
+  left: 0;
+}
+.frame-decor--top .frame-decor__bar--v--1 {
+  top: 0.25rem;
+  left: 0.5rem;
+  background-color: #d1b06b;
+}
+.frame-decor--top .frame-decor__bar--v--2 {
+  top: 0.25rem;
+  left: 1.5rem;
+}
+.frame-decor--bot {
+  bottom: 4rem;
+  right: 4rem;
+}
+.frame-decor--bot .frame-decor__bar--h--1 {
+  bottom: 1rem;
+  right: 0;
+  background-color: #d1b06b;
+}
+.frame-decor--bot .frame-decor__bar--h--2 {
+  bottom: 2rem;
+  right: 0;
+}
+.frame-decor--bot .frame-decor__bar--v--1 {
+  bottom: 0.25rem;
+  right: 0.5rem;
+  background-color: #d1b06b;
+}
+.frame-decor--bot .frame-decor__bar--v--2 {
+  bottom: 0.25rem;
+  right: 1.5rem;
+}
+
 .button {
   display: inline-block;
   margin: 1rem;
-  font-size: 1.5rem;
+  font-size: 1.15rem;
   color: #fcfdfb;
   background-color: #d1b06b;
   border-radius: 2px;
@@ -288,14 +434,95 @@ html {
 }
 
 .logo {
+  font-family: "EB Garamond", serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
   font-size: 3rem;
   display: flex;
   align-items: center;
   gap: 0.75rem;
   color: #d1b06b;
+  user-select: none;
 }
 .logo img {
   height: 0.9em;
+}
+
+#home {
+  overflow: auto;
+  height: 100svh;
+}
+#home > section {
+  height: 100svh;
+}
+
+#contacts {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+}
+
+.hero {
+  position: relative;
+  height: 100svh;
+  display: grid;
+  grid-template-areas: "logo logo" "info img";
+  grid-template-columns: 1fr 1fr;
+}
+.hero .logo {
+  grid-area: logo;
+  place-self: start;
+}
+.hero__info {
+  grid-area: info;
+  font-size: 1.5rem;
+  place-self: center;
+  padding-left: 3em;
+  padding-bottom: 6em;
+}
+.hero__info__title {
+  color: #fcfdfb;
+  font-size: 2em;
+}
+.hero__info__title > * {
+  display: block;
+}
+.hero__info__text {
+  color: #d1b06b;
+}
+.hero__info button {
+  font-size: 1.25rem;
+  padding: 1em 2em;
+}
+.hero__lawyer {
+  grid-area: img;
+  width: 35vmax;
+  align-self: end;
+  justify-self: center;
+}
+
+.porque {
+  display: grid;
+  grid-template-areas: "title img" "p1 img" "p2 img" "multas multas";
+  grid-template-columns: 40% 60%;
+  grid-template-rows: min-content min-content min-content auto;
+}
+.porque h2 {
+  grid-area: title;
+}
+.porque p:nth-child(0) {
+  grid-area: p1;
+}
+.porque p:nth-child(1) {
+  grid-area: p2;
+}
+.porque img {
+  grid-area: img;
+  max-height: 35vh;
+  justify-self: center;
 }
 
 /*# sourceMappingURL=main.css.map */
