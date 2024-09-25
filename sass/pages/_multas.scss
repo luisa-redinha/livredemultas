@@ -1,7 +1,21 @@
 .multas {
-	p {
-		max-width: 40%;
-		padding: 1rem;
+	header {
+		display: grid;
+		grid-template-areas:
+			"title buttons"
+			"p .";
+
+		h1 {
+			grid-area: title;
+		}
+		p {
+			grid-area: p;
+			max-width: 40%;
+			padding: 1rem;
+		}
+		button {
+			grid-area: buttons;
+		}
 	}
 
 	.search {
