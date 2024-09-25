@@ -449,6 +449,33 @@ body,
   height: 0.9em;
 }
 
+.section-thumbnail {
+  width: 12vmax;
+  height: 12vmax;
+  background-color: #3b434e;
+  display: inline-block;
+}
+.section-thumbnail img {
+  width: 100%;
+  height: 100%;
+  transform: scale(0.9);
+  transition: all 0.15s ease-in-out;
+}
+.section-thumbnail span {
+  text-align: center;
+  display: inline-block;
+  width: 100%;
+  padding: 0.5rem 0;
+  font-size: 1.15rem;
+  transition: transform 0.15s ease-in-out;
+}
+.section-thumbnail:hover img {
+  transform: scale(0.95);
+}
+.section-thumbnail:hover span {
+  transform: scale(1.05);
+}
+
 #home {
   overflow: auto;
   height: 100svh;
@@ -522,7 +549,23 @@ body,
 .porque img {
   grid-area: img;
   max-height: 35vh;
+  max-width: 40vw;
   justify-self: center;
+  place-self: center;
+}
+.porque .multas {
+  align-self: center;
+  grid-area: multas;
+  display: flex;
+  justify-content: space-evenly;
+  gap: 1em;
+}
+.porque .multas > * {
+  transition: filter 0.5s ease, transform 0.25s ease-in-out;
+}
+.porque .multas:has(.section-thumbnail:hover) .section-thumbnail:not(:hover) {
+  filter: blur(1px) grayscale(0.4);
+  transform: scale(0.95);
 }
 
 /*# sourceMappingURL=main.css.map */

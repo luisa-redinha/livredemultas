@@ -1,3 +1,4 @@
+import SectionThumbnail from "@/components/buttons/SectionThumbnail";
 import Section from "@/components/containers/Section";
 import React from "react";
 
@@ -25,6 +26,15 @@ export default function Porque() {
 				src="/lawyer2.jpg"
 				alt=""
 			/>
+
+			<div className="multas">
+
+				<SectionThumbnail src="/multa1.jpg" label="Excesso de Velocidade" />
+				<SectionThumbnail src="/multa2.png" label="Excesso de Alcool"/>
+				<SectionThumbnail src="/multa3.png" label="Multas a Empresas"/>
+				<SectionThumbnail src="/multa4.png" label="Outras Multas"/>
+
+			</div>
 		</Section>
 	);
 }

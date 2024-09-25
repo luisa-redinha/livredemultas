@@ -21,6 +21,26 @@
 	img {
 		grid-area: img;
 		max-height: 35vh;
+		max-width: 40vw;
 		justify-self: center;
+		place-self: center;
+	}
+
+	.multas {
+		align-self: center;
+		grid-area: multas;
+
+		display: flex;
+		justify-content: space-evenly;
+		gap: 1em;
+
+		& > * {
+			transition: filter 0.5s ease, transform 0.25s ease-in-out;
+		}
+
+		&:has(.section-thumbnail:hover) .section-thumbnail:not(:hover) {
+			filter: blur(1px) grayscale(0.4);
+			transform: scale(.95);
+		}
 	}
 }
