@@ -1,0 +1,53 @@
+.about {
+	padding-right: 8rem;
+	display: grid;
+
+	grid-template-areas:
+		"intro links"
+		"img p2";
+
+	gap: 2rem;
+
+	.intro {
+		grid-area: intro;
+
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		gap: 2em;
+	}
+
+	.lawyer {
+		grid-area: img;
+		place-self: center;
+		max-width: 50%;
+	}
+
+	.links {
+		place-self: center;
+
+		display: flex;
+		height: 100%;
+		flex-direction: column;
+		justify-content: space-evenly;
+		place-items: center;
+		img {
+			width: 20vmax;
+			max-height: 150px;
+			&:nth-child(1) {
+				transform: translateX(-20%);
+			}
+			&:nth-child(2) {
+				transform: translateX(20%);
+			}
+			&:nth-child(3) {
+				transform: translateX(-10%);
+			}
+		}
+	}
+
+	p:last-of-type {
+		place-self: center;
+        ;
+	}
+}
