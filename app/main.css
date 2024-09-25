@@ -488,8 +488,8 @@ body,
   display: flex;
   flex-direction: column;
   position: fixed;
-  bottom: 2rem;
-  right: 2rem;
+  bottom: 7rem;
+  right: 7rem;
 }
 
 .hero {
