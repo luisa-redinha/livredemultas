@@ -1,0 +1,30 @@
+.multas {
+	p {
+		max-width: 40%;
+		padding: 1rem;
+	}
+
+	.search {
+		width: 33%;
+	}
+
+	.grid {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr 1fr;
+		grid-template-rows: auto;
+		grid-auto-flow: row;
+		gap: 1em;
+		padding: 1em 5em;
+		margin: 3em;
+		width: 90%;
+		height: calc(12vmax + 5.5em); //12vmax section thumbnail img height
+		overflow-y: auto;
+
+		& > * {
+			$size: 10vmax;
+			width: $size;
+			height: $size;
+			margin-bottom: 4em;
+		}
+	}
+}
