@@ -25,7 +25,7 @@ const CheckBox = forwardRef(
 					<span className="checkbox__toggle__inner" />
 				</span>
 
-				<span className="checkbox__label">{props.children}</span>
+				<span className="checkbox__label">{props.label}</span>
 			</label>
 		);
 	}
