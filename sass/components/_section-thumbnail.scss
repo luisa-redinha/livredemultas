@@ -1,0 +1,36 @@
+@use "../abstracts/colors" as colors;
+
+.section-thumbnail {
+	$size: 12vmax;
+	width: $size;
+	height: $size;
+
+	background-color: colors.$dark--2;
+	display: inline-block;
+
+
+	img {
+		width: 100%;
+		height: 100%;
+		transform: scale(0.9);
+		transition: all 0.15s ease-in-out;
+	}
+
+	span {
+		text-align: center;
+		display: inline-block;
+		width: 100%;
+		padding: 0.5rem 0;
+		font-size: 1.15rem;
+		transition: transform 0.15s ease-in-out;
+	}
+
+	&:hover {
+		img {
+			transform: scale(0.95);
+		}
+		span {
+			transform: scale(1.05);
+		}
+	}
+}
