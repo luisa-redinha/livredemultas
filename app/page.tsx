@@ -1,12 +1,14 @@
-import Logo from "@/components/misc/Logo";
+import About from "./sections/About";
+import ContactUs from "./sections/ContactUs";
 import Hero from "./sections/Hero";
-import Section from "@/components/containers/Section";
 import Porque from "./sections/Porque";
 export default function Home() {
 	return (
 		<main id="home">
 			<Hero />
 			<Porque />
+			<ContactUs/>
+			<About />
 		</main>
 	);
 }

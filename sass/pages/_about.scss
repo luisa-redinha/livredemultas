@@ -3,17 +3,21 @@
 	display: grid;
 
 	grid-template-areas:
+		"title title"
 		"intro links"
 		"img p2";
 
 	gap: 2rem;
 
+	h2 {
+		grid-area: title;
+	}
+
 	.intro {
 		grid-area: intro;
-
+		padding-top: 2em;
 		display: flex;
 		flex-direction: column;
-		justify-content: center;
 		gap: 2em;
 	}
 
@@ -35,10 +39,10 @@
 			width: 20vmax;
 			max-height: 150px;
 			&:nth-child(1) {
-				transform: translateX(-20%);
+				transform: translateX(-30%);
 			}
 			&:nth-child(2) {
-				transform: translateX(20%);
+				transform: translateX(30%);
 			}
 			&:nth-child(3) {
 				transform: translateX(-10%);
@@ -46,8 +50,8 @@
 		}
 	}
 
-	p:last-of-type {
+	.note{
 		place-self: center;
-        ;
+		width: 70%;
 	}
 }

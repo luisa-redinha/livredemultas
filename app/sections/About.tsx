@@ -4,8 +4,9 @@ import React from "react";
 export default function About() {
 	return (
 		<Section className="about">
-			<div className="intro">
 				<h2>Sobre Nós</h2>
+
+			<div className="intro">
 				<p>
 					Lorem ipsum dolor sit amet consectetur adipisicing elit.
 					Suscipit animi, facilis asperiores id aliquid repudiandae
@@ -45,7 +46,7 @@ export default function About() {
 				/>
 			</div>
 
-			<p className="">
+			<p className="note">
 				Lorem ipsum dolor sit amet consectetur adipisicing elit.
 				Suscipit animi, facilis asperiores id aliquid repudiandae sequi
 				impedit itaque cum nisi molestias error harum! Recusandae nulla

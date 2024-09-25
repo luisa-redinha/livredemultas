@@ -14,6 +14,10 @@
   outline: none;
 }
 
+html, body {
+  font-size: min(18px, 3vmax);
+}
+
 * {
   user-select: none;
 }
@@ -259,6 +263,7 @@ body,
   width: 100%;
   padding: 0.3em 0.5em;
   background-color: #fcfdfb;
+  color: #1f2732;
   border-radius: 2px;
   outline: 2px solid transparent;
   transition: all 0.15s ease;
@@ -480,9 +485,6 @@ body,
   overflow: auto;
   height: 100svh;
 }
-#home > section {
-  height: 100svh;
-}
 
 #contacts {
   display: flex;
@@ -507,7 +509,7 @@ body,
   grid-area: info;
   font-size: 1.5rem;
   place-self: center;
-  padding-left: 3em;
+  padding-left: 6em;
   padding-bottom: 6em;
 }
 .hero__info__title {
@@ -566,6 +568,97 @@ body,
 .porque .multas:has(.section-thumbnail:hover) .section-thumbnail:not(:hover) {
   filter: blur(1px) grayscale(0.4);
   transform: scale(0.95);
+}
+
+.about {
+  padding-right: 8rem;
+  display: grid;
+  grid-template-areas: "title title" "intro links" "img p2";
+  gap: 2rem;
+}
+.about h2 {
+  grid-area: title;
+}
+.about .intro {
+  grid-area: intro;
+  padding-top: 2em;
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+}
+.about .lawyer {
+  grid-area: img;
+  place-self: center;
+  max-width: 50%;
+}
+.about .links {
+  place-self: center;
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  justify-content: space-evenly;
+  place-items: center;
+}
+.about .links img {
+  width: 20vmax;
+  max-height: 150px;
+}
+.about .links img:nth-child(1) {
+  transform: translateX(-30%);
+}
+.about .links img:nth-child(2) {
+  transform: translateX(30%);
+}
+.about .links img:nth-child(3) {
+  transform: translateX(-10%);
+}
+.about .note {
+  place-self: center;
+  width: 70%;
+}
+
+.contact-us {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto 1fr;
+  grid-template-areas: "title title" "p1 p2";
+}
+.contact-us .info {
+  grid-area: p1;
+  padding: 4em 2em;
+  display: flex;
+  flex-direction: column;
+  place-content: center;
+  place-items: center;
+  gap: 1em;
+}
+.contact-us .info img {
+  max-width: 100%;
+  max-height: 35vmin;
+  margin: auto;
+}
+.contact-us .form {
+  grid-area: p2;
+  margin: 0em auto;
+  padding: 1em 4em;
+  padding-bottom: 2em;
+  background-color: #1f2732;
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+  max-width: 550px;
+  height: fit-content;
+}
+.contact-us .form h3 {
+  text-align: center;
+  font-size: 2em;
+}
+.contact-us .form__checks {
+  margin-top: -1.5em;
+}
+.contact-us .form button {
+  margin-top: -0.75em;
+  margin-bottom: 0.25em;
 }
 
 /*# sourceMappingURL=main.css.map */

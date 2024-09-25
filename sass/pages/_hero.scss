@@ -10,10 +10,11 @@
 
 	grid-template-columns: 1fr 1fr;
 
-	// &,
+	// wea,
 	// & > * {
-	// 	border: 1px solid red;
+	// border: 1px solid red;
 	// }
+
 	.logo {
 		grid-area: logo;
 		place-self: start;
@@ -24,7 +25,7 @@
 		font-size: 1.5rem;
 		place-self: center;
 
-		padding-left: 3em;
+		padding-left: 6em;
 		padding-bottom: 6em;
 
 		&__title {
