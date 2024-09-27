@@ -27,12 +27,12 @@ export default function Porque() {
 				alt=""
 			/>
 
-			<div className="multas">
+			<div className="multas-comuns">
 
 				<SectionThumbnail src="/multa1.jpg" label="Excesso de Velocidade" />
 				<SectionThumbnail src="/multa2.png" label="Excesso de Alcool"/>
-				<SectionThumbnail src="/multa3.png" label="Multas a Empresas"/>
-				<SectionThumbnail src="/multa4.png" label="Outras Multas"/>
+				<SectionThumbnail src="/multa3.png" label="Multas a Empresas" path="./multas"/>
+				<SectionThumbnail src="/multa4.png" label="Outras Multas" path="./multas"/>
 
 			</div>
 		</Section>
