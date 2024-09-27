@@ -10,6 +10,7 @@
 		"watchsass": "sass sass/main.scss:app/main.css --watch"
 	},
 	"dependencies": {
+		"@szhsin/react-accordion": "^1.2.5",
 		"framer-motion": "^11.5.5",
 		"next": "14.2.12",
 		"react": "^18",
