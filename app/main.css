@@ -688,4 +688,9 @@ body,
   gap: 0.25em;
 }
 
+.faq {
+  height: 95%;
+  overflow: auto;
+}
+
 /*# sourceMappingURL=main.css.map */

@@ -30,5 +30,45 @@
 		"a": [
 			"Sim, devolvemos as quantias pagas a título de honorários (defesa, impugnação ou recurso judicial) se o condutor for condenado e a nossa informação inicial tiver sido no sentido de que a defesa teria viabilidade."
 		]
-	}
+	},
+	{
+		"q": "O que fazer quando perante o auto de notícia?",
+		"a": [
+			"Quando acontecer ser mandado/a parar por um agente de autoridade e este o autuar/multar (emitir o auto no momento da fiscalização), deve selecionar a opção “Depósito” (se não for condenado esta quantia ser-lhe-á devolvida e se pagar – opção “Coima” – não lhe será devolvida a dita quantia)",
+			"Em caso de sanção grave ou muito grave, o prazo para a defesa (15 dias úteis) começará a contar no momento da notificação, no momento da ação de fiscalização ou da receção por correio sob registo.",
+			"Se fizer o depósito poderão ser apreendidos provisoriamente os documentos, de acordo com a situação.",
+			"Se fizer o depósito e não apresentar defesa no prazo legal, o depósito converte-se, de forma automática, em pagamento.",
+			"Quando apresentar defesa, no prazo legal, o depósito será devolvido, desde que não haja decisão condenatória.",
+			"Se receber por correio a notificação do auto de notícia, então, no prazo de 48 horas, deve proceder ao depósito (através dos meios de indicados) – (Note bem: se o depósito for efetuado após transcorridas as 48 horas, já não será a título de depósito, mas considerado pagamento.",
+			"Proceda ao envio do auto (imagem, formato JEPG, ou em PDF) e, sem qualquer compromisso, daremos uma opinião sobre a viabilidade da sua defesa."
+		]
+	},
+	{
+		"q": "O que fazer quando perante a decisão da ANSR?",
+		"a": [
+			"Com a notificação da decisão (v.g. como no exemplo abaixo), começa a correr o prazo (15 dias úteis) para impugnar ou para apresentar recurso judicial, o que deve ser ponderado tendo em conta fatores como a decisão concreta, infração em causa e a defesa, para aferir da viabilidade da impugnação ou do recurso judicial. ",
+			"Envie-nos o auto (imagem, formato JEPG, ou PDF) e, sem qualquer compromisso, daremos um parecer sobre a viabilidade da defesa."
+		]
+	},
+	{
+		"q": "Como posso apresentar defesa?",
+		"a": [
+			"A defesa dever ser apresentada (no prazo de 15 dias úteis), apresentando todos os dados relativos ao auto de contraordenação, e enviando para a ANSR uma carta por correio registado, ou entregue presencialmente."
+		]
+	},
+	{
+		"q": "Se pagar a coima o processo termina?",
+		"a": [
+			"O pagamento da coima apenas faz terminar o procedimento nas infrações ditas “leves”, ou seja, nas infrações graves e muito graves, o pagamento não faz terminar, automaticamente, o procedimento.",
+			"Este tipo de infrações (graves ou muito graves), poderão existir sanções acessórias, que podem ter como consequência (além do pagamento de coima): Perda de pontos no registo do condutor, inibição de conduzir, ou apreensão do veículo, e até mesmo perda do título de condução."
+		]
+	},
+	{
+		"q": "O que acontece em caso de não apresentar defesa?",
+		"a": [" O processo termina se tiver realizado o depósito, convertendo-se automaticamente em pagamento, ou se tiver sido feito o pagamento voluntário da coima. Caso contrário o processo seguirá para a decisão final."
+]	},
+	{
+		"q": "Serei reembolsado do que pagar se ganhar o processo?",
+		"a": ["Ser-lhe-á restituída a quantia se tiver escolhido a opção “Depósito” (em caso de ter optado pela “Coima”, não lhe será devolvida essa quantia), bastando não ser condenado, ainda que não tenha vencimento no processo."
+]	}
 ]
