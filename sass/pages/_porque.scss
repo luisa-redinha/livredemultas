@@ -26,7 +26,7 @@
 		place-self: center;
 	}
 
-	.multas {
+	.multas-comuns {
 		align-self: center;
 		grid-area: multas;
 
@@ -40,7 +40,7 @@
 
 		&:has(.section-thumbnail:hover) .section-thumbnail:not(:hover) {
 			filter: blur(1px) grayscale(0.4);
-			transform: scale(.95);
+			transform: scale(0.95);
 		}
 	}
 }

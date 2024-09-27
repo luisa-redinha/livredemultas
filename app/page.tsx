@@ -1,5 +1,6 @@
 import About from "./sections/About";
 import ContactUs from "./sections/ContactUs";
+import FAQ from "./sections/FAQ";
 import Hero from "./sections/Hero";
 import Porque from "./sections/Porque";
 export default function Home() {
@@ -7,7 +8,8 @@ export default function Home() {
 		<main id="home">
 			<Hero />
 			<Porque />
-			<ContactUs/>
+			<ContactUs />
+			<FAQ />
 			<About />
 		</main>
 	);
