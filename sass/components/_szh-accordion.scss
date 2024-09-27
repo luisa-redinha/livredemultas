@@ -1,0 +1,62 @@
+@use "../abstracts/colors" as colors;
+
+.szh-accordion {
+	padding: 1rem;
+	&__item {
+		border-top: 1px solid colors.$gold;
+		&:last-child {
+			border-bottom: 1px solid colors.$gold;
+		}
+
+		&-btn {
+			cursor: pointer;
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			width: 100%;
+			margin: 0;
+			padding: 1rem;
+			font-size: 1rem;
+			font-weight: 400;
+			text-align: left;
+			color: colors.$light;
+			background-color: transparent;
+			border: none;
+			&:hover {
+				background-color: rgba($color: colors.$gold, $alpha: 0.5);
+			}
+
+			.chevron-down {
+				margin-left: 1rem;
+				transition: transform 0.25s cubic-bezier(0, 0, 0, 1);
+			}
+		}
+
+		&-content {
+			transition: height 0.25s cubic-bezier(0, 0, 0, 1);
+		}
+
+		&-panel {
+			padding: 1rem;
+			background-color: rgba($color: colors.$dark--2, $alpha: 0.65);
+			box-shadow: inset 2px 2px 20px 2px colors.$dark--1;
+
+			ul {
+				padding: 0em 1em;
+				display: flex;
+				flex-direction: column;
+				gap: 0.5em;
+			}
+		}
+
+		&--expanded {
+			.szh-accordion__item-btn {
+				background-color: rgba($color: colors.$gold, $alpha: 0.85);
+				color: colors.$dark--1;
+			}
+			.chevron-down {
+				transform: rotate(180deg);
+			}
+		}
+	}
+}

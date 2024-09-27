@@ -1,7 +1,17 @@
 "use client";
 
-import { Children, ReactElement, cloneElement, useState } from "react";
-import { AccordionItem, AccordionItemProps } from "./AccordionItem";
+import {
+	Accordion as SzhAccordion,
+	AccordionItem as Item,
+	AccordionItemProps,
+} from "@szhsin/react-accordion";
+import {
+	Children,
+	ReactElement,
+	ReactNode,
+	cloneElement,
+	useState,
+} from "react";
 
 export interface AccordionProps {
 	className?: string;
@@ -12,22 +22,32 @@ export default function Accordion({ className, children }: AccordionProps) {
 	const [isOpen, setIsOpen] = useState<false | number>(false);
 
 	return (
-		<div className={`accordion-container ${className}`}>
-			{Children.map(children, (child, index) => {
-				if (child.type !== AccordionItem)
-					throw new Error(
-						"Accordion only accepts AccordionItem as children"
-					);
-
-				const childProps: AccordionItemProps = {
-					isCollapsed: isOpen !== index,
-					onToggle: () => {
-						setIsOpen(isOpen === index ? false : index);
-					},
-				};
-
-				return cloneElement(child, childProps);
-			})}
-		</div>
+		<SzhAccordion
+			transition
+			transitionTimeout={250}
+		>
+			{children}
+		</SzhAccordion>
 	);
 }
+
+export const AccordionItem = ({
+	header,
+	children,
+}: {
+	header: string;
+	children: ReactNode;
+}) => {
+	return (
+		<Item
+			header={
+				<>
+					{header}
+					<i className="fa-solid fa-chevron-down chevron-down" />
+				</>
+			}
+		>
+			{children}
+		</Item>
+	);
+};
