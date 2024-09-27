@@ -35,7 +35,7 @@ export default function page() {
 	};
 
 	return (
-		<Section className="multas">
+		<>
 			<header>
 				<h2>Tipos de Multas</h2>
 				<p>
@@ -44,13 +44,14 @@ export default function page() {
 					eveniet vero maiores nostrum numquam excepturi debitis
 					consectetur fuga amet vitae velit, laborum deserunt sunt?
 				</p>
-
-				<Link
-					className="button button--secondary"
-					href="/"
-				>
-					Início
-				</Link>
+				<nav>
+					<Link
+						className="button button--secondary"
+						href="/"
+					>
+						Início
+					</Link>
+				</nav>
 			</header>
 
 			<div className="search">
@@ -66,10 +67,11 @@ export default function page() {
 				{list.map((e, i) => (
 					<SectionThumbnail
 						{...e}
+						path={`/multas/${i}`}
 						key={`${e.label}-${i}`}
 					/>
 				))}
 			</div>
-		</Section>
+		</>
 	);
 }

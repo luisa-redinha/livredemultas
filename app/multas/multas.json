@@ -1,15 +1,67 @@
 [
 	{
-		"label": "Excesso de Velocidade"
+		"label": "Excesso de Velocidade",
+		"info": [
+			"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias repellat inventore ut veniam sint? Quia placeat atque quidem minus dolorum vitae repudiandae magni sed aperiam delectus. Assumenda ad culpa dolore.",
+			"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias repellat inventore ut veniam sint? Quia placeat atque quidem minus dolorum vitae repudiandae magni sed aperiam delectus. Assumenda ad culpa dolore.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias repellat inventore ut veniam sint? Quia placeat atque quidem minus dolorum vitae repudiandae magni sed aperiam delectus. Assumenda ad culpa dolore."
+		],
+		"img": "/multa1.jpg",
+		"coimas": {
+			"leve": [
+				"Razao super imp1",
+				"Razao super imp2",
+				"Razao super imp3",
+				"Razao super imp4"
+			],
+			"grave": [
+				"Razao super imp1",
+				"Razao super imp2",
+				"Razao super imp3",
+				"Razao super imp4"
+			],
+			"muitoGrave": [
+				"Razao super imp1",
+				"Razao super imp2",
+				"Razao super imp3",
+				"Razao super imp4"
+			]
+		}
 	},
 	{
-		"label": "Excesso de Alcool"
+		"label": "Excesso de Alcool",
+		"info": [
+			"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias repellat inventore ut veniam sint? Quia placeat atque quidem minus dolorum vitae repudiandae magni sed aperiam delectus. Assumenda ad culpa dolore.",
+			"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias repellat inventore ut veniam sint? Quia placeat atque quidem minus dolorum vitae repudiandae magni sed aperiam delectus. Assumenda ad culpa dolore.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias repellat inventore ut veniam sint? Quia placeat atque quidem minus dolorum vitae repudiandae magni sed aperiam delectus. Assumenda ad culpa dolore."
+		],
+		"img": "/multa2.png",
+		"coimas": {
+			"leve": [
+				"Razao super super super super imp1",
+				"Razao super super super super imp2",
+				"Razao super super super super imp3",
+				"Razao super super super super imp4"
+			],
+			"grave": [
+				"Razao super super super super imp1",
+				"Razao super super super super imp2",
+				"Razao super super super super imp3",
+				"Razao super super super super imp4"
+			],
+			"muitoGrave": [
+				"Razao super super super super imp1",
+				"Razao super super super super imp2",
+				"Razao super super super super imp3",
+				"Razao super super super super imp4"
+			]
+		}
 	},
 	{
-		"label": "Multas a Empresas"
+		"label": "Multas a Empresas",
+		"img": "/multa3.jpg"
 	},
 	{
-		"label": "Atraso de Pagamentos"
+		"label": "Atraso de Pagamentos",
+		"img": "/multa4.jpg"
 	},
 
 	{

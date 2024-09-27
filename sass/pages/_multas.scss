@@ -1,22 +1,42 @@
+@use "../abstracts/colors" as colors;
 .multas {
 	header {
 		display: grid;
 		grid-template-areas:
 			"title buttons"
-			"p .";
+			"p img";
 
-		h1 {
+		grid-template-columns: 40% 60%;
+
+		h2 {
 			grid-area: title;
+			width: fit-content;
 		}
-		p {
+		.info {
 			grid-area: p;
-			max-width: 40%;
+			// max-width: 50%;
 			padding: 1rem;
+
+			display: flex;
+			flex-direction: column;
+			gap: 1em;
 		}
-		button {
+		nav {
 			grid-area: buttons;
+			justify-self: end;
+		}
+
+		img {
+			justify-self: center;
+			grid-area: img;
+			max-width: 100%;
+			max-height: 300px;
 		}
 	}
+
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
 
 	.search {
 		width: 33%;
@@ -39,6 +59,23 @@
 			width: $size;
 			height: $size;
 			margin-bottom: 4em;
+		}
+	}
+
+	.coimas {
+		display: flex;
+		justify-content: space-evenly;
+		.coimas-card {
+			background-color: colors.$dark--1;
+			padding: 1em 2em;
+			border-radius: 2px;
+
+			ul {
+				padding: 1em;
+				display: flex;
+				flex-direction: column;
+				gap: 0.25em;
+			}
 		}
 	}
 }
