@@ -2,6 +2,7 @@ import React from "react";
 import multas from "../multas.json";
 import Link from "next/link";
 import { notFound, redirect } from "next/navigation";
+import Section from "@/components/containers/Section";
 export default function page({ params }: { params: { multaId: number } }) {
 	/*
 
@@ -16,7 +17,7 @@ export default function page({ params }: { params: { multaId: number } }) {
 	if (!multaData) redirect("/multas");
 
 	return (
-		<>
+		<Section className="multas">
 			<header>
 				<h2>{multaData.label}</h2>
 
@@ -72,6 +73,6 @@ export default function page({ params }: { params: { multaId: number } }) {
 					</ul>
 				</div>
 			</div>
-		</>
+		</Section>
 	);
 }

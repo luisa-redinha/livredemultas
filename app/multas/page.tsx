@@ -1,12 +1,10 @@
 "use client";
-
-import Section from "@/components/containers/Section";
-import ComboBox from "@/components/input/ComboBox";
-import React, { useState } from "react";
-import multas from "./multas.json";
 import SectionThumbnail from "@/components/buttons/SectionThumbnail";
-import Button from "@/components/buttons/Button";
+import ComboBox from "@/components/input/ComboBox";
 import Link from "next/link";
+import { useState } from "react";
+import multas from "./multas.json";
+import Section from "@/components/containers/Section";
 export default function page() {
 	const comboBoxData = multas.map((e, i) => ({
 		label: e.label,
@@ -35,7 +33,7 @@ export default function page() {
 	};
 
 	return (
-		<>
+		<Section className="multas">
 			<header>
 				<h2>Tipos de Multas</h2>
 				<p>
@@ -72,6 +70,6 @@ export default function page() {
 					/>
 				))}
 			</div>
-		</>
+		</Section>
 	);
 }
