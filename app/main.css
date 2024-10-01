@@ -110,6 +110,7 @@ body,
 }
 
 .section {
+  display: block;
   position: relative;
   height: 100svh;
   padding: 4rem;

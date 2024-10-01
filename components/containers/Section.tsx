@@ -1,4 +1,7 @@
-import React, { ReactNode } from "react";
+"use client";
+import React, { ReactNode, RefObject } from "react";
+import { motion } from "framer-motion";
+import FrameDecor from "../misc/FrameDecor";
 
 export default function Section({
 	children,
@@ -8,21 +11,21 @@ export default function Section({
 	className?: string;
 }) {
 	return (
-		<section className={`section`}>
-			<FrameDecor className="frame-decor--top" />
-
+		<motion.section
+			className={`section`}
+			whileInView={{ opacity: 1, scale: 1 }}
+			initial={{ opacity: 0, scale: 0.85 }}
+			transition={{ ease: "easeInOut" }}
+			exit={{ opacity: 0, scale: 0.85 }}
+			viewport={{
+				amount: "some",
+				margin: "300%",
+			}}
+		>
+			<FrameDecor variant="top" />
 			<div className={`section__content ${className}`}>{children}</div>
 
-			<FrameDecor className="frame-decor--bot" />
-		</section>
+			<FrameDecor variant="bot" />
+		</motion.section>
 	);
 }
-
-const FrameDecor = ({ className }: { className: string }) => (
-	<div className={`frame-decor ${className}`}>
-		<span className="frame-decor__bar frame-decor__bar--h frame-decor__bar--h--1"></span>
-		<span className="frame-decor__bar frame-decor__bar--h frame-decor__bar--h--2"></span>
-		<span className="frame-decor__bar frame-decor__bar--v frame-decor__bar--v--1"></span>
-		<span className="frame-decor__bar frame-decor__bar--v frame-decor__bar--v--2"></span>
-	</div>
-);
