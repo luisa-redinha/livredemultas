@@ -1,0 +1,10 @@
+@mixin mobile() {
+	@media (hover: none) and (orientation: portrait) {
+		@content;
+	}
+}
+@mixin mobile-landscape() {
+	@media (hover: none) and (orientation: landscape) {
+		@content;
+	}
+}

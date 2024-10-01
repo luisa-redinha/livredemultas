@@ -1,0 +1,38 @@
+@mixin hide() {
+	/* Hide scrollbar for Chrome, Safari and Opera */
+	&::-webkit-scrollbar {
+		display: none;
+	}
+
+	/* Hide scrollbar for IE, Edge and Firefox */
+	& {
+		-ms-overflow-style: none; /* IE and Edge */
+		scrollbar-width: none; /* Firefox */
+	}
+}
+
+//Scrollbar
+
+$light: #fff;
+
+*::-webkit-scrollbar {
+	width: 0.5em;
+	height: 0.5em;
+	transition: all 0.2s ease;
+}
+
+*::-webkit-scrollbar-track {
+	$color: $light;
+	background-color: rgba($color: $color, $alpha: 0.1);
+	transition: all 1.25s ease;
+	border-radius: 10px;
+	&:hover {
+		background-color: rgba($color: $color, $alpha: 0.35);
+	}
+}
+
+*::-webkit-scrollbar-thumb {
+	background-color: $light;
+	outline: 1px solid $light;
+	border-radius: 10px;
+}
