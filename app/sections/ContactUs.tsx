@@ -5,7 +5,7 @@ import { Form } from "@/components/form/Form";
 import CheckBox from "@/components/input/CheckBox";
 import React from "react";
 import { useForm } from "react-hook-form";
-
+import { motion } from "framer-motion";
 type ContactData = {
 	name: string;
 	contact: string;
@@ -42,9 +42,16 @@ export default function ContactUs() {
 					Repudiandae, repellat.
 				</p>
 
-				<img
+				<motion.img
 					src="/lawyer2.jpg"
 					alt=""
+					whileInView={{ opacity: 1 }}
+					initial={{ opacity: 0 }}
+					exit={{ opacity: 0, transitionDelay: "unset" }}
+					transition={{
+						ease: "easeInOut",
+						duration: 1.5,
+					}}
 				/>
 			</div>
 

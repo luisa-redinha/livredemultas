@@ -14,11 +14,11 @@ export default function Section({
 		<motion.section
 			className={`section`}
 			whileInView={{ opacity: 1, scale: 1 }}
-			initial={{ opacity: 0, scale: 0.85 }}
+			initial={{ opacity: 0, scale: 0.8 }}
 			transition={{ ease: "easeInOut" }}
-			exit={{ opacity: 0, scale: 0.85 }}
+			exit={{ opacity: 0, scale: 0.8 }}
 			viewport={{
-				amount: "some",
+				amount: 0.65,
 				margin: "300%",
 			}}
 		>

@@ -1,5 +1,6 @@
+import { motion } from "framer-motion";
 import Link from "next/link";
-import React from "react";
+import React, { LegacyRef } from "react";
 
 type SectionThumbnailProps = {
 	src?: string;
@@ -7,14 +8,17 @@ type SectionThumbnailProps = {
 	label: string;
 };
 
-export default function SectionThumbnail(props: SectionThumbnailProps) {
-	return (
-		<Link
-			href={props.path || ""}
-			className="section-thumbnail"
-		>
-			<img src={props.src} />
-			<span>{props.label}</span>
-		</Link>
-	);
-}
+const Component = React.forwardRef((props: SectionThumbnailProps, ref) => (
+	<Link
+		ref={ref as LegacyRef<HTMLAnchorElement> | undefined}
+		href={props.path || ""}
+		className="section-thumbnail"
+	>
+		<img src={props.src} />
+		<span>{props.label}</span>
+	</Link>
+));
+
+const SectionThumbnail = motion.create(Component);
+
+export default SectionThumbnail;

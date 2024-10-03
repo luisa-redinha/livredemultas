@@ -1,33 +1,53 @@
 import Button from "@/components/buttons/Button";
 import Logo from "@/components/misc/Logo";
-import Image from "next/image";
-import React from "react";
-
+import React, { createRef, RefObject } from "react";
+import { motion } from "framer-motion";
 export default function Hero() {
 	return (
 		<div className="hero">
 			<Logo />
 
 			<div className="hero__info">
-				<h2 className="hero__info__title">
+				<motion.h2
+					className="hero__info__title"
+					whileInView={{ opacity: 1 }}
+					initial={{ opacity: 0 }}
+					transition={{ ease: "easeInOut", delay: 0.20 }}
+					exit={{ opacity: 0 }}
+				>
 					<span>Conteste a sua multa.</span>
 					<span>Defenda-se!</span>
-				</h2>
+				</motion.h2>
 
-				<p className="hero__info__text">
+				<motion.p
+					className="hero__info__text"
+					whileInView={{ rotateX: 0 }}
+					initial={{ rotateX: 90 }}
+					transition={{ ease: "easeInOut", delay: 0.15 }}
+					exit={{ rotateX: -90 }}
+				>
 					Lorem ipsum dolor sit amet, consectetur adipisicing elit.
 					Quam obcaecati quis consequatur laborum et earum tenetur?
 					Distinctio numquam rerum animi corporis, impedit tenetur
 					odio doloremque quas debitis quisquam nostrum modi.
-				</p>
+				</motion.p>
 
 				<Button>Fale Connosco</Button>
 			</div>
 
-			<img
+			<motion.img
 				src="/lawyer1.png"
 				className="hero__lawyer"
 				draggable="false"
+				layout
+				whileInView={{ opacity: 1, scale: 1 }}
+				initial={{ opacity: 0, scale: 0.8 }}
+				transition={{ ease: "easeInOut", delay: 0.2 }}
+				exit={{ opacity: 0, scale: 0.8 }}
+				viewport={{
+					amount: 0.5,
+					margin: "0%",
+				}}
 			/>
 		</div>
 	);

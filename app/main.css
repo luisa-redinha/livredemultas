@@ -198,7 +198,7 @@ body,
   border: 1px solid #fcfdfb;
 }
 .button:hover {
-  transform: scale(1.05);
+  transform: scale(1.08);
 }
 .button:active {
   transform: scale(0.97);
@@ -225,7 +225,7 @@ body,
   opacity: 0.75;
 }
 .checkbox:hover {
-  transform: scale(1.05);
+  transform: scale(1.08);
 }
 .checkbox:active {
   transform: scale(0.97);
@@ -447,9 +447,39 @@ body,
   transform: scale(1.05);
 }
 
+*::-webkit-scrollbar {
+  width: 0.5em;
+  height: 0.5em;
+  transition: all 0.2s ease;
+}
+
+*::-webkit-scrollbar-track {
+  background-color: rgba(255, 255, 255, 0.1);
+  transition: all 1.25s ease;
+  border-radius: 10px;
+}
+*::-webkit-scrollbar-track:hover {
+  background-color: rgba(255, 255, 255, 0.35);
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #fff;
+  outline: 1px solid #fff;
+  border-radius: 10px;
+}
+
 #home {
   overflow: auto;
   height: 100svh;
+  /* Hide scrollbar for Chrome, Safari and Opera */
+  /* Hide scrollbar for IE, Edge and Firefox */
+}
+#home::-webkit-scrollbar {
+  display: none;
+}
+#home {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
 }
 
 #contacts {
@@ -457,7 +487,11 @@ body,
   flex-direction: column;
   position: fixed;
   bottom: 7rem;
-  right: 7rem;
+  right: 5rem;
+  transition: all 0.25s ease-in-out;
+}
+#contacts:hover {
+  transform: scale(1.1);
 }
 
 .hero {

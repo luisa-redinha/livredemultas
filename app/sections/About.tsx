@@ -1,20 +1,39 @@
 import Section from "@/components/containers/Section";
 import React from "react";
-
+import { motion } from "framer-motion";
 export default function About() {
+	const contentDelay = 0.30;
 	return (
 		<Section className="about">
-				<h2>Sobre Nós</h2>
+			<h2>Sobre Nós</h2>
 
 			<div className="intro">
-				<p>
+				<motion.p
+					whileInView={{ opacity: 1 }}
+					initial={{ opacity: 0 }}
+					exit={{ opacity: 0 }}
+					transition={{
+						delay: contentDelay * 1,
+						ease: "easeInOut",
+						duration: 1.5,
+					}}
+				>
 					Lorem ipsum dolor sit amet consectetur adipisicing elit.
 					Suscipit animi, facilis asperiores id aliquid repudiandae
 					sequi impedit itaque cum nisi molestias error harum!
 					Recusandae nulla qui provident quia id tenetur!
-				</p>
+				</motion.p>
 
-				<p>
+				<motion.p
+					whileInView={{ opacity: 1 }}
+					initial={{ opacity: 0 }}
+					exit={{ opacity: 0 }}
+					transition={{
+						delay: contentDelay * 2,
+						ease: "easeInOut",
+						duration: 1.5,
+					}}
+				>
 					Lorem ipsum dolor sit amet consectetur adipisicing elit.
 					Suscipit animi, facilis asperiores id aliquid repudiandae
 					sequi impedit itaque cum nisi molestias error harum!
@@ -23,15 +42,34 @@ export default function About() {
 					accusamus provident omnis. Possimus consectetur eos ipsum
 					culpa dolor dolorum ad? Animi tenetur voluptatem tempore
 					quaerat sequi maiores ullam velit.
-				</p>
+				</motion.p>
 			</div>
-			<img
+
+			<motion.img
 				src="/lawyer3.jpg"
 				alt=""
 				className="lawyer"
+				whileInView={{ opacity: 1 }}
+				initial={{ opacity: 0 }}
+				exit={{ opacity: 0 }}
+				transition={{
+					delay: contentDelay * 3,
+					ease: "easeInOut",
+					duration: 1.5,
+				}}
 			/>
 
-			<div className="links">
+			<motion.div
+				className="links"
+				whileInView={{ opacity: 1 }}
+				initial={{ opacity: 0 }}
+				exit={{ opacity: 0 }}
+				transition={{
+					delay: contentDelay * 4,
+					ease: "easeInOut",
+					duration: 1.5,
+				}}
+			>
 				<img
 					src="/ansr.png"
 					alt="ansr.png"
@@ -44,9 +82,19 @@ export default function About() {
 					src="/imt.png"
 					alt="imt.png"
 				/>
-			</div>
+			</motion.div>
 
-			<p className="note">
+			<motion.p
+				className="note"
+				whileInView={{ opacity: 1 }}
+				initial={{ opacity: 0 }}
+				exit={{ opacity: 0 }}
+				transition={{
+					delay: contentDelay * 5,
+					ease: "easeInOut",
+					duration: 1.5,
+				}}
+			>
 				Lorem ipsum dolor sit amet consectetur adipisicing elit.
 				Suscipit animi, facilis asperiores id aliquid repudiandae sequi
 				impedit itaque cum nisi molestias error harum! Recusandae nulla
@@ -55,7 +103,7 @@ export default function About() {
 				omnis. Possimus consectetur eos ipsum culpa dolor dolorum ad?
 				Animi tenetur voluptatem tempore quaerat sequi maiores ullam
 				velit.
-			</p>
+			</motion.p>
 		</Section>
 	);
 }

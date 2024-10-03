@@ -1,4 +1,8 @@
+@use "../utils/scrollbar" as scrollbar;
+
 #home {
 	overflow: auto;
 	height: 100svh;
+
+	@include scrollbar.hide();
 }

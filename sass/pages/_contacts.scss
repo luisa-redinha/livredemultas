@@ -3,5 +3,11 @@
 	flex-direction: column;
 	position: fixed;
 	bottom: 7rem;
-	right: 7rem;
+	right: 5rem;
+
+	transition: all 0.25s ease-in-out;
+
+	&:hover {
+		transform: scale(1.1);
+	}
 }
