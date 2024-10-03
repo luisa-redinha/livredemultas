@@ -1,3 +1,4 @@
+@use "../utils/media-query" as media-query;
 .porque {
 	display: grid;
 	grid-template-areas:
@@ -41,6 +42,20 @@
 		&:has(.section-thumbnail:hover) .section-thumbnail:not(:hover) {
 			filter: blur(1px) grayscale(0.4);
 			transform: scale(0.95);
+		}
+	}
+
+	@include media-query.mobile {
+		display: flex;
+		flex-direction: column;
+		gap: 1em;
+
+		& > img {
+			display: none;
+		}
+
+		.multas-comuns {
+			flex-wrap: wrap;
 		}
 	}
 }

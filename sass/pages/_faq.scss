@@ -1,4 +1,9 @@
+@use "../utils/media-query" as media-query;
+
 .faq {
-	height: 95%;
 	overflow: auto;
+
+	@include media-query.mobile {
+		height: 90%;
+	}
 }

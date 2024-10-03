@@ -1,13 +1,25 @@
+@use "../utils/media-query" as media-query;
+@use "../abstracts/animations" as animations;
 #contacts {
 	display: flex;
 	flex-direction: column;
 	position: fixed;
 	bottom: 7rem;
 	right: 5rem;
-
+	opacity: 0;
+	@include animations.appear;
 	transition: all 0.25s ease-in-out;
 
 	&:hover {
 		transform: scale(1.1);
+	}
+
+	@include media-query.mobile {
+		flex-direction: row;
+		bottom: 3svh;
+		width: 100%;
+		justify-content: space-evenly;
+		right: unset;
+		left: unset;
 	}
 }

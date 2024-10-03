@@ -1,0 +1,12 @@
+@keyframes appear {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+@mixin appear($delay: "1s", $duration: "0.5s") {
+	animation: appear #{$duration} ease-in forwards 1 #{$delay};
+}

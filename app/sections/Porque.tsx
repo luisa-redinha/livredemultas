@@ -19,10 +19,7 @@ export default function Porque() {
 				Necessitatibus animi architecto aspernatur adipisci, non, ad
 				corrupti exercitationem harum eligendi ipsam libero doloremque
 				at a aperiam quia quaerat aut. Explicabo, doloribus. Lorem
-				ipsum, dolor sit amet consectetur adipisicing elit. Id assumenda
-				suscipit ex eveniet, officiis repellat odit cumque rem tenetur
-				repudiandae possimus, ab nam non vero, pariatur cupiditate
-				ducimus nostrum atque.
+				ipsum, dolor sit amet consectetur adipisicing elit.
 			</p>
 			<img
 				src="/lawyer2.jpg"

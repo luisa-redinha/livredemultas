@@ -33,16 +33,16 @@ export default function page({ params }: { params: { multaId: number } }) {
 				/>
 				<nav>
 					<Link
-						href={"../"}
-						className="button button--secondary"
-					>
-						Ver Outras Multas
-					</Link>
-					<Link
 						href={"/"}
 						className="button button--secondary"
 					>
 						Início
+					</Link>
+					<Link
+						href={"../"}
+						className="button button--secondary"
+					>
+						Ver Outras Multas
 					</Link>
 				</nav>
 			</header>

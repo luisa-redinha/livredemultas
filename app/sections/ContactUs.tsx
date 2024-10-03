@@ -22,7 +22,7 @@ export default function ContactUs() {
 
 	return (
 		<Section className="contact-us">
-			<h2>Como Entrar Em Contacto</h2>
+			<h2>Envie-nos Os Detalhes</h2>
 			<div className="info">
 				<p>
 					Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -67,7 +67,7 @@ export default function ContactUs() {
 					register={register}
 					formState={formState}
 					name="contact"
-					label="Contacto (Email ou Telemóvel)"
+					label="Email ou Telemóvel"
 				/>
 
 				<Button variant="secondary">
@@ -88,7 +88,7 @@ export default function ContactUs() {
 						name="urgent"
 						label="Urgente?"
 					/>
-					<CheckBox label="Aceito os Termos e Condições" />
+					<CheckBox label="Termos e Condições" />
 				</span>
 
 				<Form.Submit formState={formState}>Submeter</Form.Submit>

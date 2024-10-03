@@ -1,11 +1,13 @@
+@use "../utils/media-query" as media-query;
 .about {
-	padding-right: 8rem;
 	display: grid;
 
 	grid-template-areas:
 		"title title"
 		"intro links"
 		"img p2";
+
+	place-content: center;
 
 	gap: 2rem;
 
@@ -50,8 +52,33 @@
 		}
 	}
 
-	.note{
+	.note {
 		place-self: center;
 		width: 70%;
+	}
+
+	@include media-query.mobile {
+		grid-template-areas:
+			"title"
+			"intro"
+			"links"
+			"p2";
+
+		.intro {
+			padding-top: 0;
+		}
+
+		.lawyer {
+			display: none;
+		}
+
+		place-content: start;
+		place-items: start;
+
+		overflow: auto;
+
+		.note {
+			width: 100%;
+		}
 	}
 }

@@ -1,13 +1,13 @@
 @use "../abstracts/colors" as colors;
-
+@use "../utils/media-query" as media-query;
 .section-thumbnail {
 	$size: 12vmax;
 	width: $size;
 	height: $size;
 
+	position: relative;
 	background-color: colors.$dark--2;
 	display: inline-block;
-
 
 	img {
 		width: 100%;
@@ -31,6 +31,18 @@
 		}
 		span {
 			transform: scale(1.05);
+		}
+	}
+
+	@include media-query.mobile {
+		& > span {
+			position: absolute;
+			padding: 0.2em;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			background-color: rgba($color: colors.$dark--1, $alpha: 0.5);
+			font-size: 1em;
 		}
 	}
 }
