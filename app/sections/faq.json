@@ -12,7 +12,7 @@
 		]
 	},
 	{
-		"q": "Quanto tempo demoraram a responder, no caso de a minha defesa será viável?",
+		"q": "Quanto tempo demoraram a responder, no caso de a minha defesa ser viável?",
 		"a": ["Responderemos no prazo máximo de 24h."]
 	},
 	{
@@ -65,10 +65,121 @@
 	},
 	{
 		"q": "O que acontece em caso de não apresentar defesa?",
-		"a": [" O processo termina se tiver realizado o depósito, convertendo-se automaticamente em pagamento, ou se tiver sido feito o pagamento voluntário da coima. Caso contrário o processo seguirá para a decisão final."
-]	},
+		"a": [
+			" O processo termina se tiver realizado o depósito, convertendo-se automaticamente em pagamento, ou se tiver sido feito o pagamento voluntário da coima. Caso contrário o processo seguirá para a decisão final."
+		]
+	},
 	{
 		"q": "Serei reembolsado do que pagar se ganhar o processo?",
-		"a": ["Ser-lhe-á restituída a quantia se tiver escolhido a opção “Depósito” (em caso de ter optado pela “Coima”, não lhe será devolvida essa quantia), bastando não ser condenado, ainda que não tenha vencimento no processo."
-]	}
+		"a": [
+			"Ser-lhe-á restituída a quantia se tiver escolhido a opção “Depósito” (em caso de ter optado pela “Coima”, não lhe será devolvida essa quantia), bastando não ser condenado, ainda que não tenha vencimento no processo."
+		]
+	},
+	{
+		"q": "Como funcionam os pontos na carta ?",
+		"a": [
+			"Ao título de condução de cada condutor são atribuídos 12 (doze) pontos desde o dia 1 de junho de 2016.",
+			"Por cada contraordenação grave ou muito grave, ou crime rodoviário, serão subtraídos pontos.",
+			"Se não praticar contraordenações graves, muito graves ou crimes rodoviários, podem ser atribuídos pontos.",
+			"Se não praticar contraordenações graves, muito graves ou crimes rodoviários, podem ser atribuídos pontos."
+		]
+	},
+	{
+		"q": "Tenho que substituir a carta de condução?",
+		"a": [
+			"Não. O sistema de carta por pontos não implica nenhuma substituição de documentos. Os pontos são subtraídos e adicionados informaticamente."
+		]
+	},
+	{
+		"q": "As infrações praticadas antes de 1 de junho de 2016 tiram pontos?",
+		"a": [
+			"Não. Qualquer contraordenação grave ou muito grave, ou crime rodoviário, praticado antes da entrada em vigor deste sistema, será punido ao abrigo do regime anterior e não terá como consequência a subtração de pontos."
+		]
+	},
+	{
+		"q": "Quando é que são retirados pontos após praticar a infração?",
+		"a": [
+			"Os pontos só são subtraídos na data da definitividade da decisão administrativa ou do trânsito em julgado da sentença."
+		]
+	},
+	{
+		"q": "Quantos pontos são retirados em contraordenações graves?",
+		"a": [
+			"De acordo com o artigo 145º do código da estrada, aquando da prática de uma contraordenação grave, na sua generalidade, são retirados 2 (dois) pontos.",
+			"São retirados 3 (três) pontos nas seguintes contraordenações graves:",
+			"Condução sob influência de álcool, com uma taxa de alcoolemia igual ou superior a 0,5g/l e inferior a 0,8g/l ou igual ou superior a 0,2 g/l e inferior a 0,5 g/l quando respeite a condutor em regime probatório, condutor de veículo de socorro ou de serviço urgente, de transporte coletivo de crianças e jovens até aos 16 anos, de táxi, de automóvel pesado de passageiros ou de mercadorias ou de transporte de mercadorias perigosas;",
+			"Excesso de velocidade superior a 20 km/h (motociclo ou automóvel ligeiro) ou superior a 10 km/h (outro veículo a motor) em zonas de coexistência;",
+			"Ultrapassagem efetuada imediatamente antes e nas passagens assinaladas para a travessia de peões ou velocípedes."
+		]
+	},
+	{
+		"q": "Quantos pontos são retirados em contraordenações muito graves",
+		"a": [
+			"De acordo com o artigo 146º do código da estrada, aquando da prática de uma contraordenação muito grave, na sua generalidade, são retirados 4 (quatro) pontos.",
+			"São retirados 5 (cinco) pontos nas seguintes contraordenações muito graves:",
+			"Condução sob influência de álcool, com uma taxa de alcoolemia igual ou superior a 0,8g/l e inferior a 1,2g/l ou igual ou superior a 0,5 g/l e inferior a 1,2 g/l quando respeite a condutor em regime probatório, condutor de veículo de socorro ou de serviço urgente, de transporte coletivo de crianças e jovens até aos 16 anos, de táxi, de automóveis pesado de passageiros ou de mercadorias ou de transporte de mercadorias perigosas, bem como quando o condutor for considerado influenciado pelo álcool em relatório médico;",
+			"Condução sob influência de substâncias psicotrópicas;",
+			"Excesso de velocidade superior a 40 km/h (motociclo ou automóvel ligeiro) ou superior a 20 km/h (outro veículo a motor) em zonas de coexistência."
+		]
+	},
+	{
+		"q": "Quantos pontos são retirados por crime rodoviário?",
+		"a": ["São retirados 6 (seis) pontos."]
+	},
+	{
+		"q": "Qual o máximo de pontos que podem ser retirados se praticar várias contraordenações em simultâneo?",
+		"a": [
+			"Quando praticadas várias contraordenações graves e muito graves no mesmo dia, são retirados no limite 6 (seis) pontos. No entanto, se entre as condenações por contraordenação grave ou muito grave estiver em causa a condução sob influência do álcool ou sob influência de substâncias psicotrópicas, são ainda retirados os pontos respetivos (3, 5 ou 6 – consoante seja grave, muito grave ou crime)."
+		]
+	},
+	{
+		"q": "Com o regime de carta por pontos também tenho que entregar a carta de condução para cumprir a inibição de conduzir?",
+		"a": [
+			"Sim, os pressupostos da determinação da medida da sanção acessória mantêm-se. Após a prática de contraordenação grave ou muito grave, o processo corre os seus trâmites legais, e no caso de haver decisão condenatória de sanção acessória de inibição temporária de conduzir, o condutor deverá entregar o seu título de condução para cumprimento da mesma."
+		]
+	},
+	{
+		"q": "Posso ganhar pontos? Como?",
+		"a": [
+			"Sim. No final de cada período de 3 (três) anos, sem que sejam praticadas contraordenações graves ou muito graves, ou crimes de natureza rodoviária, são atribuídos 3 (três) pontos ao condutor, não podendo ser ultrapassado o limite de 15 (quinze) pontos.",
+			"A cada período da revalidação do título de condução, sem que sejam praticados crimes rodoviários, e o condutor tenha frequentado voluntariamente ação de formação de segurança rodoviária, é atribuído um ponto ao condutor não podendo ser ultrapassado o limite de 16 (dezasseis) pontos. Este limite é aplicado apenas em situações em tenham sido atribuídos pontos conforme previsto no parágrafo anterior, caso contrário mantém-se o limite máximo de 15 (quinze) pontos."
+		]
+	},
+	{
+		"q": "Os 3 anos, para efeitos de adição de pontos, são contados a partir da data da última infração ou da data da definitividade da decisão administrativa sobre esta?",
+		"a": [
+			"Os 3 (três) anos são contados a partir da data de definitividade da decisão administrativa ou do trânsito em julgado da sentença da última infração praticada (contraordenação grave ou muito grave, ou crime rodoviário)."
+		]
+	},
+	{
+		"q": "Estou no regime probatório, o que pode acontecer à minha carta de condução se praticar uma infração?",
+		"a": [
+			"Os trâmites legais, em vigor, mantêm-se. Ou seja, no caso da prática de duas contraordenações graves ou uma muito grave, o título de condução é cancelado."
+		]
+	},
+	{
+		"q": "Se ficar sem pontos, o que acontece ao título de condução?",
+		"a": [
+			"No caso de se encontrarem subtraídos todos os pontos, é ordenada a cassação do título de condução em processo autónomo, isto é, fica sem carta de condução.",
+			"Efetivada a cassação do título de condução, fica impedido de obter novo título durante o período de 2 (dois) anos. Após este período poderá tirar novamente a carta, suportando os respetivos custos."
+		]
+	},
+	{
+		"q": "Tenho 5 ou 4 pontos. E agora?",
+		"a": [
+			"Agora, será obrigado a frequentar uma ação de formação de Segurança Rodoviária. A falta não justificada implica a cassação do título de condução, isto é, fica sem carta de condução e terá que aguardar 2 (dois) anos para a tirar novamente, suportando os respetivos custos."
+		]
+	},
+	{
+		"q": "Tenho 3, 2 ou 1 pontos. O que terei de fazer?",
+		"a": [
+			"Será obrigado a realizar a prova teórica do exame de condução. A falta não justificada ou a reprovação na prova implica a cassação do título de condução, isto é, fica sem carta de condução e terá que aguardar 2 (dois) anos para a tirar novamente, suportando os respetivos custos."
+		]
+	},
+	{
+		"q": "Como é que sei quantos pontos tenho?",
+		"a": [
+			"Para saber os pontos que tem, deverá registar-se no Portal de Contraordenações Rodoviárias (https://portalcontraordenacoes.ansr.pt/)."
+		]
+	}
 ]

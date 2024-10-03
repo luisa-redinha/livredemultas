@@ -912,5 +912,8 @@ body,
     height: 90%;
   }
 }
+.faq li {
+  user-select: text;
+}
 
 /*# sourceMappingURL=main.css.map */

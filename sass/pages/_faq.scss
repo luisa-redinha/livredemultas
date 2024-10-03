@@ -6,4 +6,8 @@
 	@include media-query.mobile {
 		height: 90%;
 	}
+
+	li {
+		user-select: text;
+	}
 }
