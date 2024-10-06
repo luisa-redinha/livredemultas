@@ -2,7 +2,7 @@
 
 .faq {
 	overflow: auto;
-
+	height: 90%;
 	@include media-query.mobile {
 		height: 90%;
 	}
