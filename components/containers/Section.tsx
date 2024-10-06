@@ -5,7 +5,7 @@ import FrameDecor from "../misc/FrameDecor";
 
 export default function Section({
 	children,
-	className,
+	className = "",
 }: {
 	children?: ReactNode;
 	className?: string;
