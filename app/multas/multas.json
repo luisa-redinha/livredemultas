@@ -56,6 +56,21 @@
 		}
 	},
 	{
+		"label": "Uso de Telemóvel",
+		"info": [
+			"O manuseamento de telemóvel enquanto se conduz, é uma infração ao at. 84º do código da Estrada. Não se trata de falar ou não ao telefone, mas sim o mero ato de tocar num telemóvel durante a condução."
+		],
+		"img": "/multa2.png",
+		"coimas": {
+			"muitoGrave": [
+				"Coima de 250€ a 1250€",
+				"Inibição de conduzir (ou apreensão de veículo para empresas) – 1 a 12 meses",
+				"Cadastro Rodoviário manchado durante 5 anos",
+				"Perda de 3 pontos na carta"
+			]
+		}
+	},
+	{
 		"label": "Multas a Empresas",
 		"img": "/multa3.jpg"
 	},

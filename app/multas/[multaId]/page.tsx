@@ -48,30 +48,37 @@ export default function page({ params }: { params: { multaId: number } }) {
 			</header>
 
 			<div className="coimas">
-				<div className="coimas-card coimas__leve">
-					<h3>Leve</h3>
-					<ul>
-						{multaData.coimas?.leve.map((e, i) => (
-							<li key={"coima-leve-" + i}>{e}</li>
-						))}
-					</ul>
-				</div>
-				<div className="coimas-card coimas__grave">
-					<h3>Grave</h3>
-					<ul>
-						{multaData.coimas?.grave.map((e, i) => (
-							<li key={"coima-leve-" + i}>{e}</li>
-						))}
-					</ul>
-				</div>
-				<div className="coimas-card coimas__muito-grave">
-					<h3>Muito Grave</h3>
-					<ul>
-						{multaData.coimas?.muitoGrave.map((e, i) => (
-							<li key={"coima-leve-" + i}>{e}</li>
-						))}
-					</ul>
-				</div>
+				{multaData.coimas?.leve && (
+					<div className="coimas-card coimas__leve">
+						<h3>Leve</h3>
+
+						<ul>
+							{multaData.coimas.leve.map((e, i) => (
+								<li key={"coima-leve-" + i}>{e}</li>
+							))}
+						</ul>
+					</div>
+				)}
+				{multaData.coimas?.grave && (
+					<div className="coimas-card coimas__grave">
+						<h3>Grave</h3>
+						<ul>
+							{multaData.coimas?.grave.map((e, i) => (
+								<li key={"coima-leve-" + i}>{e}</li>
+							))}
+						</ul>
+					</div>
+				)}
+				{multaData.coimas?.muitoGrave && (
+					<div className="coimas-card coimas__muito-grave">
+						<h3>Muito Grave</h3>
+						<ul>
+							{multaData.coimas?.muitoGrave.map((e, i) => (
+								<li key={"coima-leve-" + i}>{e}</li>
+							))}
+						</ul>
+					</div>
+				)}
 			</div>
 		</Section>
 	);
