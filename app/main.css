@@ -132,10 +132,10 @@ body,
 }
 @media (hover: none) and (orientation: portrait) {
   .section {
-    padding: 1rem;
+    padding: 2rem 0.5em;
   }
   .section__content {
-    padding: 3.2rem;
+    padding: 0rem 3.5rem;
   }
 }
 
@@ -225,7 +225,7 @@ body,
   background-color: transparent;
   border: 1px solid #fcfdfb;
 }
-.button:hover {
+.button:hover, .button:focus {
   transform: scale(1.08);
 }
 .button:active {
@@ -252,7 +252,7 @@ body,
   cursor: pointer;
   opacity: 0.75;
 }
-.checkbox:hover {
+.checkbox:hover, .checkbox:focus {
   transform: scale(1.08);
 }
 .checkbox:active {
@@ -469,10 +469,10 @@ body,
   font-size: 1.15rem;
   transition: transform 0.15s ease-in-out;
 }
-.section-thumbnail:hover img {
+.section-thumbnail:hover img, .section-thumbnail:focus img {
   transform: scale(0.95);
 }
-.section-thumbnail:hover span {
+.section-thumbnail:hover span, .section-thumbnail:focus span {
   transform: scale(1.05);
 }
 @media (hover: none) and (orientation: portrait) {
@@ -650,7 +650,7 @@ body,
 .porque .multas-comuns > * {
   transition: filter 0.5s ease, transform 0.25s ease-in-out;
 }
-.porque .multas-comuns:has(.section-thumbnail:hover) .section-thumbnail:not(:hover) {
+.porque .multas-comuns:has(.section-thumbnail:hover) .section-thumbnail:not(:hover), .porque .multas-comuns:has(.section-thumbnail:focus) .section-thumbnail:not(:focus) {
   filter: blur(1px) grayscale(0.4);
   transform: scale(0.95);
 }
@@ -906,7 +906,6 @@ body,
 
 .faq {
   overflow-y: auto;
-  height: 90%;
   width: 90%;
   margin: auto;
 }

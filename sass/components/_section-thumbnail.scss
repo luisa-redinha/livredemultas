@@ -25,7 +25,8 @@
 		transition: transform 0.15s ease-in-out;
 	}
 
-	&:hover {
+	&:hover,
+	&:focus {
 		img {
 			transform: scale(0.95);
 		}

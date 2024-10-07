@@ -32,7 +32,7 @@ export default function Hero() {
 					odio doloremque quas debitis quisquam nostrum modi.
 				</motion.p>
 
-				<Button>Fale Connosco</Button>
+				<Button tabIndex={0}>Fale Connosco</Button>
 			</div>
 
 			<motion.img

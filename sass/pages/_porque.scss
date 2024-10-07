@@ -39,7 +39,8 @@
 			transition: filter 0.5s ease, transform 0.25s ease-in-out;
 		}
 
-		&:has(.section-thumbnail:hover) .section-thumbnail:not(:hover) {
+		&:has(.section-thumbnail:hover) .section-thumbnail:not(:hover),
+		&:has(.section-thumbnail:focus) .section-thumbnail:not(:focus) {
 			filter: blur(1px) grayscale(0.4);
 			transform: scale(0.95);
 		}

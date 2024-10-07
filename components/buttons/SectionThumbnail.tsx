@@ -6,6 +6,7 @@ type SectionThumbnailProps = {
 	src?: string;
 	path?: string;
 	label: string;
+	tabIndex: number;
 };
 
 const Component = React.forwardRef((props: SectionThumbnailProps, ref) => (
@@ -13,6 +14,7 @@ const Component = React.forwardRef((props: SectionThumbnailProps, ref) => (
 		ref={ref as LegacyRef<HTMLAnchorElement> | undefined}
 		href={props.path || ""}
 		className="section-thumbnail"
+		tabIndex={props.tabIndex}
 	>
 		<img src={props.src} />
 		<span>{props.label}</span>

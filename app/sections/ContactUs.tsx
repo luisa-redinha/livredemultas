@@ -16,7 +16,6 @@ type ContactData = {
 
 export default function ContactUs() {
 	const { register, handleSubmit, formState, reset } = useForm<ContactData>({
-		// resolver: zodResolver(LoginSchema),
 		defaultValues: { name: "", contact: "", urgent: false },
 	});
 
@@ -62,12 +61,22 @@ export default function ContactUs() {
 					formState={formState}
 					name="name"
 					label="Nome"
+					tabIndex={5}
 				/>
 				<Form.Control
 					register={register}
 					formState={formState}
 					name="contact"
 					label="Email ou Telemóvel"
+					tabIndex={6}
+				/>
+
+				<Form.Control
+					register={register}
+					formState={formState}
+					name="contact"
+					label="ADD EMAIL & PHONE SEPARATE"
+					tabIndex={6}
 				/>
 
 				<Button variant="secondary">

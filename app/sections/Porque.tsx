@@ -28,6 +28,7 @@ export default function Porque() {
 
 			<div className="multas-comuns">
 				<SectionThumbnail
+					tabIndex={1}
 					src="/multa1.jpg"
 					label="Excesso de Velocidade"
 					whileInView={{ opacity: 1 }}
@@ -40,6 +41,7 @@ export default function Porque() {
 					}}
 				/>
 				<SectionThumbnail
+					tabIndex={2}
 					src="/multa2.png"
 					label="Excesso de Alcool"
 					whileInView={{ opacity: 1 }}
@@ -52,6 +54,7 @@ export default function Porque() {
 					}}
 				/>
 				<SectionThumbnail
+					tabIndex={3}
 					src="/multa3.png"
 					label="Multas a Empresas"
 					path="./multas"
@@ -65,6 +68,7 @@ export default function Porque() {
 					}}
 				/>
 				<SectionThumbnail
+					tabIndex={4}
 					src="/multa4.png"
 					label="Outras Multas"
 					path="./multas"
