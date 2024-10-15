@@ -8,7 +8,8 @@ import { useForm } from "react-hook-form";
 import { motion } from "framer-motion";
 type ContactData = {
 	name: string;
-	contact: string;
+	mobile: string;
+	email: string;
 	urgent: boolean;
 	file?: File;
 	info?: string;
@@ -16,7 +17,13 @@ type ContactData = {
 
 export default function ContactUs() {
 	const { register, handleSubmit, formState, reset } = useForm<ContactData>({
-		defaultValues: { name: "", contact: "", urgent: false },
+		defaultValues: {
+			name: "",
+			mobile: "",
+			email: "",
+			urgent: false,
+			info: "",
+		},
 	});
 
 	return (
@@ -60,22 +67,22 @@ export default function ContactUs() {
 					register={register}
 					formState={formState}
 					name="name"
-					label="Nome"
+					label="Nome*"
 					tabIndex={5}
 				/>
 				<Form.Control
 					register={register}
 					formState={formState}
-					name="contact"
-					label="Email ou Telemóvel"
+					name="email"
+					label="Email"
 					tabIndex={6}
 				/>
 
 				<Form.Control
 					register={register}
 					formState={formState}
-					name="contact"
-					label="ADD EMAIL & PHONE SEPARATE"
+					name="mobile"
+					label="Telemóvel"
 					tabIndex={6}
 				/>
 
