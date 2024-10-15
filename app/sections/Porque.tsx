@@ -30,6 +30,7 @@ export default function Porque() {
 				<SectionThumbnail
 					tabIndex={1}
 					src="/multa1.jpg"
+					path="./multas/0"
 					label="Excesso de Velocidade"
 					whileInView={{ opacity: 1 }}
 					initial={{ opacity: 0 }}
@@ -44,6 +45,7 @@ export default function Porque() {
 					tabIndex={2}
 					src="/multa2.png"
 					label="Excesso de Alcool"
+					path="./multas/1"
 					whileInView={{ opacity: 1 }}
 					initial={{ opacity: 0 }}
 					exit={{ opacity: 0 }}
@@ -57,7 +59,7 @@ export default function Porque() {
 					tabIndex={3}
 					src="/multa3.png"
 					label="Multas a Empresas"
-					path="./multas"
+					path="./multas/3"
 					whileInView={{ opacity: 1 }}
 					initial={{ opacity: 0 }}
 					exit={{ opacity: 0, transitionDelay: "unset" }}
