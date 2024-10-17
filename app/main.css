@@ -889,6 +889,9 @@ body,
   gap: 0.25em;
   margin: auto;
 }
+.multas .coimas .coimas-card ul li {
+  text-align: start;
+}
 @media (hover: none) and (orientation: portrait) {
   .multas {
     align-items: center;
