@@ -34,7 +34,7 @@
 	{
 		"q": "O que fazer quando perante o auto de notícia?",
 		"a": [
-			"Quando acontecer ser mandado/a parar por um agente de autoridade e este o autuar/multar (emitir o auto no momento da fiscalização), deve selecionar a opção “Depósito” (se não for condenado esta quantia ser-lhe-á devolvida e se pagar – opção “Coima” – não lhe será devolvida a dita quantia)",
+			"Quando acontecer ser mandado/a parar por um agente de autoridade e este o autuar/multar (emitir o auto no momento da fiscalização), deve selecionar a opção “Depósito” (se não for condenado esta quantia ser-lhe-á devolvida e se pagar – opção “Coima” – não lhe será devolvida a dita quantia).",
 			"Em caso de sanção grave ou muito grave, o prazo para a defesa (15 dias úteis) começará a contar no momento da notificação, no momento da ação de fiscalização ou da receção por correio sob registo.",
 			"Se fizer o depósito poderão ser apreendidos provisoriamente os documentos, de acordo com a situação.",
 			"Se fizer o depósito e não apresentar defesa no prazo legal, o depósito converte-se, de forma automática, em pagamento.",
@@ -46,7 +46,7 @@
 	{
 		"q": "O que fazer quando perante a decisão da ANSR?",
 		"a": [
-			"Com a notificação da decisão (v.g. como no exemplo abaixo), começa a correr o prazo (15 dias úteis) para impugnar ou para apresentar recurso judicial, o que deve ser ponderado tendo em conta fatores como a decisão concreta, infração em causa e a defesa, para aferir da viabilidade da impugnação ou do recurso judicial. ",
+			"Com a notificação da decisão, começa a correr o prazo (15 dias úteis) para impugnar ou para apresentar recurso judicial, o que deve ser ponderado tendo em conta fatores como a decisão concreta, infração em causa e a defesa, para aferir da viabilidade da impugnação ou do recurso judicial. ",
 			"Envie-nos o auto (imagem, formato JEPG, ou PDF) e, sem qualquer compromisso, daremos um parecer sobre a viabilidade da defesa."
 		]
 	},
@@ -142,7 +142,7 @@
 		"q": "Posso ganhar pontos? Como?",
 		"a": [
 			"Sim. No final de cada período de 3 (três) anos, sem que sejam praticadas contraordenações graves ou muito graves, ou crimes de natureza rodoviária, são atribuídos 3 (três) pontos ao condutor, não podendo ser ultrapassado o limite de 15 (quinze) pontos.",
-			"A cada período da revalidação do título de condução, sem que sejam praticados crimes rodoviários, e o condutor tenha frequentado voluntariamente ação de formação de segurança rodoviária, é atribuído um ponto ao condutor não podendo ser ultrapassado o limite de 16 (dezasseis) pontos. Este limite é aplicado apenas em situações em tenham sido atribuídos pontos conforme previsto no parágrafo anterior, caso contrário mantém-se o limite máximo de 15 (quinze) pontos."
+			"A cada período da revalidação do título de condução, sem que sejam praticados crimes rodoviários, e o condutor tenha frequentado ,voluntariamente, ação de formação de segurança rodoviária, é atribuído um ponto ao condutor não podendo ser ultrapassado o limite de 16 (dezasseis) pontos. Este limite é aplicado apenas em situações em tenham sido atribuídos pontos conforme previsto no parágrafo anterior, caso contrário mantém-se o limite máximo de 15 (quinze) pontos."
 		]
 	},
 	{

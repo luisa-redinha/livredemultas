@@ -10,10 +10,13 @@ export default function page() {
 			<header>
 				<h2>Tipos de Multas</h2>
 				<p>
-					Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-					Illo placeat quia mollitia nesciunt, molestias, impedit
-					eveniet vero maiores nostrum numquam excepturi debitis
-					consectetur fuga amet vitae velit, laborum deserunt sunt?
+					Temos uma equipa de advogados com uma enorme e elevada
+					experiência e exigência na defesa de contraordenações
+					rodoviárias e na aplicação do direito rodoviário.
+					Identificamos aqui alguns dos tipos de contraordenações cuja
+					defesa fazemos. Se pretende evitar a aplicação de uma coima,
+					vulgarmente conhecida por multa, nós podemos ajudar.
+					
 				</p>
 				<nav>
 					<Link

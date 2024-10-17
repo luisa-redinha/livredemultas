@@ -17,7 +17,7 @@ export default function Porque() {
 			</p>
 			<p>
 				Recorrer a um advogado para contestar uma multa é uma forma de
-				garantir que os seus direitos sejam defendidos de forma adequada
+				garantir que os seus direitos serão defendidos de forma adequada
 				e profissional. A experiência e os conhecimentos da nossa equipa de advogados
 				fazem a diferença entre o sucesso e o fracasso de uma
 				contestação!

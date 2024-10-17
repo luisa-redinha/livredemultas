@@ -585,15 +585,25 @@ body,
 .hero__info__text {
   color: #d1b06b;
 }
-.hero__info button {
-  font-size: 1.25rem;
-  padding: 1em 2em;
-}
 .hero__lawyer {
   grid-area: img;
   width: 35vmax;
   align-self: end;
   justify-self: center;
+}
+.hero__contacts {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+  margin-top: 0.5em;
+  width: fit-content;
+  transform: scale(0.8);
+}
+.hero__contacts__link {
+  margin: 0em;
+  display: flex;
+  gap: 1em;
+  align-items: end;
 }
 @media (hover: none) and (orientation: portrait) {
   .hero {
@@ -615,6 +625,10 @@ body,
     bottom: 0;
     right: 50%;
     left: 50%;
+  }
+  .hero__contacts {
+    margin: auto;
+    place-items: center;
   }
 }
 
@@ -898,9 +912,16 @@ body,
   }
   .multas .grid {
     height: auto;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    justify-content: center;
+    justify-items: center;
   }
   .multas .grid > * {
     margin-bottom: 0;
+    width: 70%;
+    height: 100%;
+    align-self: stretch;
   }
   .multas .coimas {
     padding: 2em 0;
@@ -914,6 +935,23 @@ body,
   }
   .multas ul {
     padding: 0.75em 0.5em !important;
+  }
+}
+
+.outras-multas {
+  justify-content: start;
+}
+
+.outras-multas-links {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 4rem;
+}
+@media (hover: none) and (orientation: portrait) {
+  .outras-multas-links {
+    margin-top: 1em;
+    gap: 0;
   }
 }
 

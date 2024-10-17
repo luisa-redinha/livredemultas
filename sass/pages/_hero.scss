@@ -38,11 +38,6 @@
 		&__text {
 			color: colors.$gold;
 		}
-
-		button {
-			font-size: 1.25rem;
-			padding: 1em 2em;
-		}
 	}
 
 	&__lawyer {
@@ -50,6 +45,22 @@
 		width: 35vmax;
 		align-self: end;
 		justify-self: center;
+	}
+
+	&__contacts {
+		display: flex;
+		flex-direction: column;
+		gap: 0.5em;
+		margin-top: 0.5em;
+		width: fit-content;
+		transform: scale(0.8);
+
+		&__link {
+			margin: 0em;
+			display: flex;
+			gap: 1em;
+			align-items: end;
+		}
 	}
 
 	@include media-query.mobile {
@@ -73,6 +84,11 @@
 			bottom: 0;
 			right: 50%;
 			left: 50%;
+		}
+
+		&__contacts {
+			margin: auto;
+			place-items: center;
 		}
 	}
 }

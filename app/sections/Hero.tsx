@@ -1,5 +1,6 @@
 import Logo from "@/components/misc/Logo";
 import { motion } from "framer-motion";
+import Contacts from "./Contacts";
 export default function Hero() {
 	return (
 		<div className="hero">
@@ -24,19 +25,34 @@ export default function Hero() {
 					transition={{ ease: "easeInOut", delay: 0.15 }}
 					exit={{ rotateX: -90 }}
 				>
-					Acreditamos na justiça para todos. Se recebeu uma multa que
-					considera injusta, conte connosco. Os nossos especialistas
-					em direito rodoviário analisarão o seu caso e construirão
-					uma defesa sólida em seu nome.
+					Se recebeu uma multa e quer contestar, conte connosco. Os
+					nossos especialistas em direito rodoviário analisarão o seu
+					caso e construirão uma defesa sólida em seu nome.
 				</motion.p>
 
-				<a
-					className="button button--primary"
-					href="mailto:geral@livredemultas.pt?subject=Contestar%20Multa"
-					target="_blank"
-				>
-					Fale Connosco
-				</a>
+				<div className="hero__contacts">
+					<a
+						href=""
+						className="button button--primary hero__contacts__link"
+					>
+						<i className="fa-brands fa-whatsapp" />
+						Whatsapp
+					</a>
+					<a
+						href=""
+						className="button button--primary hero__contacts__link"
+					>
+						<i className="fa-solid fa-mobile-screen" />
+						+351 987 654 321
+					</a>
+					<a
+						href=""
+						className="button button--primary hero__contacts__link"
+					>
+						<i className="fa-regular fa-envelope" />
+						Email
+					</a>
+				</div>
 			</div>
 
 			<motion.img

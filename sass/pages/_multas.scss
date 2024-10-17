@@ -118,8 +118,15 @@
 		}
 		.grid {
 			height: auto;
+			grid-template-columns: 1fr;
+			grid-template-rows: 1fr;
+			justify-content: center;
+			justify-items: center;
 			& > * {
 				margin-bottom: 0;
+				width: 70%;
+				height: 100%;
+				align-self: stretch;
 			}
 		}
 
@@ -141,6 +148,19 @@
 	}
 }
 
+.outras-multas {
+	justify-content: start;
+}
+.outras-multas-links {
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+	margin-top: 4rem;
+	@include media-query.mobile {
+		margin-top: 1em;
+		gap: 0;
+	}
+}
 .outras-multas-contact {
 	max-width: 50%;
 	margin: auto;

@@ -1,9 +1,12 @@
 import IconButton from "@/components/buttons/IconButton";
 import React from "react";
 
-export default function Contacts() {
+export default function Contacts({ className = "" }: { className?: string }) {
 	return (
-		<section id="contacts">
+		<section
+			id="contacts"
+			className={className}
+		>
 			<a
 				href=""
 				target="_blank"
