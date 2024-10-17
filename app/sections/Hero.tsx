@@ -1,6 +1,5 @@
 import Logo from "@/components/misc/Logo";
 import { motion } from "framer-motion";
-import Contacts from "./Contacts";
 export default function Hero() {
 	return (
 		<div className="hero">
@@ -32,21 +31,21 @@ export default function Hero() {
 
 				<div className="hero__contacts">
 					<a
-						href=""
+						href="https://wa.me/+351913785352"
 						className="button button--primary hero__contacts__link"
 					>
 						<i className="fa-brands fa-whatsapp" />
 						Whatsapp
 					</a>
 					<a
-						href=""
+						href="tel:+351913785352"
 						className="button button--primary hero__contacts__link"
 					>
 						<i className="fa-solid fa-mobile-screen" />
-						+351 987 654 321
+						+351 913 785 352
 					</a>
 					<a
-						href=""
+						href="mailto:geral@livredemultas.pt?subject=Contestar%20Multa"
 						className="button button--primary hero__contacts__link"
 					>
 						<i className="fa-regular fa-envelope" />
