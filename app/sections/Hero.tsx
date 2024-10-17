@@ -1,6 +1,4 @@
-import Button from "@/components/buttons/Button";
 import Logo from "@/components/misc/Logo";
-import React, { createRef, RefObject } from "react";
 import { motion } from "framer-motion";
 export default function Hero() {
 	return (

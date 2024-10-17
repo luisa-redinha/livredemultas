@@ -21,6 +21,8 @@ const Component = React.forwardRef((props: SectionThumbnailProps, ref) => (
 	</Link>
 ));
 
+Component.displayName = "SectionThumbnail";
+
 const SectionThumbnail = motion.create(Component);
 
 export default SectionThumbnail;

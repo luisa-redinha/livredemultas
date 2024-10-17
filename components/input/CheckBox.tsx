@@ -30,4 +30,7 @@ const CheckBox = forwardRef(
 		);
 	}
 );
+
+CheckBox.displayName="CheckBox"
+
 export default CheckBox;

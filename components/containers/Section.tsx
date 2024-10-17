@@ -1,6 +1,6 @@
 "use client";
-import React, { ReactNode, RefObject } from "react";
 import { motion } from "framer-motion";
+import { ReactNode } from "react";
 import FrameDecor from "../misc/FrameDecor";
 
 export default function Section({

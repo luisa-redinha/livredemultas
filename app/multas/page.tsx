@@ -4,8 +4,6 @@ import Section from "@/components/containers/Section";
 import Link from "next/link";
 import multas from "./multas.json";
 
-type MultaSchema = (typeof multas)[0];
-
 export default function page() {
 	return (
 		<Section className="multas">

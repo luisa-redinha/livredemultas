@@ -3,9 +3,8 @@ import Button from "@/components/buttons/Button";
 import Section from "@/components/containers/Section";
 import { Form } from "@/components/form/Form";
 import CheckBox from "@/components/input/CheckBox";
-import React from "react";
-import { useForm } from "react-hook-form";
 import { motion } from "framer-motion";
+import { useForm } from "react-hook-form";
 type ContactData = {
 	name: string;
 	mobile: string;
@@ -16,7 +15,7 @@ type ContactData = {
 };
 
 export default function ContactUs() {
-	const { register, handleSubmit, formState, reset } = useForm<ContactData>({
+	const { register, formState } = useForm<ContactData>({
 		defaultValues: {
 			name: "",
 			mobile: "",

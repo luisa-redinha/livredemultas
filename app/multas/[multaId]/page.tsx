@@ -1,8 +1,7 @@
-import React from "react";
-import multas from "../multas.json";
-import Link from "next/link";
-import { notFound, redirect } from "next/navigation";
 import Section from "@/components/containers/Section";
+import Link from "next/link";
+import { redirect } from "next/navigation";
+import multas from "../multas.json";
 export default function page({ params }: { params: { multaId: number } }) {
 	const multaData = multas[Number(params.multaId)];
 

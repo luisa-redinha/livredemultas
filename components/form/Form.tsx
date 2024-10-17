@@ -3,14 +3,13 @@ import React, { FormEvent, FormHTMLAttributes } from "react";
 import { FieldValues, FormState, Path, UseFormRegister } from "react-hook-form";
 import Button, { ButtonProps } from "../buttons/Button";
 
+import CheckBox from "../input/CheckBox";
 import Input, { InputProps } from "../input/Input";
 import TextareaComponent, { TextareaProps } from "../input/Textarea";
-import CheckBox from "../input/CheckBox";
 
 interface FormProps extends FormHTMLAttributes<HTMLFormElement> {
 	//NOTE: Couldn't figure out the proper type, ts creates a conflict with HTMLFormAttributes and MotionProps
 	animationProps?: any;
-	middleware?: Function;
 	honeyPotFieldName?: string;
 }
 
@@ -33,7 +32,7 @@ export function Form({
 			return; //begone foul bot! YOU SHALL NOT PASS!!!
 		}
 
-		onSubmit && onSubmit(e);
+		if (onSubmit) onSubmit(e);
 	};
 
 	return (

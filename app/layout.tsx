@@ -1,8 +1,8 @@
 import "./main.css";
 
+import { AnimatePresence } from "framer-motion";
 import { Metadata } from "next";
 import Contacts from "./sections/Contacts";
-import { AnimatePresence } from "framer-motion";
 
 export const metadata: Metadata = {
 	title: "Livre de Multas",
@@ -21,6 +21,7 @@ export default function RootLayout({
 				<script
 					src="https://kit.fontawesome.com/1a62655504.js"
 					crossOrigin="anonymous"
+					async
 				></script>
 			</head>
 			<body>

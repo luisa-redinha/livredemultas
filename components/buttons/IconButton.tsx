@@ -1,7 +1,5 @@
 "use client";
 
-import React from "react";
-
 enum ICONS {
 	whatsapp = "fa-brands fa-whatsapp",
 	phone = "fa-solid fa-phone",
@@ -9,7 +7,7 @@ enum ICONS {
 }
 
 export type IconButtonProps = {
-	onClick?: Function;
+	onClick?: () => void;
 	icon: keyof typeof ICONS;
 };
 

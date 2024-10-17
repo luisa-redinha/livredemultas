@@ -1,4 +1,3 @@
-import Button from "@/components/buttons/Button";
 import Section from "@/components/containers/Section";
 import Link from "next/link";
 export default function page() {

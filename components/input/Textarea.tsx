@@ -30,6 +30,7 @@ const Textarea = forwardRef(
 			>
 				<textarea
 					{...props}
+					rows={rows}
 					ref={ref}
 					spellCheck={spellCheck}
 					className="textarea__element input__element"
@@ -64,4 +65,6 @@ const Textarea = forwardRef(
 		);
 	}
 );
+
+Textarea.displayName = "Textarea";
 export default Textarea;

@@ -1,26 +1,17 @@
 "use client";
 
 import {
-	Accordion as SzhAccordion,
 	AccordionItem as Item,
-	AccordionItemProps,
+	Accordion as SzhAccordion,
 } from "@szhsin/react-accordion";
-import {
-	Children,
-	ReactElement,
-	ReactNode,
-	cloneElement,
-	useState,
-} from "react";
+import { ReactElement, ReactNode } from "react";
 
 export interface AccordionProps {
 	className?: string;
 	children: ReactElement | ReactElement[];
 }
 
-export default function Accordion({ className, children }: AccordionProps) {
-	const [isOpen, setIsOpen] = useState<false | number>(false);
-
+export default function Accordion({ children }: AccordionProps) {
 	return (
 		<SzhAccordion
 			transition
