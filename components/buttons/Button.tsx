@@ -10,7 +10,7 @@ export default function Button({ variant = "primary", ...props }: ButtonProps) {
 	return (
 		<button
 			{...props}
-			className={`button button--${variant}`}
+			className={`button button--${variant} ${props.className ?? ""}`}
 		/>
 	);
 }

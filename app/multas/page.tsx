@@ -1,37 +1,12 @@
 "use client";
 import SectionThumbnail from "@/components/buttons/SectionThumbnail";
-import ComboBox from "@/components/input/ComboBox";
-import Link from "next/link";
-import { useState } from "react";
-import multas from "./multas.json";
 import Section from "@/components/containers/Section";
+import Link from "next/link";
+import multas from "./multas.json";
+
+type MultaSchema = (typeof multas)[0];
+
 export default function page() {
-	const comboBoxData = multas.map((e, i) => ({
-		label: e.label,
-		value: i,
-	}));
-
-	const [list, setList] = useState(multas);
-
-	const onKeyFilterChangeHandler = (str: string) => {
-		if (!str) {
-			setList(multas);
-			return;
-		}
-
-		setList(
-			multas.filter((e) => e.label.match(new RegExp(`^${str}`, "gi")))
-		);
-	};
-	const onSelectHandler = (str: string) => {
-		if (!str) {
-			setList(multas);
-			return;
-		}
-		const target = multas.find((e) => e.label === str);
-		target && setList([target]);
-	};
-
 	return (
 		<Section className="multas">
 			<header>
@@ -52,23 +27,42 @@ export default function page() {
 				</nav>
 			</header>
 
-			<div className="search">
-				<h3>Pesquisar</h3>
-				<ComboBox
-					data={comboBoxData}
-					onKeyDown={onKeyFilterChangeHandler}
-					onSelect={onSelectHandler}
-				/>
-			</div>
-
 			<div className="grid">
-				{list.map((e, i) => (
+				{/* ===== */}
+
+				<SectionThumbnail
+					src={"/multas/velocidade.webp"}
+					label="Excesso de Velocidade"
+					path={`/multas/velocidade`}
+					key={`velocidade`}
+				/>
+
+				{/* Multas json data */}
+
+				{multas.map((e, i) => (
 					<SectionThumbnail
 						{...e}
+						src={e.img}
 						path={`/multas/${i}`}
 						key={`${e.label}-${i}`}
 					/>
 				))}
+
+				{/* ===== */}
+
+				<SectionThumbnail
+					src={"/multas/empresas.webp"}
+					label="Multas a Empresas"
+					path={`/multas/empresas`}
+					key={`multas-empresas`}
+				/>
+
+				<SectionThumbnail
+					src={"/multas/outras.webp"}
+					label="Outras Multas"
+					path={`/multas/outras`}
+					key={`outras`}
+				/>
 			</div>
 		</Section>
 	);

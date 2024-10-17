@@ -1,101 +1,115 @@
 [
 	{
-		"label": "Excesso de Velocidade",
+		"label": "Excesso de Álcool",
 		"info": [
-			"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias repellat inventore ut veniam sint? Quia placeat atque quidem minus dolorum vitae repudiandae magni sed aperiam delectus. Assumenda ad culpa dolore.",
-			"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias repellat inventore ut veniam sint? Quia placeat atque quidem minus dolorum vitae repudiandae magni sed aperiam delectus. Assumenda ad culpa dolore.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias repellat inventore ut veniam sint? Quia placeat atque quidem minus dolorum vitae repudiandae magni sed aperiam delectus. Assumenda ad culpa dolore."
+			"Conduzir sob o efeito do álcool é uma infração grave e perigosa em Portugal, com consequências legais e sociais significativas. A legislação portuguesa estabelece limites máximos de álcool no sangue para condutores, e ultrapassar esses limites pode resultar em coimas elevadas, inibição de condução e perda de pontos na carta.",
+			"É importante ressaltar que os efeitos do álcool no organismo variam de pessoa para pessoa e podem afetar significativamente a capacidade de conduzir, aumentando o risco de acidentes."
 		],
-		"img": "/multa1.jpg",
+		"img": "/multas/alcool.webp",
 		"coimas": {
-			"leve": [
-				"Razao super imp1",
-				"Razao super imp2",
-				"Razao super imp3",
-				"Razao super imp4"
-			],
 			"grave": [
-				"Razao super imp1",
-				"Razao super imp2",
-				"Razao super imp3",
-				"Razao super imp4"
+				"Entre os 0,5 g/l e 0,8 g/l de álcool no sangue",
+				"Coima entre 250€ a 1250€",
+				"Inibição de conduzir entre 1 a 12 meses",
+				"Cadastro Individual (rodoviário) manchado durante 5 anos",
+				"Perda de 3 pontos na carta"
 			],
 			"muitoGrave": [
-				"Razao super imp1",
-				"Razao super imp2",
-				"Razao super imp3",
-				"Razao super imp4"
-			]
-		}
-	},
-	{
-		"label": "Excesso de Alcool",
-		"info": [
-			"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias repellat inventore ut veniam sint? Quia placeat atque quidem minus dolorum vitae repudiandae magni sed aperiam delectus. Assumenda ad culpa dolore.",
-			"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias repellat inventore ut veniam sint? Quia placeat atque quidem minus dolorum vitae repudiandae magni sed aperiam delectus. Assumenda ad culpa dolore.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias repellat inventore ut veniam sint? Quia placeat atque quidem minus dolorum vitae repudiandae magni sed aperiam delectus. Assumenda ad culpa dolore."
-		],
-		"img": "/multa2.png",
-		"coimas": {
-			"leve": [
-				"Razao super super super super imp1",
-				"Razao super super super super imp2",
-				"Razao super super super super imp3",
-				"Razao super super super super imp4"
+				"Entre os 0,8 g/l e 1.2 g/l de álcool no sangue",
+				"Coima entre 500€ a 2500€",
+				"Inibição de conduzir entre 2 a 24 meses",
+				"Cadastro Individual (rodoviário) manchado durante 5 anos",
+				"Perda de 5 pontos na carta",
+				"Perda da carta se for condutor em regime probatório"
 			],
-			"grave": [
-				"Razao super super super super imp1",
-				"Razao super super super super imp2",
-				"Razao super super super super imp3",
-				"Razao super super super super imp4"
-			],
-			"muitoGrave": [
-				"Razao super super super super imp1",
-				"Razao super super super super imp2",
-				"Razao super super super super imp3",
-				"Razao super super super super imp4"
+			"crime": [
+				"Acima de 1.2 g/l de álcool no sangue",
+				"Proibição de condução de veículos motorizados por um período fixado entre 3 meses e 3 anos",
+				"Pena de prisão até 1 ano ou com pena de multa até 120 dias",
+				"Registo Criminal",
+				"Perda de 6 pontos na carta de condução",
+				"Custas judiciais suportadas pelo condutor"
 			]
 		}
 	},
 	{
 		"label": "Uso de Telemóvel",
 		"info": [
-			"O manuseamento de telemóvel enquanto se conduz, é uma infração ao at. 84º do código da Estrada. Não se trata de falar ou não ao telefone, mas sim o mero ato de tocar num telemóvel durante a condução."
+			"Muitos condutores acreditam que basta desligar o telemóvel para evitar problemas com a lei, mas a verdade é que a legislação portuguesa é bastante restritiva quanto ao uso de dispositivos móveis durante a condução. Mesmo com o telemóvel desligado, a simples manipulação do aparelho, como por exemplo, para verificar a hora ou uma notificação, já constitui uma infração.",
+			"A única forma legal de utilizar o telemóvel enquanto conduz é através de sistemas de mãos livres, como auriculares ou Bluetooth, que permitam fazer e receber chamadas sem a necessidade de manusear o aparelho."
 		],
-		"img": "/multa2.png",
+		"img": "/multas/telemovel.webp",
 		"coimas": {
 			"muitoGrave": [
 				"Coima de 250€ a 1250€",
 				"Inibição de conduzir (ou apreensão de veículo para empresas) – 1 a 12 meses",
-				"Cadastro Rodoviário manchado durante 5 anos",
+				"Cadastro Individual (rodoviário) durante 5 anos",
 				"Perda de 3 pontos na carta"
 			]
 		}
 	},
 	{
-		"label": "Multas a Empresas",
-		"img": "/multa3.jpg"
+		"label": "Não parar num STOP ou semáforo",
+		"info": [
+			"Ignorar o sinal amarelo e acelerar para passar no vermelho é uma infração grave que coloca em risco a vida de todos no trânsito. A luz amarela serve como alerta para reduzir a velocidade e preparar-se para parar. Ao desrespeitar essa sinalização, o condutor arrisca-se a causar acidentes e está sujeito a multas e outras penalidades.",
+			"A mesma imprudência ocorre em relação aos sinais de STOP. Ao não parar completamente antes de entrar numa via, o condutor demonstra total desrespeito pelas regras de trânsito e coloca em perigo os outros utilizadores da via."
+		],
+		"img": "/multas/semaforo.webp",
+		"coimas": {
+			"grave": [
+				"Coima de 120€ a 600€",
+				"Inibição de conduzir (ou apreensão de veículo para empresas) – 2 a 24 meses",
+				"Cadastro Individual (rodoviário) manchado durante 5 anos",
+				"Perda de 4 pontos na carta"
+			]
+		}
 	},
 	{
-		"label": "Atraso de Pagamentos",
-		"img": "/multa4.jpg"
+		"label": "Condução de veículo sem habilitação",
+		"info": [
+			"Circular com um veículo na via pública, de categoria para a qual não conste averbamento da mesma no seu titulo de condução, é uma infração MUITO GRAVE ao código da estrada.",
+			"É o que acontece, por exemplo, quando tem carta apenas para conduzir veículo ligeiro, e é fiscalizado a conduzir um veículo pesado. As sanções para esta infração, previstas na lei, para um condutor, são as seguintes:"
+		],
+		"img": "/multas/semcarta.webp",
+		"coimas": {
+			"grave": [
+				"Coima de 500€ a 3000€",
+				"Inibição de conduzir de 2 a 24 meses",
+				"Cadastro Individual (rodoviário) manchado durante 5 anos",
+				"Perda de 4 pontos na carta"
+			]
+		}
 	},
-
 	{
-		"label": "Outras multas"
+		"label": "Circulação sem seguro de responsabilidade civil",
+		"info": [
+			"Conduzir um veículo em Portugal sem o seguro obrigatório de responsabilidade civil é uma infração grave que pode acarretar consequências significativas para o condutor.",
+			"É fundamental ressaltar que o seguro de responsabilidade civil é obrigatório por lei e visa proteger terceiros em caso de acidentes causados pelo veículo segurado. A falta deste seguro pode deixar o condutor responsável por todos os danos materiais e pessoais causados a terceiros em um eventual acidente, o que pode gerar custos elevados e implicações legais ainda mais graves."
+		],
+		"img": "/multas/seguro.webp",
+		"coimas": {
+			"grave": [
+				"Coima de 500€ a 3000€",
+				"Inibição de conduzir (ou apreensão de veículo para empresas) de 1 a 12 meses",
+				"Cadastro Individual (rodoviário) manchado durante 5 anos",
+				"Perda de 2 pontos na carta"
+			]
+		}
 	},
-
 	{
-		"label": "Outras multas"
-	},
-
-	{
-		"label": "Outras multas"
-	},
-
-	{
-		"label": "Outras multas"
-	},
-
-	{
-		"label": "Outras multas"
+		"label": "Não cedência de passagem",
+		"info": [
+			"A não cedência de passagem ocorre quando um condutor não dá prioridade a outro veículo que tem direito a passar, como por exemplo, num cruzamento, numa via de aceleração ou numa rotunda. Esta infração demonstra uma falta de atenção e respeito pelas regras de trânsito, colocando em risco a segurança de todos os condutores e peões.",
+			"Para evitar esta infração, é fundamental estar atento à sinalização, ceder sempre que necessário e respeitar as prioridades de passagem. Ao seguir estas simples regras, contribui para um trânsito mais seguro para todos."
+		],
+		"img": "/multas/cedencia.webp",
+		"coimas": {
+			"grave": [
+				"Coima de 120€ a 600€",
+				"Inibição de conduzir (ou apreensão de veículo para empresas) de 1 a 12 meses",
+				"Cadastro Individual (rodoviário) manchado durante 5 anos",
+				"Perda de 2 pontos na carta"
+			]
+		}
 	}
 ]

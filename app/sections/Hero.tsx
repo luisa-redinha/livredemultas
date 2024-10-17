@@ -12,7 +12,7 @@ export default function Hero() {
 					className="hero__info__title"
 					whileInView={{ opacity: 1 }}
 					initial={{ opacity: 0 }}
-					transition={{ ease: "easeInOut", delay: 0.20 }}
+					transition={{ ease: "easeInOut", delay: 0.2 }}
 					exit={{ opacity: 0 }}
 				>
 					<span>Conteste a sua multa.</span>
@@ -26,13 +26,19 @@ export default function Hero() {
 					transition={{ ease: "easeInOut", delay: 0.15 }}
 					exit={{ rotateX: -90 }}
 				>
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-					Quam obcaecati quis consequatur laborum et earum tenetur?
-					Distinctio numquam rerum animi corporis, impedit tenetur
-					odio doloremque quas debitis quisquam nostrum modi.
+					Acreditamos na justiça para todos. Se recebeu uma multa que
+					considera injusta, conte connosco. Os nossos especialistas
+					em direito rodoviário analisarão o seu caso e construirão
+					uma defesa sólida em seu nome.
 				</motion.p>
 
-				<Button tabIndex={0}>Fale Connosco</Button>
+				<a
+					className="button button--primary"
+					href="mailto:geral@livredemultas.pt?subject=Contestar%20Multa"
+					target="_blank"
+				>
+					Fale Connosco
+				</a>
 			</div>
 
 			<motion.img

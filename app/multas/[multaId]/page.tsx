@@ -4,16 +4,8 @@ import Link from "next/link";
 import { notFound, redirect } from "next/navigation";
 import Section from "@/components/containers/Section";
 export default function page({ params }: { params: { multaId: number } }) {
-	/*
+	const multaData = multas[Number(params.multaId)];
 
-		Next steps -> faq -> Go with zahirs awnser
-		-> work on responsiveness
-		-> animate stuff
-		-> figure out form stuff
-
-	*/
-	const multaData = multas[params.multaId];
-	console.log(params.multaId);
 	if (!multaData) redirect("/multas");
 
 	return (
@@ -48,17 +40,6 @@ export default function page({ params }: { params: { multaId: number } }) {
 			</header>
 
 			<div className="coimas">
-				{multaData.coimas?.leve && (
-					<div className="coimas-card coimas__leve">
-						<h3>Leve</h3>
-
-						<ul>
-							{multaData.coimas.leve.map((e, i) => (
-								<li key={"coima-leve-" + i}>{e}</li>
-							))}
-						</ul>
-					</div>
-				)}
 				{multaData.coimas?.grave && (
 					<div className="coimas-card coimas__grave">
 						<h3>Grave</h3>
@@ -72,6 +53,16 @@ export default function page({ params }: { params: { multaId: number } }) {
 				{multaData.coimas?.muitoGrave && (
 					<div className="coimas-card coimas__muito-grave">
 						<h3>Muito Grave</h3>
+						<ul>
+							{multaData.coimas?.muitoGrave.map((e, i) => (
+								<li key={"coima-leve-" + i}>{e}</li>
+							))}
+						</ul>
+					</div>
+				)}{" "}
+				{multaData.coimas?.crime && (
+					<div className="coimas-card coimas__muito-grave">
+						<h3>Crime</h3>
 						<ul>
 							{multaData.coimas?.muitoGrave.map((e, i) => (
 								<li key={"coima-leve-" + i}>{e}</li>

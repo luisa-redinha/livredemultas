@@ -99,7 +99,7 @@ body,
   bottom: 0;
   left: 0;
   z-index: -1;
-  background: url("/bg.jpg");
+  background: url("/bg.webp");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -225,7 +225,7 @@ body,
   background-color: transparent;
   border: 1px solid #fcfdfb;
 }
-.button:hover, .button:focus {
+.button:hover {
   transform: scale(1.08);
 }
 .button:active {
@@ -252,7 +252,7 @@ body,
   cursor: pointer;
   opacity: 0.75;
 }
-.checkbox:hover, .checkbox:focus {
+.checkbox:hover {
   transform: scale(1.08);
 }
 .checkbox:active {
@@ -713,6 +713,7 @@ body,
 .about .note {
   place-self: center;
   width: 70%;
+  margin-bottom: 4em;
 }
 @media (hover: none) and (orientation: portrait) {
   .about {
@@ -839,25 +840,27 @@ body,
 }
 .multas .grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(12vmax, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(14vmax, 1fr));
   grid-template-rows: auto;
   grid-auto-flow: row;
-  gap: 1em;
+  gap: 3em;
   padding: 1em;
   margin: 2em;
   width: 90%;
-  height: calc(12vmax + 5.5em);
   overflow-y: auto;
 }
 .multas .grid > * {
   margin-bottom: 4em;
 }
 .multas .coimas {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-rows: auto;
+  grid-auto-flow: row;
   justify-content: space-evenly;
-  flex-wrap: wrap;
-  gap: 1em;
-  margin: 1em 0em;
+  justify-items: center;
+  gap: 2em;
+  padding: 2em 4em;
 }
 .multas .coimas .coimas-card {
   background-color: #1f2732;
@@ -870,6 +873,7 @@ body,
   flex-direction: column;
   padding-left: 3em;
   gap: 0.25em;
+  margin: auto;
 }
 @media (hover: none) and (orientation: portrait) {
   .multas {
@@ -898,21 +902,54 @@ body,
   .multas .grid > * {
     margin-bottom: 0;
   }
+  .multas .coimas {
+    padding: 2em 0;
+  }
   .multas .coimas,
   .multas .coimas-card {
     width: 100%;
   }
+  .multas .coimas-card {
+    text-align: center;
+  }
+  .multas ul {
+    padding: 0.75em 0.5em !important;
+  }
+}
+
+.outras-multas-contact {
+  max-width: 50%;
+  margin: auto;
+}
+@media (hover: none) and (orientation: portrait) {
+  .outras-multas-contact {
+    max-width: 100%;
+    margin: 1em auto;
+    text-align: center;
+  }
+}
+
+.table {
+  background-color: #1f2732;
+  padding: 0.5em;
+  max-width: 80vw;
+  margin: auto;
+}
+.table * {
+  border: 1px solid #d1b06b;
+}
+.table td {
+  padding: 0.1em 0.5em;
+}
+.table h3 {
+  border: none;
 }
 
 .faq {
   overflow-y: auto;
   width: 90%;
+  height: 90%;
   margin: auto;
-}
-@media (hover: none) and (orientation: portrait) {
-  .faq {
-    height: 90%;
-  }
 }
 .faq li {
   user-select: text;

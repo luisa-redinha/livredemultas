@@ -1,8 +1,7 @@
 @mixin action-component-states() {
 	transition: all 0.15s ease;
 	cursor: pointer;
-	&:hover,
-	&:focus {
+	&:hover {
 		transform: scale(1.08);
 	}
 	&:active {

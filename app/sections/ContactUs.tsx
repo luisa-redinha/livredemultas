@@ -31,25 +31,25 @@ export default function ContactUs() {
 			<h2>Envie-nos Os Detalhes</h2>
 			<div className="info">
 				<p>
-					Lorem ipsum dolor sit amet consectetur adipisicing elit.
-					Molestias, rem? Quod harum cupiditate, atque beatae ad
-					aperiam vel dolore at quidem nisi, ea deserunt unde, natus
-					maxime earum. Repudiandae, repellat.
+					A nossa equipa de advogados possui uma vasta experiência,
+					acumulada ao longo de mais de três décadas, na área das
+					contraordenações e coimas, com uma especialização particular
+					nas contraordenações rodoviárias.
 				</p>
 
 				<p>
-					Lorem ipsum dolor sit amet consectetur adipisicing elit.
-					Molestias, rem? Quod harum cupiditate, atque beatae ad
-					aperiam vel dolore at quidem nisi, ea deserunt unde, natus
-					maxime earum. Repudiandae, repellat Lorem ipsum dolor sit
-					amet consectetur adipisicing elit. Molestias, rem? Quod
-					harum cupiditate, atque beatae ad aperiam vel dolore at
-					quidem nisi, ea deserunt unde, natus maxime earum.
-					Repudiandae, repellat.
+					Contestamos todo o tipo de multas rodoviárias, tratando de
+					todo o procedimento, com segurança e acompanhamento
+					personalizado, através de meios de comunicação à distância.
+					Após o contacto e envio da multa digitalizada, responderemos
+					com a maior brevidade, apresentando-lhe uma proposta para
+					apresentar a sua Defesa/Contestação, elaborando o tipo de
+					defesa adequado ao seu caso, honorários e custos processuais
+					(se os houver).
 				</p>
 
 				<motion.img
-					src="/lawyer2.jpg"
+					src="/lawyer2.webp"
 					alt=""
 					whileInView={{ opacity: 1 }}
 					initial={{ opacity: 0 }}

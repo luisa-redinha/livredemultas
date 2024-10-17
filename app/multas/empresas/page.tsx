@@ -6,10 +6,24 @@ export default function page() {
 			<header>
 				<h2>Multas a Empresas</h2>
 
-				<span className="info"></span>
+				<span className="info">
+					<p>
+						As empresas, enquanto entidades jurídicas, são
+						responsáveis pelas infrações cometidas pelos seus
+						veículos, independentemente de quem os conduza. As
+						multas rodoviárias aplicadas a empresas podem ter um
+						impacto significativo nos seus custos operacionais e na
+						sua imagem.
+					</p>
+					<p>
+						É fundamental que as empresas adotem medidas preventivas
+						para evitar estas situações e garantir a segurança dos
+						seus colaboradores e de todos os utentes da via.
+					</p>
+				</span>
 
 				<img
-					src={"/multas/empresas.png"}
+					src={"/multas/empresas.webp"}
 					alt="Imagem ilustrativa"
 				/>
 				<nav>

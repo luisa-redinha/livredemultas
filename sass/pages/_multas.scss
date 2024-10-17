@@ -49,14 +49,15 @@
 
 	.grid {
 		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(12vmax, 1fr));
+		grid-template-columns: repeat(auto-fit, minmax(14vmax, 1fr));
 		grid-template-rows: auto;
 		grid-auto-flow: row;
-		gap: 1em;
+		gap: 3em;
 		padding: 1em;
 		margin: 2em;
 		width: 90%;
-		height: calc(12vmax + 5.5em); //12vmax section thumbnail img height
+		// height: calc(12vmax + 5.5em); //12vmax section thumbnail img height
+
 		overflow-y: auto;
 
 		& > * {
@@ -65,23 +66,28 @@
 	}
 
 	.coimas {
-		display: flex;
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+		grid-template-rows: auto;
+		grid-auto-flow: row;
+
 		justify-content: space-evenly;
-		flex-wrap: wrap;
-		gap: 1em;
-		margin: 1em 0em;
+		justify-items: center;
+
+		gap: 2em;
+		padding: 2em 4em;
+
 		.coimas-card {
 			background-color: colors.$dark--1;
 			padding: 1em 2em;
 			border-radius: 2px;
-
 			ul {
 				padding: 1em;
 				display: flex;
 				flex-direction: column;
 				padding-left: 3em;
 				gap: 0.25em;
-				color: rgb(191, 47, 47);
+				margin: auto;
 			}
 		}
 	}
@@ -117,9 +123,60 @@
 			}
 		}
 
+		.coimas {
+			padding: 2em 0;
+		}
 		.coimas,
 		.coimas-card {
 			width: 100%;
 		}
+
+		.coimas-card {
+			text-align: center;
+		}
+
+		ul {
+			padding: 0.75em 0.5em !important;
+		}
 	}
+}
+
+.outras-multas-contact {
+	max-width: 50%;
+	margin: auto;
+	@include media-query.mobile {
+		max-width: 100%;
+		margin: 1em auto;
+		text-align: center;
+	}
+}
+
+.table {
+	& * {
+		border: 1px solid colors.$gold;
+	}
+
+	background-color: colors.$dark--1;
+	padding: 0.5em;
+
+	td {
+		padding: 0.1em 0.5em;
+	}
+	h3 {
+		border: none;
+	}
+
+	max-width: 80vw;
+	margin: auto;
+	// &__title {
+	// }
+
+	// &__header {
+	// }
+
+	// &__sub-header {
+	// }
+
+	// &__row {
+	// }
 }

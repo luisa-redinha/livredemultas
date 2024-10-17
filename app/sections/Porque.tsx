@@ -9,28 +9,29 @@ export default function Porque() {
 		<Section className="porque">
 			<h2>Porquê Contestar</h2>
 			<p>
-				Lorem ipsum dolor sit amet consectetur adipisicing elit.
-				Necessitatibus animi architecto aspernatur adipisci, non, ad
-				corrupti exercitationem harum eligendi ipsam libero doloremque
-				at a aperiam quia quaerat aut. Explicabo, doloribus.
+				Em Portugal, como em qualquer outro país, é possível contestar
+				multas, principalmente as relacionadas com infrações de
+				trânsito. A possibilidade de recorrer de uma multa é um direito
+				do cidadão, mas exige conhecimento das regras e dos prazos
+				legais.
 			</p>
 			<p>
-				Lorem ipsum dolor sit amet consectetur adipisicing elit.
-				Necessitatibus animi architecto aspernatur adipisci, non, ad
-				corrupti exercitationem harum eligendi ipsam libero doloremque
-				at a aperiam quia quaerat aut. Explicabo, doloribus. Lorem
-				ipsum, dolor sit amet consectetur adipisicing elit.
+				Recorrer a um advogado para contestar uma multa é uma forma de
+				garantir que os seus direitos sejam defendidos de forma adequada
+				e profissional. A experiência e os conhecimentos da nossa equipa de advogados
+				fazem a diferença entre o sucesso e o fracasso de uma
+				contestação!
 			</p>
 			<img
-				src="/lawyer2.jpg"
+				src="/lawyer2.webp"
 				alt=""
 			/>
 
 			<div className="multas-comuns">
 				<SectionThumbnail
 					tabIndex={1}
-					src="/multa1.jpg"
-					path="./multas/0"
+					src="/multas/velocidade.webp"
+					path="./multas/velocidade"
 					label="Excesso de Velocidade"
 					whileInView={{ opacity: 1 }}
 					initial={{ opacity: 0 }}
@@ -43,7 +44,7 @@ export default function Porque() {
 				/>
 				<SectionThumbnail
 					tabIndex={2}
-					src="/multa2.png"
+					src="/multas/alcool.webp"
 					label="Excesso de Alcool"
 					path="./multas/1"
 					whileInView={{ opacity: 1 }}
@@ -57,9 +58,9 @@ export default function Porque() {
 				/>
 				<SectionThumbnail
 					tabIndex={3}
-					src="/multa3.png"
+					src="/multas/empresas.webp"
 					label="Multas a Empresas"
-					path="./multas/3"
+					path="./multas/empresas"
 					whileInView={{ opacity: 1 }}
 					initial={{ opacity: 0 }}
 					exit={{ opacity: 0, transitionDelay: "unset" }}
@@ -71,7 +72,7 @@ export default function Porque() {
 				/>
 				<SectionThumbnail
 					tabIndex={4}
-					src="/multa4.png"
+					src="/multas/outras.webp"
 					label="Outras Multas"
 					path="./multas"
 					whileInView={{ opacity: 1 }}

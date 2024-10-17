@@ -55,6 +55,7 @@
 	.note {
 		place-self: center;
 		width: 70%;
+		margin-bottom: 4em;
 	}
 
 	@include media-query.mobile {

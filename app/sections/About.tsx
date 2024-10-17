@@ -6,54 +6,57 @@ export default function About() {
 
 			<div className="intro">
 				<p>
-					Lorem ipsum dolor sit amet consectetur adipisicing elit.
-					Suscipit animi, facilis asperiores id aliquid repudiandae
-					sequi impedit itaque cum nisi molestias error harum!
-					Recusandae nulla qui provident quia id tenetur!
+					A nossa equipa de advogados possui uma vasta experiência,
+					acumulada ao longo de mais de três décadas, na área das
+					contraordenações e coimas, com uma especialização particular
+					nas contraordenações rodoviárias. A nossa especialização
+					inclui uma abordagem abrangente às diferentes etapas que um
+					processo de contraordenação pode implicar.
 				</p>
 
 				<p>
-					Lorem ipsum dolor sit amet consectetur adipisicing elit.
-					Suscipit animi, facilis asperiores id aliquid repudiandae
-					sequi impedit itaque cum nisi molestias error harum!
-					Recusandae nulla qui provident quia id tenetur! Lorem, ipsum
-					dolor sit amet consectetur adipisicing elit. Nesciunt odit
-					accusamus provident omnis. Possimus consectetur eos ipsum
-					culpa dolor dolorum ad? Animi tenetur voluptatem tempore
-					quaerat sequi maiores ullam velit.
+					Desde a fase inicial de análise do auto de contraordenação
+					até à eventual audiência de discussão e julgamento,
+					oferecemos um acompanhamento jurídico contínuo e rigoroso.O
+					nosso serviço começa com a análise detalhada do processo, em
+					que verificamos se a contraordenação foi devidamente
+					fundamentada e se os direitos dos nossos clientes foram
+					respeitados ao longo de todo o procedimento administrativo.
+					A nossa experiência permite-nos identificar rapidamente
+					qualquer irregularidade ou falha de procedimento que possa
+					ser explorada para anular ou atenuar a infração em questão.
 				</p>
 			</div>
 
 			<img
-				src="/lawyer3.jpg"
+				src="/lawyer3.webp"
 				alt=""
 				className="lawyer"
 			/>
 
 			<div className="links">
 				<img
-					src="/ansr.png"
-					alt="ansr.png"
+					src="/ansr.webp"
+					alt="ansr"
 				/>
 				<img
-					src="/ip.png"
-					alt="ip.png"
+					src="/ip.webp"
+					alt="ip"
 				/>
 				<img
-					src="/imt.png"
-					alt="imt.png"
+					src="/imt.webp"
+					alt="imt"
 				/>
 			</div>
 
 			<p className="note">
-				Lorem ipsum dolor sit amet consectetur adipisicing elit.
-				Suscipit animi, facilis asperiores id aliquid repudiandae sequi
-				impedit itaque cum nisi molestias error harum! Recusandae nulla
-				qui provident quia id tenetur! Lorem, ipsum dolor sit amet
-				consectetur adipisicing elit. Nesciunt odit accusamus provident
-				omnis. Possimus consectetur eos ipsum culpa dolor dolorum ad?
-				Animi tenetur voluptatem tempore quaerat sequi maiores ullam
-				velit.
+				Procedimento integralmente tratado, com segurança e
+				acompanhamento personalizado, através de meios de comunicação à
+				distância. Após o contacto e envio da multa digitalizada,
+				responderemos com a maior brevidade, apresentado-lhe uma
+				proposta para apresentar a sua Defesa/Contestação, contendo o
+				tipo de Defesa para o seu caso, honorários e custos processuais
+				(se os houver).
 			</p>
 		</Section>
 	);
