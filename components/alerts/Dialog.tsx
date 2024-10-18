@@ -1,3 +1,4 @@
+"use client";
 import { AnimatePresence, motion } from "framer-motion";
 import Button from "../buttons/Button";
 import { createPortal } from "react-dom";
