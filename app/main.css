@@ -487,6 +487,49 @@ body,
   }
 }
 
+.fileinput input {
+  visibility: hidden;
+  position: absolute;
+}
+.fileinput__icon {
+  margin-right: 1em;
+}
+.dialog {
+  width: 50%;
+  background-color: #1f2732;
+  padding: 2em 3em;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+.dialog__wrapper {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(51, 51, 51, 0.3333333333);
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  place-content: center;
+  place-items: center;
+}
+.dialog__content {
+  width: 90%;
+  align-self: center;
+  max-height: 40vh;
+  overflow-y: scroll;
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+}
+.dialog__buttons {
+  display: flex;
+  justify-content: flex-end;
+}
+
 *::-webkit-scrollbar {
   width: 0.5em;
   height: 0.5em;
@@ -588,7 +631,7 @@ body,
 .hero__lawyer {
   grid-area: img;
   width: 35vmax;
-  align-self: end;
+  align-self: flex-end;
   justify-self: center;
 }
 .hero__contacts {
@@ -603,7 +646,7 @@ body,
   margin: 0em;
   display: flex;
   gap: 1em;
-  align-items: end;
+  align-items: flex-end;
 }
 @media (hover: none) and (orientation: portrait) {
   .hero {

@@ -24,9 +24,9 @@ export default function Hero() {
 					transition={{ ease: "easeInOut", delay: 0.15 }}
 					exit={{ rotateX: -90 }}
 				>
-					Se recebeu uma multa e quer contestar, conte connosco. Os
-					nossos especialistas em direito rodoviário analisarão o seu
-					caso e construirão uma defesa sólida em seu nome.
+					Se recebeu uma multa e quer contestar, conte connosco. A
+					nossa equipa analisará o seu caso e poderá orientá-lo sobre
+					os procedimentos adequados.
 				</motion.p>
 
 				<div className="hero__contacts">

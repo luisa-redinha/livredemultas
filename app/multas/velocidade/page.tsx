@@ -10,8 +10,8 @@ export default function page() {
 					<p>
 						O excesso do limite máximo de velocidade que configure
 						contraordenação grave ou muito grave é passível de
-						aplicação da sanção acessória de inibição de conduzir e,
-						ainda, ser-lhe-ão retirados pontos da carta.
+						aplicação da sanção acessória de inibição de conduzir e
+						ser-lhe-ão, ainda, retirados pontos da carta.
 					</p>
 					<p>
 						Mesmo que pague a coima, no caso das contraordenações

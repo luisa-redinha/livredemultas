@@ -1,29 +1,63 @@
 "use client";
+import Dialog from "@/components/alerts/Dialog";
 import Button from "@/components/buttons/Button";
 import Section from "@/components/containers/Section";
 import { Form } from "@/components/form/Form";
 import CheckBox from "@/components/input/CheckBox";
+import FileInput from "@/components/input/FileInput";
+import Input from "@/components/input/Input";
 import { motion } from "framer-motion";
+import { FormEvent, useState } from "react";
 import { useForm } from "react-hook-form";
+import TC from "./termos-condicoes.json";
+import { sendMail } from "@/nodemailer/main";
+
 type ContactData = {
 	name: string;
 	mobile: string;
 	email: string;
 	urgent: boolean;
-	file?: File;
-	info?: string;
+	info: string;
+	files?: FileList;
 };
 
 export default function ContactUs() {
-	const { register, formState } = useForm<ContactData>({
+	const [show, setShow] = useState(false);
+
+	const onShowDialogHandler = (isChecked: boolean) => {
+		if (!isChecked) {
+			setShow(false);
+		} else {
+			setShow(true);
+		}
+	};
+
+	const { register, formState, handleSubmit } = useForm<ContactData>({
 		defaultValues: {
 			name: "",
 			mobile: "",
 			email: "",
 			urgent: false,
 			info: "",
+			files: undefined,
 		},
 	});
+
+	const onSubmitHandler = (data: ContactData) => {
+		console.log(data);
+		const { files, ...info } = data;
+
+		const content = Object.entries(info);
+		console.log(content);
+
+		if (!files?.length) {
+			fetch("app/api/sendMail/");
+
+			return;
+		}
+
+		// sendMail({ content, attachments: [] });
+	};
 
 	return (
 		<Section className="contact-us">
@@ -60,7 +94,20 @@ export default function ContactUs() {
 				/>
 			</div>
 
-			<Form className="form">
+			<Dialog
+				title="Termos e Condições"
+				show={show}
+				toggle={() => setShow((e) => !e)}
+			>
+				{TC.map((e, i) => (
+					<p key={`tc-p${i}`}>{e}</p>
+				))}
+			</Dialog>
+
+			<Form
+				className="form"
+				onSubmit={handleSubmit(onSubmitHandler)}
+			>
 				<h3>Formulário</h3>
 				<Form.Control
 					register={register}
@@ -85,9 +132,11 @@ export default function ContactUs() {
 					tabIndex={6}
 				/>
 
-				<Button variant="secondary">
-					<i className="fa-regular fa-file" /> Anexar Ficheiro
-				</Button>
+				<Form.Files
+					formState={formState}
+					register={register}
+					name="files"
+				/>
 
 				<Form.Textarea
 					register={register}
@@ -103,7 +152,11 @@ export default function ContactUs() {
 						name="urgent"
 						label="Urgente?"
 					/>
-					<CheckBox label="Termos e Condições" />
+
+					<CheckBox
+						label="Termos e Condições"
+						onChange={(e) => onShowDialogHandler(e.target.checked)}
+					/>
 				</span>
 
 				<Form.Submit formState={formState}>Submeter</Form.Submit>

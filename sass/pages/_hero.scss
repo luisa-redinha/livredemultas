@@ -43,7 +43,7 @@
 	&__lawyer {
 		grid-area: img;
 		width: 35vmax;
-		align-self: end;
+		align-self: flex-end;
 		justify-self: center;
 	}
 
@@ -59,7 +59,7 @@
 			margin: 0em;
 			display: flex;
 			gap: 1em;
-			align-items: end;
+			align-items: flex-end;
 		}
 	}
 
