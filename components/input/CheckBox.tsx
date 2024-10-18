@@ -16,11 +16,10 @@ const CheckBox = forwardRef(
 			>
 				<span className="checkbox__toggle">
 					<input
+						{...props}
 						ref={ref}
 						type="checkbox"
 						className="checkbox__input"
-						aria-hidden
-						onChange={props.onChange}
 					/>
 					<span className="checkbox__toggle__inner" />
 				</span>
@@ -31,6 +30,6 @@ const CheckBox = forwardRef(
 	}
 );
 
-CheckBox.displayName="CheckBox"
+CheckBox.displayName = "CheckBox";
 
 export default CheckBox;

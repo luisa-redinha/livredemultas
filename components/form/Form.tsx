@@ -6,6 +6,7 @@ import Button, { ButtonProps } from "../buttons/Button";
 import CheckBox from "../input/CheckBox";
 import Input, { InputProps } from "../input/Input";
 import TextareaComponent, { TextareaProps } from "../input/Textarea";
+import FileInput from "../input/FileInput";
 
 interface FormProps extends FormHTMLAttributes<HTMLFormElement> {
 	//NOTE: Couldn't figure out the proper type, ts creates a conflict with HTMLFormAttributes and MotionProps
@@ -158,6 +159,19 @@ export namespace Form {
 			/>
 		);
 	};
+
+	export const Files = <T extends FieldValues>({
+		register,
+		formState,
+		className = "",
+		...props
+	}: FormControlProps<T>) => (
+		<FileInput
+			{...props}
+			{...register(props.name)}
+		/>
+	);
+
 	/**
 	 *
 	 * @param props
