@@ -1,16 +1,12 @@
 "use client";
 import Dialog from "@/components/alerts/Dialog";
-import Button from "@/components/buttons/Button";
 import Section from "@/components/containers/Section";
 import { Form } from "@/components/form/Form";
 import CheckBox from "@/components/input/CheckBox";
-import FileInput from "@/components/input/FileInput";
-import Input from "@/components/input/Input";
 import { motion } from "framer-motion";
-import { FormEvent, useState } from "react";
+import { useState } from "react";
 import { useForm } from "react-hook-form";
 import TC from "./termos-condicoes.json";
-import { sendMail } from "@/nodemailer/main";
 
 type ContactData = {
 	name: string;

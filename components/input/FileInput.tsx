@@ -5,10 +5,8 @@ import {
 	forwardRef,
 	InputHTMLAttributes,
 	Ref,
-	useRef,
-	useState,
+	useState
 } from "react";
-import Button from "../buttons/Button";
 import { validateFiles } from "../utils/util-functions";
 
 interface FileInputProps extends InputHTMLAttributes<HTMLInputElement> {
