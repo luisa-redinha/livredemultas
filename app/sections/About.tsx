@@ -22,7 +22,7 @@ export default function About() {
 					que verificamos se a contraordenação foi devidamente
 					fundamentada e se os direitos dos nossos clientes foram
 					respeitados ao longo de todo o procedimento administrativo.
-					A nossa experiência permite-nos identificar rapidamente
+					A nossa vasta experiência permite identificar rapidamente
 					qualquer irregularidade ou falha de procedimento que possa
 					ser explorada para anular ou atenuar a infração em questão.
 				</p>

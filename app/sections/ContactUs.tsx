@@ -90,7 +90,7 @@ export default function ContactUs() {
 				/>
 			</div>
 
-			{/* <Dialog
+			<Dialog
 				title="Termos e Condições"
 				show={show}
 				toggle={() => setShow((e) => !e)}
@@ -98,7 +98,7 @@ export default function ContactUs() {
 				{TC.map((e, i) => (
 					<p key={`tc-p${i}`}>{e}</p>
 				))}
-			</Dialog> */}
+			</Dialog>
 
 			<Form
 				className="form"
@@ -129,7 +129,6 @@ export default function ContactUs() {
 				/>
 
 				<Form.Files
-					formState={formState}
 					register={register}
 					name="files"
 				/>

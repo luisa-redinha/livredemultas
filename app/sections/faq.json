@@ -8,7 +8,7 @@
 	{
 		"q": "Como poderei efetuar o pagamento ?",
 		"a": [
-			"Por Transferência Bancária/Multibanco/MBway, e após fazer o envio do comprovativo aos nossos serviços."
+			"Por Transferência Bancária ou MBway, e após fazer o envio do comprovativo aos nossos serviços."
 		]
 	},
 	{
@@ -66,7 +66,7 @@
 	{
 		"q": "O que acontece em caso de não apresentar defesa?",
 		"a": [
-			" O processo termina se tiver realizado o depósito, convertendo-se automaticamente em pagamento, ou se tiver sido feito o pagamento voluntário da coima. Caso contrário o processo seguirá para a decisão final."
+			" O processo termina se tiver realizado o depósito, convertendo-se automaticamente em pagamento, ou se tiver sido feito o pagamento voluntário da coima. Caso contrário, o processo seguirá para a decisão final."
 		]
 	},
 	{

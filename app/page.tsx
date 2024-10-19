@@ -17,7 +17,7 @@ export default function Home() {
 		>
 			<Hero />
 			<Porque />
-			<ContactUs />
+			{/* <ContactUs /> */}
 			<FAQ />
 			<About />
 		</motion.main>

@@ -15,9 +15,9 @@ export default function page() {
 					</p>
 					<p>
 						Mesmo que pague a coima, no caso das contraordenações
-						graves e muito graves, ser-lhe-ão retirados pontos à
+						graves e muito graves, ser-lhe-ão retirados pontos da
 						carta e ficará inibido de conduzir por um período mínimo
-						de um mês (no caso das graves) ou no mínimo dois meses
+						de um mês (no caso das graves) ou no mínimo de dois meses
 						(no caso das muito graves).
 					</p>
 					<Link

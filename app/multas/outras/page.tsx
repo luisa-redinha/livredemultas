@@ -21,8 +21,7 @@ export default function page() {
 						advogados, especializados em direito rodoviário,
 						analisará o seu caso e poderá orientá-lo sobre os
 						procedimentos adequados a seguir. Estamos preparados
-						para lidar com qualquer situação, desde multas multas
-						por excesso de passageiros até infrações.
+						para lidar com qualquer situação.
 					</p>
 				</span>
 

@@ -8,6 +8,7 @@ export const metadata: Metadata = {
 	title: "Livre de Multas",
 	description:
 		"A melhor plataforma para contestar a sua multa, e recorrer a advogados profissionais para o ajudar.",
+		icons:"/"
 };
 
 export default function RootLayout({

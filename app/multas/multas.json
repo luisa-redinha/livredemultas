@@ -3,7 +3,7 @@
 		"label": "Excesso de Álcool",
 		"info": [
 			"Conduzir sob o efeito do álcool é uma infração grave e perigosa em Portugal, com consequências legais e sociais significativas. A legislação portuguesa estabelece limites máximos de álcool no sangue para condutores, e ultrapassar esses limites pode resultar em coimas elevadas, inibição de condução e perda de pontos na carta.",
-			"É importante ressaltar que os efeitos do álcool no organismo variam de pessoa para pessoa e podem afetar significativamente a capacidade de conduzir, aumentando o risco de acidentes."
+			"É importante ressaltar que os efeitos do álcool no organismo variam de pessoa para pessoa e podem afetar, significativamente, a capacidade de conduzir, aumentando o risco de acidentes."
 		],
 		"img": "/multas/alcool.webp",
 		"coimas": {
@@ -43,7 +43,7 @@
 			"muitoGrave": [
 				"Coima de 250€ a 1250€",
 				"Inibição de conduzir (ou apreensão de veículo para empresas) – 1 a 12 meses",
-				"Cadastro Individual (rodoviário) durante 5 anos",
+				"Cadastro Individual (rodoviário) manchado durante 5 anos",
 				"Perda de 3 pontos na carta"
 			]
 		}
@@ -52,7 +52,7 @@
 		"label": "Não parar num STOP ou semáforo",
 		"info": [
 			"Ignorar o sinal amarelo e acelerar para passar no vermelho é uma infração grave que coloca em risco a vida de todos no trânsito. A luz amarela serve como alerta para reduzir a velocidade e preparar-se para parar. Ao desrespeitar essa sinalização, o condutor arrisca-se a causar acidentes e está sujeito a multas e outras penalidades.",
-			"A mesma imprudência ocorre em relação aos sinais de STOP. Ao não parar completamente antes de entrar numa via, o condutor demonstra total desrespeito pelas regras de trânsito e coloca em perigo os outros utilizadores da via."
+			"A mesma imprudência ocorre em relação aos sinais de STOP. Ao não parar, completamente, antes de entrar numa via, o condutor demonstra total desrespeito pelas regras de trânsito e coloca em perigo os outros utilizadores da via."
 		],
 		"img": "/multas/semaforo.webp",
 		"coimas": {
@@ -100,7 +100,7 @@
 		"label": "Não cedência de passagem",
 		"info": [
 			"A não cedência de passagem ocorre quando um condutor não dá prioridade a outro veículo que tem direito a passar, como por exemplo, num cruzamento, numa via de aceleração ou numa rotunda. Esta infração demonstra uma falta de atenção e respeito pelas regras de trânsito, colocando em risco a segurança de todos os condutores e peões.",
-			"Para evitar esta infração, é fundamental estar atento à sinalização, ceder sempre que necessário e respeitar as prioridades de passagem. Ao seguir estas simples regras, contribui para um trânsito mais seguro para todos."
+			"Para evitar esta infração, é fundamental estar atento à sinalização, ceder a passagem sempre que necessário e respeitar as ditas regras de passagem. Ao seguir estas simples regras, contribui para um trânsito mais seguro para todos."
 		],
 		"img": "/multas/cedencia.webp",
 		"coimas": {

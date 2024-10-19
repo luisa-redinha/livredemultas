@@ -13,7 +13,7 @@ export default function Hero() {
 					transition={{ ease: "easeInOut", delay: 0.2 }}
 					exit={{ opacity: 0 }}
 				>
-					<span>Conteste a sua multa.</span>
+					<span>Conteste a sua multa</span>
 					<span>Defenda-se!</span>
 				</motion.h2>
 
