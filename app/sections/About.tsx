@@ -29,7 +29,7 @@ export default function About() {
 			</div>
 
 			<img
-				src="/lawyer3.webp"
+				src="/lawyer2.webp"
 				alt=""
 				className="lawyer"
 			/>

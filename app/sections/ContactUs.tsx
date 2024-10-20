@@ -108,7 +108,7 @@ export default function ContactUs() {
 				</p>
 
 				<motion.img
-					src="/lawyer2.webp"
+					src="/lawyer3.webp"
 					alt=""
 					whileInView={{ opacity: 1 }}
 					initial={{ opacity: 0 }}
