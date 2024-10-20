@@ -2,6 +2,7 @@ import Section from "@/components/containers/Section";
 import Link from "next/link";
 import { redirect } from "next/navigation";
 import multas from "../multas.json";
+import Image from "next/image";
 export default function page({ params }: { params: { multaId: number } }) {
 	const multaData = multas[Number(params.multaId)];
 
@@ -18,7 +19,7 @@ export default function page({ params }: { params: { multaId: number } }) {
 					))}
 				</span>
 
-				<img
+				<Image
 					src={multaData.img}
 					alt="Imagem ilustrativa"
 				/>

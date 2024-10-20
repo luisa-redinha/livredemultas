@@ -1,5 +1,3 @@
-"use client";
-
 import { AnimatePresence, motion } from "framer-motion";
 import Button from "../buttons/Button";
 import { createPortal } from "react-dom";
@@ -20,34 +18,36 @@ const Dialog = ({
 	title,
 	children,
 }: DialogProps) => {
-	return createPortal(
-		<AnimatePresence>
-			{show && (
-				<motion.div
-					initial={{ opacity: 0 }}
-					animate={{ opacity: 1 }}
-					exit={{ opacity: 0 }}
-					className={"dialog__wrapper" + className}
-				>
+	if (typeof window !== "undefined") {
+		return createPortal(
+			<AnimatePresence>
+				{show && (
 					<motion.div
-						initial={{ opacity: 0, scale: 0.5 }}
-						animate={{ opacity: 1, scale: 1 }}
-						exit={{ opacity: 0, scale: 0.5 }}
-						className="dialog"
+						initial={{ opacity: 0 }}
+						animate={{ opacity: 1 }}
+						exit={{ opacity: 0 }}
+						className={"dialog__wrapper" + className}
 					>
-						<h3 className="dialog__title">{title}</h3>
+						<motion.div
+							initial={{ opacity: 0, scale: 0.5 }}
+							animate={{ opacity: 1, scale: 1 }}
+							exit={{ opacity: 0, scale: 0.5 }}
+							className="dialog"
+						>
+							<h3 className="dialog__title">{title}</h3>
 
-						<div className="dialog__content">{children}</div>
+							<div className="dialog__content">{children}</div>
 
-						<span className="dialog__buttons">
-							<Button onClick={toggle}>Ok</Button>
-						</span>
+							<span className="dialog__buttons">
+								<Button onClick={toggle}>Ok</Button>
+							</span>
+						</motion.div>
 					</motion.div>
-				</motion.div>
-			)}
-		</AnimatePresence>,
+				)}
+			</AnimatePresence>,
 
-		document.querySelector("body") as HTMLBodyElement
-	);
+			document.querySelector("body") as HTMLBodyElement
+		);
+	}
 };
 export default Dialog;

@@ -4,11 +4,10 @@ import Section from "@/components/containers/Section";
 import { Form } from "@/components/form/Form";
 import CheckBox from "@/components/input/CheckBox";
 import { motion } from "framer-motion";
-import { useState } from "react";
+import { useRef, useState } from "react";
 import { useForm } from "react-hook-form";
-import TC from "./termos-condicoes.json";
 
-type ContactData = {
+export type ContactData = {
 	name: string;
 	mobile: string;
 	email: string;
@@ -19,6 +18,7 @@ type ContactData = {
 
 export default function ContactUs() {
 	const [show, setShow] = useState(false);
+	const ref = useRef<HTMLInputElement>(null);
 
 	const onShowDialogHandler = (isChecked: boolean) => {
 		if (!isChecked) {
@@ -28,7 +28,7 @@ export default function ContactUs() {
 		}
 	};
 
-	const { register, formState, handleSubmit } = useForm<ContactData>({
+	const { register, formState, handleSubmit, reset } = useForm<ContactData>({
 		defaultValues: {
 			name: "",
 			mobile: "",
@@ -39,20 +39,50 @@ export default function ContactUs() {
 		},
 	});
 
-	const onSubmitHandler = (data: ContactData) => {
-		console.log(data);
+	const onSubmitHandler = async (data: ContactData) => {
+		if (!ref.current?.checked) {
+			alert("Tem de aceitar os termos e condições");
+			return;
+		}
 		const { files, ...info } = data;
 
-		const content = Object.entries(info);
-		console.log(content);
-
-		if (!files?.length) {
-			fetch("app/api/sendMail/");
-
+		if (!info.email || !info.mobile) {
+			alert("Tem de preencher ou o email, ou o telemóvel");
 			return;
 		}
 
-		// sendMail({ content, attachments: [] });
+		const formData = new FormData();
+
+		if (files) {
+			Array.from(files).forEach((file) =>
+				formData.append(
+					`ficheiro`,
+					new Blob([file], { type: file.type })
+				)
+			);
+		}
+
+		let key: keyof typeof info;
+		for (key in info) {
+			formData.append(key, info[key].toString());
+		}
+
+		console.log("Before POST");
+
+		fetch("api/sendEmail/", {
+			method: "POST",
+			body: formData,
+		}).then((res) => {
+			if (res.status === 200) {
+				alert("Email enviado! Será contactado em breve.");
+				reset();
+			} else {
+				alert(
+					"Ocorreu um problema, por favor tente outra vez, ou se o erro persistir, contacte-nos pelos meios alternativos"
+				);
+			}
+		});
+		return;
 	};
 
 	return (
@@ -95,9 +125,7 @@ export default function ContactUs() {
 				show={show}
 				toggle={() => setShow((e) => !e)}
 			>
-				{TC.map((e, i) => (
-					<p key={`tc-p${i}`}>{e}</p>
-				))}
+				{TC}
 			</Dialog>
 
 			<Form
@@ -111,6 +139,7 @@ export default function ContactUs() {
 					name="name"
 					label="Nome*"
 					tabIndex={5}
+					required
 				/>
 				<Form.Control
 					register={register}
@@ -125,12 +154,13 @@ export default function ContactUs() {
 					formState={formState}
 					name="mobile"
 					label="Telemóvel"
-					tabIndex={6}
+					tabIndex={7}
 				/>
 
 				<Form.Files
 					register={register}
 					name="files"
+					tabIndex={8}
 				/>
 
 				<Form.Textarea
@@ -138,6 +168,7 @@ export default function ContactUs() {
 					formState={formState}
 					name="info"
 					label="Informações adicionais"
+					tabIndex={9}
 				/>
 
 				<span className="form__checks">
@@ -146,16 +177,96 @@ export default function ContactUs() {
 						formState={formState}
 						name="urgent"
 						label="Urgente?"
+						tabIndex={10}
 					/>
 
 					<CheckBox
+						ref={ref}
 						label="Termos e Condições"
 						onChange={(e) => onShowDialogHandler(e.target.checked)}
+						tabIndex={11}
 					/>
 				</span>
 
-				<Form.Submit formState={formState}>Submeter</Form.Submit>
+				<Form.Submit
+					formState={formState}
+					tabIndex={12}
+				>
+					Submeter
+				</Form.Submit>
 			</Form>
 		</Section>
 	);
 }
+
+const TC = (
+	<div className="terms-conditions">
+		<h4>Aviso</h4>
+		<p>
+			Este aviso de privacidade aplica-se apenas aos dados recolhidas por
+			este site. Ele irá informá-lo sobre o seguinte:
+		</p>
+		<ul>
+			<li>
+				Quais os dados pessoais que são recolhidos através do site, como
+				são usados e com quem podem ser partilhados;
+			</li>
+			<li>Como pode gerir os seus dados pessoais;</li>
+			<li>
+				Os procedimentos de segurança em vigor para proteger o uso
+				indevido dos seus dados;
+			</li>
+			<li>Como pode corrigir quaisquer imprecisões nos dados.</li> 
+		</ul>
+		<h4>Recolha, uso e partilha de dados</h4>
+		<p>
+			Somos os únicos proprietários dos dados recolhidos neste site. Nós
+			só temos acesso aos dados que nos fornece voluntariamente via e-mail
+			ou outro contacto direto. Nós não iremos vender ou ceder estes dados
+			para ninguém.
+		</p>
+		 <h4>O seu acesso e controlo da informação</h4>
+		<p>
+			Pode a qualquer momento entrar em contacto connosco por email
+			(geral@advogados-leiria.pt) ou telefone (+351 91 378 53 52) a
+			qualquer momento para:
+		</p>
+		<ul>
+			<li>Ver quais os seus dados que dispomos guardados;</li>
+			<li>Alterar / corrigir os dados;</li>
+			<li>Apagar todos os dados;</li>
+			<li>
+				Expressar qualquer preocupação que tenha sobre o uso dos seus
+				dados
+			</li>
+		</ul>
+		 <h4>Segurança</h4>
+		<p>
+			Nós tomamos precauções para proteger a sua informação. Quando envia
+			dados confidenciais através do site, os mesmos são protegidos online
+			e offline.
+		</p>
+		<p>
+			Embora usemos criptografia para proteger dados confidenciais
+			transmitidos online, também protegemos os seus dados offline.
+			Somente os nossos colaboradores que precisam dos seus dados pessoais
+			para realizar um trabalho específico (por exemplo, faturação ou
+			atendimento ao cliente) têm acesso aos mesmos.
+		</p>
+		<p>
+			Os computadores/servidores nos quais armazenamos dados pessoais são
+			mantidos num ambiente seguro.
+		</p>
+		<p>
+			Terceiros podem usar cookies, web beacons e outras tecnologias de
+			armazenamento para recolher ou receber informações deste site e usar
+			essas informações para fornecer serviços de medição e segmentar
+			anúncios.
+		</p>
+		<p>
+			Se a sua opinião é no sentido de que não estamos a cumprir esta
+			política de privacidade, deve contactar-nos imediatamente para
+			geral@advogados-leiria.pt.
+		</p>
+	</div>
+);

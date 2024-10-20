@@ -3,7 +3,7 @@ import Section from "@/components/containers/Section";
 import faqData from "./faq.json";
 export default function FAQ() {
 	return (
-		<Section>
+		<Section className="faq__wrapper">
 			<h2>Perguntas Frequentes</h2>
 			<div className="faq">
 				<Accordion>

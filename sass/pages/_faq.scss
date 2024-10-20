@@ -1,12 +1,23 @@
 @use "../utils/media-query" as media-query;
 
 .faq {
+	&__wrapper {
+		overflow: hidden;
+		padding-bottom: 2em;
+	}
+
 	overflow-y: auto;
+	overflow-x: hidden;
 	width: 90%;
 	height: 90%;
 	margin: auto;
-
 	li {
 		user-select: text;
+		text-wrap: wrap;
+		line-break: anywhere;
+	}
+
+	@include media-query.mobile {
+		width: 100%;
 	}
 }

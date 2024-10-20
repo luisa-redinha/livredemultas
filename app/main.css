@@ -126,9 +126,11 @@ body,
   place-items: center;
 }
 .section__content {
-  padding: 1rem;
+  padding: 2em 1rem;
   height: 90%;
   width: 100%;
+  overflow-y: auto;
+  overflow-x: hidden;
 }
 @media (hover: none) and (orientation: portrait) {
   .section {
@@ -369,6 +371,7 @@ body,
 }
 .textarea {
   height: max-content;
+  resize: none;
 }
 .textarea__element {
   height: 5em;
@@ -529,6 +532,15 @@ body,
   display: flex;
   justify-content: flex-end;
 }
+@media (hover: none) and (orientation: portrait) {
+  .dialog {
+    width: 90%;
+    max-height: 60%;
+  }
+  .dialog__content {
+    width: 100%;
+  }
+}
 
 *::-webkit-scrollbar {
   width: 0.5em;
@@ -647,6 +659,17 @@ body,
   display: flex;
   gap: 1em;
   align-items: flex-end;
+  white-space: nowrap;
+}
+@media (hover: none) and (orientation: portrait) {
+  .hero__contacts {
+    flex-direction: row;
+    flex-wrap: wrap;
+    place-content: center;
+  }
+  .hero__contacts__link {
+    width: fit-content;
+  }
 }
 @media (hover: none) and (orientation: portrait) {
   .hero {
@@ -814,12 +837,12 @@ body,
 .contact-us .form {
   grid-area: p2;
   margin: 0em auto;
-  padding: 1em 4em;
+  padding: 0.5em 4em;
   padding-bottom: 2em;
   background-color: #1f2732;
   display: flex;
   flex-direction: column;
-  gap: 2em;
+  gap: 0.75em;
   max-width: 550px;
   justify-content: space-evenly;
   height: 100%;
@@ -855,6 +878,30 @@ body,
   }
   .contact-us .form * {
     font-size: 1rem;
+  }
+}
+
+.terms-conditions h4 {
+  color: #d1b06b;
+}
+.terms-conditions p {
+  padding-left: 2em;
+  padding-top: 1em;
+  text-indent: 0.5em;
+}
+.terms-conditions p:first-child {
+  padding-top: 0em;
+}
+.terms-conditions ul {
+  padding-top: 0.5em;
+  padding-left: 4em;
+}
+@media (hover: none) and (orientation: portrait) {
+  .terms-conditions p {
+    padding-left: 0em;
+  }
+  .terms-conditions ul {
+    padding-left: 2em;
   }
 }
 
@@ -1016,8 +1063,7 @@ body,
 .table {
   background-color: #1f2732;
   padding: 0.5em;
-  max-width: 80vw;
-  margin: auto;
+  width: 100%;
 }
 .table * {
   border: 1px solid #d1b06b;
@@ -1029,14 +1075,34 @@ body,
   border: none;
 }
 
+.tabelas__wrapper {
+  width: 100%;
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+}
+
 .faq {
   overflow-y: auto;
+  overflow-x: hidden;
   width: 90%;
   height: 90%;
   margin: auto;
 }
+.faq__wrapper {
+  overflow: hidden;
+  padding-bottom: 2em;
+}
 .faq li {
   user-select: text;
+  text-wrap: wrap;
+  line-break: anywhere;
+}
+@media (hover: none) and (orientation: portrait) {
+  .faq {
+    width: 100%;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

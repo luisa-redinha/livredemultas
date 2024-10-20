@@ -1,4 +1,5 @@
 import Section from "@/components/containers/Section";
+import Image from "next/image";
 import Link from "next/link";
 export default function page() {
 	return (
@@ -22,7 +23,7 @@ export default function page() {
 					</p>
 				</span>
 
-				<img
+				<Image
 					src={"/multas/empresas.webp"}
 					alt="Imagem ilustrativa"
 				/>

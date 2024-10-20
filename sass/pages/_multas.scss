@@ -188,9 +188,8 @@
 	h3 {
 		border: none;
 	}
+	width: 100%;
 
-	max-width: 80vw;
-	margin: auto;
 	// &__title {
 	// }
 
@@ -202,4 +201,12 @@
 
 	// &__row {
 	// }
+}
+
+.tabelas__wrapper{
+	width: 100%;
+	overflow: auto;
+	display: flex;
+	flex-direction: column;
+	gap: 2em;
 }

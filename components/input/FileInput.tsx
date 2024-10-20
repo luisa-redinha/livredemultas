@@ -5,7 +5,7 @@ import {
 	forwardRef,
 	InputHTMLAttributes,
 	Ref,
-	useState
+	useState,
 } from "react";
 import { validateFiles } from "../utils/util-functions";
 
@@ -42,6 +42,8 @@ const FileInput = forwardRef(
 			}
 
 			setFileCount(files.length);
+
+			if (props?.onChange) props.onChange(event);
 		};
 
 		return (

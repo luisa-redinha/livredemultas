@@ -60,6 +60,16 @@
 			display: flex;
 			gap: 1em;
 			align-items: flex-end;
+			white-space: nowrap;
+		}
+
+		@include media-query.mobile {
+			flex-direction: row;
+			flex-wrap: wrap;
+			place-content: center;
+			&__link {
+				width: fit-content;
+			}
 		}
 	}
 

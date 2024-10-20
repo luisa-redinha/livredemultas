@@ -2,7 +2,7 @@ import Section from "@/components/containers/Section";
 import Link from "next/link";
 export default function page() {
 	return (
-		<Section className="multas">
+		<Section className="multas tabelas-velocidade">
 			<header>
 				<h2>Tabelas dos Limites e Coimas</h2>
 
@@ -22,9 +22,11 @@ export default function page() {
 				</nav>
 			</header>
 
-			<Tabela1 />
+			<div className="tabelas__wrapper">
+				<Tabela1 />
 
-			<Tabela2 />
+				<Tabela2 />
+			</div>
 		</Section>
 	);
 }
