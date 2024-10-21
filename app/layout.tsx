@@ -8,7 +8,7 @@ export const metadata: Metadata = {
 	title: "Livre de Multas",
 	description:
 		"A melhor plataforma para contestar a sua multa, e recorrer a advogados profissionais para o ajudar.",
-		icons:"/"
+	icons: "/",
 };
 
 export default function RootLayout({
@@ -19,6 +19,11 @@ export default function RootLayout({
 	return (
 		<html lang="pt">
 			<head>
+				{" "}
+				<link
+					rel="icon"
+					href="/favicon.png"
+				/>
 				<script
 					src="https://kit.fontawesome.com/1a62655504.js"
 					crossOrigin="anonymous"
