@@ -886,6 +886,13 @@ body,
   }
 }
 
+.terms-conditions > * {
+  border: 1px solid red;
+}
+.terms-conditions h4:first-child {
+  position: relative;
+  left: -0.25em;
+}
 .terms-conditions h4 {
   color: #d1b06b;
 }

@@ -54,8 +54,8 @@
 			margin-bottom: 0.25em;
 		}
 
-		.fileinput{
-			margin-top: -.5em;
+		.fileinput {
+			margin-top: -0.5em;
 			margin-bottom: -0.5em;
 		}
 	}
@@ -84,6 +84,15 @@
 }
 
 .terms-conditions {
+	& > * {
+		border: 1px solid red;
+	}
+
+	h4:first-child {
+		position: relative;
+		left: -0.25em;
+	}
+
 	h4 {
 		color: colors.$gold;
 	}
