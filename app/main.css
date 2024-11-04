@@ -208,6 +208,12 @@ body,
   right: 1.5rem;
 }
 
+#indexable-content {
+  opacity: 0;
+  position: absolute;
+  z-index: -10;
+}
+
 .button {
   display: inline-block;
   margin: 1rem;

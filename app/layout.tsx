@@ -4,6 +4,7 @@ import { AnimatePresence } from "framer-motion";
 import { Metadata } from "next";
 import Contacts from "./sections/Contacts";
 import Script from "next/script";
+import IndexableContent from "./sections/IndexableContent";
 
 export const metadata: Metadata = {
 	title: "Livre de Multas",
@@ -34,6 +35,7 @@ export default function RootLayout({
 				<Script src="/gtag.js" />
 			</head>
 			<body>
+				<IndexableContent/>
 				<div id="bg" />
 				<AnimatePresence>{children}</AnimatePresence>
 				<Contacts />
