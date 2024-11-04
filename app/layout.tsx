@@ -27,15 +27,28 @@ export default function RootLayout({
 					crossOrigin="anonymous"
 					async
 				></Script>
+				{/* GTAG */}
 				<Script
 					async
 					src="https://www.googletagmanager.com/gtag/js?id=AW-16743308519"
 				></Script>
+				<Script
+					async
+					src="/gtag.js"
+				/>
 
-				<Script src="/gtag.js" />
+				{/* Analytics */}
+				<Script
+					async
+					src="https://www.googletagmanager.com/gtag/js?id=G-RVTPNK8QHL"
+				></Script>
+				<Script
+					async
+					src="/analytics.js"
+				></Script>
 			</head>
 			<body>
-				<IndexableContent/>
+				<IndexableContent />
 				<div id="bg" />
 				<AnimatePresence>{children}</AnimatePresence>
 				<Contacts />
