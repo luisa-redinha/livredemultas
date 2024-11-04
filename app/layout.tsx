@@ -20,10 +20,6 @@ export default function RootLayout({
 	return (
 		<html lang="pt">
 			<head>
-				<link
-					rel="icon"
-					href="/favicon.png"
-				/>
 				<Script
 					id="font-awesome"
 					src="https://kit.fontawesome.com/1a62655504.js"
@@ -36,7 +32,6 @@ export default function RootLayout({
 				></Script>
 
 				<Script src="/gtag.js" />
-
 			</head>
 			<body>
 				<div id="bg" />
