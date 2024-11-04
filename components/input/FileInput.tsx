@@ -33,7 +33,7 @@ const FileInput = forwardRef(
 				return;
 			}
 
-			if (!validateFiles(files, 2 * 1024 * 1024)) {
+			if (!validateFiles(files, 20 * 1024 * 1024)) {
 				alert(
 					"Um dos ficheiros submetidos não é suportado. One of the files submitted is not supported."
 				);
