@@ -10,7 +10,20 @@ export const metadata: Metadata = {
 	title: "Livre de Multas",
 	description:
 		"A melhor plataforma para contestar a sua multa, e recorrer a advogados profissionais para o ajudar.",
-	icons: "/",
+	icons: [
+		{
+			rel: "icon",
+			type: "image/ico",
+			sizes: "32x32",
+			url: "/favicon.ico",
+		},
+		{
+			rel: "icon",
+			type: "image/png",
+			sizes: "100x100",
+			url: "/favicon.png",
+		},
+	],
 };
 
 export default function RootLayout({
