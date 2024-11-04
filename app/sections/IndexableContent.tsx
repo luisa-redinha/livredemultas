@@ -7,7 +7,8 @@ export default function IndexableContent() {
 			{keywords.map((e, i) => (
 				<p key={"indexable keywords " + i}>{e}</p>
 			))}
-			<h1>
+			<h1>Livre de Multas</h1>
+			<p>
 				Se recebeu uma multa e quer contestar, conte connosco. A nossa
 				equipa analisará o seu caso e poderá orientá-lo sobre os
 				procedimentos adequados. A nossa experiência permite-nos uma
@@ -16,7 +17,7 @@ export default function IndexableContent() {
 				do auto de contraordenação até à eventual audiência de discussão
 				e julgamento, oferecemos um acompanhamento jurídico contínuo e
 				rigoroso.
-			</h1>
+			</p>
 		</div>
 	);
 }
