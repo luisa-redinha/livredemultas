@@ -4,13 +4,32 @@
 .hero {
 	position: relative;
 	height: 100svh;
-
+	margin-bottom: 2em;
 	display: grid;
 	grid-template-areas:
 		"logo logo"
 		"info img";
 
 	grid-template-columns: 1fr 1fr;
+
+	@include media-query.mobile-landscape() {
+		grid-template-areas:
+			"logo"
+			"info"
+			"img";
+
+		grid-template-columns: 1fr;
+
+		&__info {
+			&__text {
+				text-align: center;
+			}
+			display: flex;
+			flex-direction: column;
+			place-content: center;
+			gap: 1em;
+		}
+	}
 
 	.logo {
 		grid-area: logo;
@@ -45,6 +64,9 @@
 		width: 35vmax;
 		align-self: flex-end;
 		justify-self: center;
+		@include media-query.mobile-landscape() {
+			display: none;
+		}
 	}
 
 	&__contacts {

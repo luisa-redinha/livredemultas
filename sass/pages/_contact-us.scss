@@ -45,7 +45,7 @@
 		}
 
 		&__checks {
-			margin-top: -2em;
+			margin-top: -1em;
 			margin-bottom: -1em;
 		}
 
@@ -63,6 +63,8 @@
 	@include media-query.mobile {
 		display: flex;
 		flex-direction: column;
+		place-content: center;
+		place-items: center;
 		.info {
 			display: none;
 		}
@@ -71,6 +73,7 @@
 			padding: 1rem 2rem;
 			margin: 0.5rem 0;
 			font-size: 0.8rem;
+			width: 100%;
 
 			button {
 				width: 100%;
@@ -84,10 +87,6 @@
 }
 
 .terms-conditions {
-	& > * {
-		border: 1px solid red;
-	}
-
 	h4:first-child {
 		position: relative;
 		left: -0.25em;

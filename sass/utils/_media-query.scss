@@ -4,7 +4,7 @@
 	}
 }
 @mixin mobile-landscape() {
-	@media (hover: none) and (orientation: landscape) {
+	@media (max-width: 900px) and (orientation: landscape) {
 		@content;
 	}
 }

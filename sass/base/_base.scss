@@ -41,29 +41,29 @@ body,
 		opacity: 0.75;
 	}
 }
-
 .section {
 	display: block;
 	position: relative;
-	height: 100svh;
-	padding: 2rem 4rem;
-
+	// min-height: 100svh;
+	height: fit-content;
+	padding: 3rem 4rem;
+	
+	
 	display: flex;
 	place-content: center;
 	place-items: center;
 
 	&__content {
-		padding: 2em 1rem;
+		padding: 2rem;
 		height: 90%;
 		width: 100%;
-		overflow-y: auto;
-		overflow-x: hidden;
+		overflow: hidden;
 	}
 
 	@include media-query.mobile {
 		padding: 2rem 0.5em;
 		&__content {
-			padding: 0rem 3.5rem;
+			padding: 1rem 2rem;
 		}
 	}
 }
@@ -93,6 +93,10 @@ body,
 	&--top {
 		top: 2rem;
 		left: 2rem;
+		@include media-query.mobile {
+			top: 1rem;
+			left: 0rem;
+		}
 		.frame-decor__bar {
 			&--h {
 				&--1 {
@@ -122,7 +126,10 @@ body,
 	&--bot {
 		bottom: 2rem;
 		right: 2rem;
-
+		@include media-query.mobile {
+			bottom: 1rem;
+			right: 0rem;
+		}
 		.frame-decor__bar {
 			&--h {
 				&--1 {

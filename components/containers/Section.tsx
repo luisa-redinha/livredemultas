@@ -13,14 +13,14 @@ export default function Section({
 	return (
 		<motion.section
 			className={`section`}
-			whileInView={{ opacity: 1, scale: 1 }}
-			initial={{ opacity: 0, scale: 0.8 }}
-			transition={{ ease: "easeInOut" }}
-			exit={{ opacity: 0, scale: 0.8 }}
-			viewport={{
-				amount: 0.65,
-				margin: "300%",
-			}}
+			// whileInView={{ opacity: 1, scale: 1 }}
+			// initial={{ opacity: 0, scale: 0.8 }}
+			// transition={{ ease: "easeInOut" }}
+			// exit={{ opacity: 0, scale: 0.8 }}
+			// viewport={{
+			// 	amount: 0.65,
+			// 	margin: "300%",
+			// }}
 		>
 			<FrameDecor variant="top" />
 			<div className={`section__content ${className}`}>{children}</div>

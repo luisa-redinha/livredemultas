@@ -2,9 +2,11 @@
 
 .faq {
 	&__wrapper {
-		overflow: hidden;
 		padding-bottom: 2em;
 	}
+
+	max-height: 70svh;
+	overflow: auto;
 
 	overflow-y: auto;
 	overflow-x: hidden;

@@ -119,25 +119,24 @@ body,
 .section {
   display: block;
   position: relative;
-  height: 100svh;
-  padding: 2rem 4rem;
+  height: fit-content;
+  padding: 3rem 4rem;
   display: flex;
   place-content: center;
   place-items: center;
 }
 .section__content {
-  padding: 2em 1rem;
+  padding: 2rem;
   height: 90%;
   width: 100%;
-  overflow-y: auto;
-  overflow-x: hidden;
+  overflow: hidden;
 }
 @media (max-width: 900px) {
   .section {
     padding: 2rem 0.5em;
   }
   .section__content {
-    padding: 0rem 3.5rem;
+    padding: 1rem 2rem;
   }
 }
 
@@ -167,6 +166,12 @@ body,
   top: 2rem;
   left: 2rem;
 }
+@media (max-width: 900px) {
+  .frame-decor--top {
+    top: 1rem;
+    left: 0rem;
+  }
+}
 .frame-decor--top .frame-decor__bar--h--1 {
   top: 1rem;
   left: 0;
@@ -188,6 +193,12 @@ body,
 .frame-decor--bot {
   bottom: 2rem;
   right: 2rem;
+}
+@media (max-width: 900px) {
+  .frame-decor--bot {
+    bottom: 1rem;
+    right: 0rem;
+  }
 }
 .frame-decor--bot .frame-decor__bar--h--1 {
   bottom: 1rem;
@@ -518,6 +529,7 @@ body,
   bottom: 0;
   right: 0;
   background-color: rgba(51, 51, 51, 0.3333333333);
+  backdrop-filter: blur(5px) grayscale(0.5);
   z-index: 10;
   display: flex;
   flex-direction: column;
@@ -541,7 +553,7 @@ body,
 @media (max-width: 900px) {
   .dialog {
     width: 90%;
-    max-height: 60%;
+    max-height: 100%;
   }
   .dialog__content {
     width: 100%;
@@ -619,9 +631,25 @@ body,
 .hero {
   position: relative;
   height: 100svh;
+  margin-bottom: 2em;
   display: grid;
   grid-template-areas: "logo logo" "info img";
   grid-template-columns: 1fr 1fr;
+}
+@media (max-width: 900px) and (orientation: landscape) {
+  .hero {
+    grid-template-areas: "logo" "info" "img";
+    grid-template-columns: 1fr;
+  }
+  .hero__info {
+    display: flex;
+    flex-direction: column;
+    place-content: center;
+    gap: 1em;
+  }
+  .hero__info__text {
+    text-align: center;
+  }
 }
 .hero .logo {
   grid-area: logo;
@@ -651,6 +679,11 @@ body,
   width: 35vmax;
   align-self: flex-end;
   justify-self: center;
+}
+@media (max-width: 900px) and (orientation: landscape) {
+  .hero__lawyer {
+    display: none;
+  }
 }
 .hero__contacts {
   display: flex;
@@ -727,11 +760,27 @@ body,
   place-self: center;
 }
 .porque .multas-comuns {
+  margin-top: 4em;
   align-self: center;
   grid-area: multas;
   display: flex;
   justify-content: space-evenly;
   gap: 1em;
+}
+@media (max-width: 900px) {
+  .porque .multas-comuns {
+    margin: 2rem 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+  }
+}
+@media (max-width: 900px) and (orientation: landscape) {
+  .porque .multas-comuns {
+    margin: 2rem 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
 }
 .porque .multas-comuns > * {
   transition: filter 0.5s ease, transform 0.25s ease-in-out;
@@ -858,7 +907,7 @@ body,
   font-size: 2em;
 }
 .contact-us .form__checks {
-  margin-top: -2em;
+  margin-top: -1em;
   margin-bottom: -1em;
 }
 .contact-us .form button {
@@ -873,6 +922,8 @@ body,
   .contact-us {
     display: flex;
     flex-direction: column;
+    place-content: center;
+    place-items: center;
   }
   .contact-us .info {
     display: none;
@@ -882,6 +933,7 @@ body,
     padding: 1rem 2rem;
     margin: 0.5rem 0;
     font-size: 0.8rem;
+    width: 100%;
   }
   .contact-us .form button {
     width: 100%;
@@ -892,9 +944,6 @@ body,
   }
 }
 
-.terms-conditions > * {
-  border: 1px solid red;
-}
 .terms-conditions h4:first-child {
   position: relative;
   left: -0.25em;
@@ -1102,6 +1151,8 @@ body,
 }
 
 .faq {
+  max-height: 70svh;
+  overflow: auto;
   overflow-y: auto;
   overflow-x: hidden;
   width: 90%;
@@ -1109,7 +1160,6 @@ body,
   margin: auto;
 }
 .faq__wrapper {
-  overflow: hidden;
   padding-bottom: 2em;
 }
 .faq li {

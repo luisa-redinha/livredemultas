@@ -28,12 +28,25 @@
 	}
 
 	.multas-comuns {
+		margin-top: 4em;
 		align-self: center;
 		grid-area: multas;
 
 		display: flex;
 		justify-content: space-evenly;
 		gap: 1em;
+
+		@include media-query.mobile() {
+			margin: 2rem 0;
+			display: grid;
+			grid-template-columns: 1fr 1fr;
+			gap: 4rem;
+		}
+		@include media-query.mobile-landscape() {
+			margin: 2rem 0;
+			display: grid;
+			grid-template-columns: 1fr 1fr 1fr 1fr;
+		}
 
 		& > * {
 			transition: filter 0.5s ease, transform 0.25s ease-in-out;
