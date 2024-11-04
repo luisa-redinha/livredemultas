@@ -19,7 +19,7 @@ html,
 body {
   font-size: min(18px, 3vmax);
 }
-@media (hover: none) and (orientation: portrait) {
+@media (max-width: 900px) {
   html,
   body {
     font-size: min(14px, 3vmax);
@@ -132,7 +132,7 @@ body,
   overflow-y: auto;
   overflow-x: hidden;
 }
-@media (hover: none) and (orientation: portrait) {
+@media (max-width: 900px) {
   .section {
     padding: 2rem 0.5em;
   }
@@ -144,7 +144,7 @@ body,
 .frame-decor {
   position: absolute;
 }
-@media (hover: none) and (orientation: portrait) {
+@media (max-width: 900px) {
   .frame-decor {
     transform: scale(0.8);
   }
@@ -484,7 +484,7 @@ body,
 .section-thumbnail:hover span, .section-thumbnail:focus span {
   transform: scale(1.05);
 }
-@media (hover: none) and (orientation: portrait) {
+@media (max-width: 900px) {
   .section-thumbnail > span {
     position: absolute;
     padding: 0.2em;
@@ -538,7 +538,7 @@ body,
   display: flex;
   justify-content: flex-end;
 }
-@media (hover: none) and (orientation: portrait) {
+@media (max-width: 900px) {
   .dialog {
     width: 90%;
     max-height: 60%;
@@ -605,7 +605,7 @@ body,
 #contacts:hover {
   transform: scale(1.1);
 }
-@media (hover: none) and (orientation: portrait) {
+@media (max-width: 900px) {
   #contacts {
     flex-direction: row;
     bottom: 3svh;
@@ -667,7 +667,7 @@ body,
   align-items: flex-end;
   white-space: nowrap;
 }
-@media (hover: none) and (orientation: portrait) {
+@media (max-width: 900px) {
   .hero__contacts {
     flex-direction: row;
     flex-wrap: wrap;
@@ -677,7 +677,7 @@ body,
     width: fit-content;
   }
 }
-@media (hover: none) and (orientation: portrait) {
+@media (max-width: 900px) {
   .hero {
     display: flex;
     flex-direction: column;
@@ -740,7 +740,7 @@ body,
   filter: blur(1px) grayscale(0.4);
   transform: scale(0.95);
 }
-@media (hover: none) and (orientation: portrait) {
+@media (max-width: 900px) {
   .porque {
     display: flex;
     flex-direction: column;
@@ -801,7 +801,7 @@ body,
   width: 70%;
   margin-bottom: 4em;
 }
-@media (hover: none) and (orientation: portrait) {
+@media (max-width: 900px) {
   .about {
     grid-template-areas: "title" "intro" "links" "p2";
     place-content: start;
@@ -869,7 +869,7 @@ body,
   margin-top: -0.5em;
   margin-bottom: -0.5em;
 }
-@media (hover: none) and (orientation: portrait) {
+@media (max-width: 900px) {
   .contact-us {
     display: flex;
     flex-direction: column;
@@ -914,7 +914,7 @@ body,
   padding-top: 0.5em;
   padding-left: 4em;
 }
-@media (hover: none) and (orientation: portrait) {
+@media (max-width: 900px) {
   .terms-conditions p {
     padding-left: 0em;
   }
@@ -1000,7 +1000,7 @@ body,
 .multas .coimas .coimas-card ul li {
   text-align: start;
 }
-@media (hover: none) and (orientation: portrait) {
+@media (max-width: 900px) {
   .multas {
     align-items: center;
     padding: 2em;
@@ -1059,7 +1059,7 @@ body,
   gap: 1rem;
   margin-top: 4rem;
 }
-@media (hover: none) and (orientation: portrait) {
+@media (max-width: 900px) {
   .outras-multas-links {
     margin-top: 1em;
     gap: 0;
@@ -1070,7 +1070,7 @@ body,
   max-width: 50%;
   margin: auto;
 }
-@media (hover: none) and (orientation: portrait) {
+@media (max-width: 900px) {
   .outras-multas-contact {
     max-width: 100%;
     margin: 1em auto;
@@ -1117,7 +1117,7 @@ body,
   text-wrap: wrap;
   line-break: anywhere;
 }
-@media (hover: none) and (orientation: portrait) {
+@media (max-width: 900px) {
   .faq {
     width: 100%;
   }
