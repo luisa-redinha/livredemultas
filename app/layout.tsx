@@ -15,13 +15,13 @@ export const metadata: Metadata = {
 			rel: "icon",
 			type: "image/ico",
 			sizes: "32x32",
-			url: "/favicon.ico",
+			url: "https://livredemultas.pt/favicon.ico",
 		},
 		{
 			rel: "icon",
 			type: "image/png",
 			sizes: "100x100",
-			url: "/favicon.png",
+			url: "https://livredemultas.pt/favicon.png",
 		},
 	],
 };
