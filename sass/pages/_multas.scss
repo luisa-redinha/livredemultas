@@ -3,7 +3,9 @@
 .multas {
 	display: flex;
 	flex-direction: column;
-	justify-content: space-between;
+	justify-content: space-evenly;
+	height: 90svh;
+	overflow: auto;
 
 	header {
 		display: grid;
@@ -43,10 +45,6 @@
 		}
 	}
 
-	.search {
-		width: 33%;
-	}
-
 	.grid {
 		display: grid;
 		grid-template-columns: repeat(auto-fit, minmax(14vmax, 1fr));
@@ -56,8 +54,8 @@
 		padding: 1em;
 		margin: 2em;
 		width: 90%;
-		// height: calc(12vmax + 5.5em); //12vmax section thumbnail img height
 
+		height: 100%;
 		overflow-y: auto;
 
 		& > * {
@@ -203,7 +201,7 @@
 	// }
 }
 
-.tabelas__wrapper{
+.tabelas__wrapper {
 	width: 100%;
 	overflow: auto;
 	display: flex;

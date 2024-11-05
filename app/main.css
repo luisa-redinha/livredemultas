@@ -474,6 +474,7 @@ body,
   position: relative;
   background-color: #3b434e;
   display: inline-block;
+  margin-bottom: 3rem;
 }
 .section-thumbnail img {
   width: 100%;
@@ -679,6 +680,11 @@ body,
   width: 35vmax;
   align-self: flex-end;
   justify-self: center;
+}
+@media (max-width: 900px) {
+  .hero__lawyer {
+    align-self: center;
+  }
 }
 @media (max-width: 900px) and (orientation: landscape) {
   .hero__lawyer {
@@ -975,7 +981,9 @@ body,
 .multas {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-evenly;
+  height: 90svh;
+  overflow: auto;
 }
 .multas header {
   display: grid;
@@ -1006,9 +1014,6 @@ body,
   max-width: 100%;
   max-height: 300px;
 }
-.multas .search {
-  width: 33%;
-}
 .multas .grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(14vmax, 1fr));
@@ -1018,6 +1023,7 @@ body,
   padding: 1em;
   margin: 2em;
   width: 90%;
+  height: 100%;
   overflow-y: auto;
 }
 .multas .grid > * {

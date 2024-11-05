@@ -64,6 +64,9 @@
 		width: 35vmax;
 		align-self: flex-end;
 		justify-self: center;
+		@include media-query.mobile(){
+			align-self: center;
+		}
 		@include media-query.mobile-landscape() {
 			display: none;
 		}
