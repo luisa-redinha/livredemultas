@@ -31,18 +31,18 @@ export default function Hero() {
 
 				<div className="hero__contacts">
 					<a
-						href="https://wa.me/+351913785352"
+						href="https://wa.me/+351966664477"
 						className="button button--primary hero__contacts__link"
 					>
 						<i className="fa-brands fa-whatsapp" />
 						Whatsapp
 					</a>
 					<a
-						href="tel:+351913785352"
+						href="tel:+351966664477"
 						className="button button--primary hero__contacts__link"
 					>
 						<i className="fa-solid fa-mobile-screen" />
-						+351 913 785 352
+						+351 966 664 477
 					</a>
 					<a
 						href="mailto:geral@livredemultas.pt?subject=Contestar%20Multa"

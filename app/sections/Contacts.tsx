@@ -8,13 +8,13 @@ export default function Contacts({ className = "" }: { className?: string }) {
 			className={className}
 		>
 			<a
-				href="https://wa.me/+351913785352"
+				href="https://wa.me/+351966664477"
 				target="_blank"
 			>
 				<IconButton icon="whatsapp" />
 			</a>
 			<a
-				href="tel:+351913785352"
+				href="tel:+351966664477"
 				target="_blank"
 			>
 				<IconButton icon="phone" />

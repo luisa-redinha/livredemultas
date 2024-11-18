@@ -35,7 +35,6 @@ export default function ContactUs() {
 			email: "",
 			urgent: false,
 			info: "",
-			files: undefined,
 		},
 	});
 
@@ -44,7 +43,7 @@ export default function ContactUs() {
 			alert("Tem de aceitar os termos e condições");
 			return;
 		}
-		const { files, ...info } = data;
+		const { ...info } = data;
 
 		if (!info.email || !info.mobile) {
 			alert("Tem de preencher ou o email, ou o telemóvel");
@@ -53,21 +52,19 @@ export default function ContactUs() {
 
 		const formData = new FormData();
 
-		if (files) {
-			Array.from(files).forEach((file) =>
-				formData.append(
-					`ficheiro`,
-					new Blob([file], { type: file.type })
-				)
-			);
-		}
+		// if (files) {
+		// 	Array.from(files).forEach((file) =>
+		// 		formData.append(
+		// 			`ficheiro`,
+		// 			new Blob([file], { type: file.type })
+		// 		)
+		// 	);
+		// }
 
-		let key: keyof typeof info;
-		for (key in info) {
-			formData.append(key, info[key].toString());
-		}
-
-		console.log("Before POST");
+		// let key: keyof typeof info;
+		// for (key in info) {
+		// 	formData.append(key, info[key].toString());
+		// }
 
 		fetch("api/sendEmail/", {
 			method: "POST",
@@ -157,11 +154,11 @@ export default function ContactUs() {
 					tabIndex={7}
 				/>
 
-				<Form.Files
+				{/* <Form.Files
 					register={register}
 					name="files"
 					tabIndex={8}
-				/>
+				/> */}
 
 				<Form.Textarea
 					register={register}
