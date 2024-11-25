@@ -51,20 +51,11 @@ export default function ContactUs() {
 		}
 
 		const formData = new FormData();
-
-		// if (files) {
-		// 	Array.from(files).forEach((file) =>
-		// 		formData.append(
-		// 			`ficheiro`,
-		// 			new Blob([file], { type: file.type })
-		// 		)
-		// 	);
-		// }
-
-		// let key: keyof typeof info;
-		// for (key in info) {
-		// 	formData.append(key, info[key].toString());
-		// }
+		formData.append("name", data.name);
+		formData.append("mobile", data.mobile);
+		formData.append("email", data.email);
+		formData.append("info", data.info);
+		formData.append("urgent", data.urgent + "");
 
 		fetch("api/sendEmail/", {
 			method: "POST",
