@@ -9,15 +9,16 @@ export async function POST(req: Request) {
 	const data: Record<string, any> = {};
 	const files: Blob[] = [];
 	content.forEach((val, key) => {
-		if (val === "true" || val === "false") data[key] = Boolean(val);
+		if (val === "true") data[key] = true;
+		if (val === "false") data[key] = false;
 		if (val instanceof Blob) {
 			files.push(val);
 		} else data[key] = val;
 	});
 
 	const res = await sendMail({ ...data, files });
-	return new Response(JSON.stringify({ data: res.body }), {
+	return new Response(JSON.stringify({ data: res?.body }), {
 		headers: { "Content-Type": "application/json" },
-		status: res.statusCode,
+		status: res?.statusCode,
 	});
 }

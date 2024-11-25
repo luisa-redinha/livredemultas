@@ -69,7 +69,7 @@ export const sendMail = async (data: EmailInfo) => {
 						 ${data?.mobile && `<p>Tel: ${data.mobile}</p>`}
 						 ${data?.info && `<p>Informação adicional: ${data.info}</p>`}
 						
-						${data?.urgent ? "<h4>Este pedido é URGENTE</h4>" : "<h4>Sem urgência</h4>"}
+						${Boolean(data?.urgent) ? "<h4>Este pedido é URGENTE</h4>" : "<h4>Sem urgência</h4>"}
 						
 						${
 							data?.email &&
@@ -80,7 +80,8 @@ export const sendMail = async (data: EmailInfo) => {
 				</html>`,
 		attachments,
 	};
-
+	console.log(data);
+	return;
 	try {
 		const info = await transporter.sendMail(mailOptions);
 		console.log("Message sent: %s", info.messageId);
