@@ -45,7 +45,7 @@ export default function ContactUs() {
 		}
 		const { ...info } = data;
 
-		if (!info.email || !info.mobile) {
+		if (!info.email && !info.mobile) {
 			alert("Tem de preencher ou o email, ou o telemóvel");
 			return;
 		}
