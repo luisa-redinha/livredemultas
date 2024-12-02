@@ -6,15 +6,14 @@ gtag("js", new Date());
 
 gtag("config", "G-RVTPNK8QHL");
 
-window.addEventListener("DOMContentLoaded", function () {
-	document.body.addEventListener("click", function (e) {
-		const link = e.target.closest('a[href*="wa.me"]');
-		if (link) {
-			gtag("event", "conversion", {
-				send_to: "AW-16743308519/vLSlCMDG1_EZEOe56q8-",
-			});
-		}
-	});
+// <!-- Event snippet for WhatsApp conversion page -->
+window.addEventListener("click", function (e) {
+    if (e.target.closest('a[href*="wa.me"]')) {
+        gtag("event", "conversion", {
+            send_to: "AW-16743308519/vLSlCMDG1_EZEOe56q8-",
+        });
+    }
+});
 
 	const form = document.querySelector(".form");
 	if (form) {
