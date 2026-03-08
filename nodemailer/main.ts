@@ -80,8 +80,9 @@ export const sendMail = async (data: EmailInfo) => {
 				</html>`,
 		attachments,
 	};
+	console.group('Mail Payload Debug')
 	console.log(data);
-	return;
+	console.groupEnd()
 	try {
 		const info = await transporter.sendMail(mailOptions);
 		console.log("Message sent: %s", info.messageId);
