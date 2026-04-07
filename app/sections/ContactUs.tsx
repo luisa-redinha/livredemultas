@@ -1,11 +1,13 @@
 "use client";
 import Dialog from "@/components/alerts/Dialog";
 import Section from "@/components/containers/Section";
+import Button from "@/components/buttons/Button";
 import { Form } from "@/components/form/Form";
 import CheckBox from "@/components/input/CheckBox";
 import { motion } from "framer-motion";
 import { useRef, useState } from "react";
 import { useForm } from "react-hook-form";
+import toast from "react-hot-toast";
 
 export type ContactData = {
 	name: string;
@@ -40,13 +42,13 @@ export default function ContactUs() {
 
 	const onSubmitHandler = async (data: ContactData) => {
 		if (!ref.current?.checked) {
-			alert("Tem de aceitar os termos e condições");
+			toast.error("Tem de aceitar os termos e condições");
 			return;
 		}
 		const { ...info } = data;
 
 		if (!info.email && !info.mobile) {
-			alert("Tem de preencher ou o email, ou o telemóvel");
+			toast.error("Tem de preencher ou o email, ou o telemóvel");
 			return;
 		}
 
@@ -62,10 +64,10 @@ export default function ContactUs() {
 			body: formData,
 		}).then((res) => {
 			if (res.status === 200) {
-				alert("Email enviado! Será contactado em breve.");
+				toast.success("Email enviado! Sera contactado em breve.");
 				reset();
 			} else {
-				alert(
+				toast.error(
 					"Ocorreu um problema, por favor tente outra vez, ou se o erro persistir, contacte-nos pelos meios alternativos"
 				);
 			}
@@ -116,10 +118,7 @@ export default function ContactUs() {
 				{TC}
 			</Dialog>
 
-			<Form
-				className="form"
-				onSubmit={handleSubmit(onSubmitHandler)}
-			>
+			<Form className="form">
 				<h3>Formulário</h3>
 				<Form.Control
 					register={register}
@@ -176,12 +175,14 @@ export default function ContactUs() {
 					/>
 				</span>
 
-				<Form.Submit
-					formState={formState}
+				<Button
+					type="button"
+					onClick={handleSubmit(onSubmitHandler)}
+					disabled={Object.keys(formState.touchedFields).length === 0 || formState.isSubmitting}
 					tabIndex={12}
 				>
 					Submeter
-				</Form.Submit>
+				</Button>
 			</Form>
 		</Section>
 	);

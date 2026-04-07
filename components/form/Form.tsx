@@ -1,4 +1,3 @@
-import { motion } from "framer-motion";
 import React, { FormEvent, FormHTMLAttributes } from "react";
 import { FieldValues, FormState, Path, UseFormRegister } from "react-hook-form";
 import Button, { ButtonProps } from "../buttons/Button";
@@ -9,14 +8,11 @@ import Input, { InputProps } from "../input/Input";
 import TextareaComponent, { TextareaProps } from "../input/Textarea";
 
 interface FormProps extends FormHTMLAttributes<HTMLFormElement> {
-	//NOTE: Couldn't figure out the proper type, ts creates a conflict with HTMLFormAttributes and MotionProps
-	animationProps?: any;
 	honeyPotFieldName?: string;
 }
 
 export function Form({
 	children,
-	animationProps,
 	className = "",
 	honeyPotFieldName,
 	onSubmit,
@@ -37,8 +33,7 @@ export function Form({
 	};
 
 	return (
-		<motion.form
-			{...animationProps}
+		<form
 			{...props}
 			noValidate={
 				props?.noValidate === undefined ? true : props.noValidate
@@ -54,7 +49,7 @@ export function Form({
 				/>
 			)}
 			{children}
-		</motion.form>
+		</form>
 	);
 }
 
