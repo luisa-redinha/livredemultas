@@ -67,6 +67,7 @@
 		justify-self: center;
 		@include media-query.mobile() {
 			align-self: center;
+		max-height: 37vh;
 		}
 		@include media-query.mobile-landscape() {
 			display: none;

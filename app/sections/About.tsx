@@ -62,7 +62,7 @@ export default function About() {
 				<i className="fa-solid fa-location-dot" />
 				<div>
 					<p>Luisa Redinha</p>
-					<p>Advogada - C.P. 3.716 - C</p>
+					<p className="address__cedula">Advogada - C.P. 3.716 - C</p>
 					<p>
 						Rua Dr. Vasco da Gama Fernandes, Lote 4, R/C Dt.,
 						2410-191 Leiria

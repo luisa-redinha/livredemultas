@@ -68,6 +68,10 @@
 		padding-top: 1rem;
 		border-top: 1px solid rgba(colors.$gold, 0.3);
 
+		&__cedula{
+			font-size: .7em;
+		}
+
 		i {
 			color: colors.$gold;
 			font-size: 1.75rem;
