@@ -61,10 +61,11 @@
 
 	&__lawyer {
 		grid-area: img;
-		width: 35vmax;
+		// width: 35vmax;
+		max-height: 90vh;
 		align-self: flex-end;
 		justify-self: center;
-		@include media-query.mobile(){
+		@include media-query.mobile() {
 			align-self: center;
 		}
 		@include media-query.mobile-landscape() {

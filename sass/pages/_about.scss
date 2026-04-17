@@ -1,3 +1,4 @@
+@use "../abstracts/colors" as colors;
 @use "../utils/media-query" as media-query;
 .about {
 	display: grid;
@@ -5,7 +6,8 @@
 	grid-template-areas:
 		"title title"
 		"intro links"
-		"img p2";
+		"img p2"
+		"address socials";
 
 	place-content: center;
 
@@ -58,12 +60,72 @@
 		margin-bottom: 4em;
 	}
 
+	.address {
+		grid-area: address;
+		display: flex;
+		align-items: flex-start;
+		gap: 1.25rem;
+		padding-top: 1rem;
+		border-top: 1px solid rgba(colors.$gold, 0.3);
+
+		i {
+			color: colors.$gold;
+			font-size: 1.75rem;
+			margin-top: 0.15em;
+		}
+
+		div {
+			display: flex;
+			flex-direction: column;
+			gap: 0.3rem;
+			color: colors.$light;
+
+			p:first-child {
+				font-weight: 700;
+				font-size: 1.1em;
+				color: colors.$gold;
+			}
+
+			p:nth-child(2) {
+				font-size: 0.95em;
+				opacity: 0.8;
+			}
+
+			p:last-child {
+				font-size: 0.9em;
+				opacity: 0.7;
+			}
+		}
+	}
+
+	.socials {
+		grid-area: socials;
+		display: flex;
+		align-items: center;
+		gap: 2rem;
+		padding-top: 1rem;
+		border-top: 1px solid rgba(colors.$gold, 0.3);
+
+		a {
+			color: colors.$gold;
+			font-size: 2rem;
+			transition: transform 0.2s, color 0.2s;
+
+			&:hover {
+				transform: scale(1.2);
+				color: colors.$light;
+			}
+		}
+	}
+
 	@include media-query.mobile {
 		grid-template-areas:
 			"title"
 			"intro"
 			"links"
-			"p2";
+			"p2"
+			"address"
+			"socials";
 
 		.intro {
 			padding-top: 0;
@@ -80,6 +142,22 @@
 
 		.note {
 			width: 100%;
+		}
+
+		.address {
+			justify-self: center;
+			text-align: center;
+			flex-direction: column;
+			align-items: center;
+
+			div {
+				align-items: center;
+			}
+		}
+
+		.socials {
+			justify-self: center;
+			padding-bottom: 2rem;
 		}
 	}
 }

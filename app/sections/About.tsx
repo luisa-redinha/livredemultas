@@ -29,7 +29,7 @@ export default function About() {
 			</div>
 
 			<img
-				src="/lawyer2.webp"
+				src="/lawyer4.png"
 				alt=""
 				className="lawyer"
 			/>
@@ -58,6 +58,32 @@ export default function About() {
 				tipo de Defesa para o seu caso, honorários e custos processuais
 				(se os houver).
 			</p>
+			<div className="address">
+				<i className="fa-solid fa-location-dot" />
+				<div>
+					<p>Luisa Redinha</p>
+					<p>Advogada - C.P. 3.716 - C</p>
+					<p>
+						Rua Dr. Vasco da Gama Fernandes, Lote 4, R/C Dt.,
+						2410-191 Leiria
+					</p>
+				</div>
+			</div>
+
+			<div className="socials">
+				<a href="https://www.instagram.com/luisaredinha.pt/" target="_blank" rel="noopener noreferrer">
+					<i className="fa-brands fa-instagram" />
+				</a>
+				<a href="https://www.facebook.com/LuisaRedinhaadvogadosassociados/?locale=pt_PT" target="_blank" rel="noopener noreferrer">
+					<i className="fa-brands fa-facebook" />
+				</a>
+				<a href="https://www.tiktok.com/@luisaredinha.pt?_r=1&_t=ZG-95cjqh2pzV2" target="_blank" rel="noopener noreferrer">
+					<i className="fa-brands fa-tiktok" />
+				</a>
+				<a href="https://www.linkedin.com/in/luisa-redinha-81aa1821/" target="_blank" rel="noopener noreferrer">
+					<i className="fa-brands fa-linkedin" />
+				</a>
+			</div>
 		</Section>
 	);
 }
