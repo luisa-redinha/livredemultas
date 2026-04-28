@@ -44,7 +44,7 @@ export default function RootLayout({
 				{/* GTAG */}
 				<Script
 					async
-					src="https://www.googletagmanager.com/gtag/js?id=AW-16743308519"
+					src="https://www.googletagmanager.com/gtag/js?id=AW-17992909738"
 				></Script>
 				<Script
 					async
