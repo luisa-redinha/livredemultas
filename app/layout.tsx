@@ -54,7 +54,7 @@ export default function RootLayout({
 				{/* Analytics */}
 				<Script
 					async
-					src="https://www.googletagmanager.com/gtag/js?id=G-RVTPNK8QHL"
+					src="https://www.googletagmanager.com/gtag/js?id=GT-K4CTR5TF"
 				></Script>
 				<Script
 					async
