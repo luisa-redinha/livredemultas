@@ -58,7 +58,8 @@ import Script from "next/script";
         new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
         j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-        })(window,document,'script','dataLayer','GTM-XXXXXXX'); // SUBSTITUI PELO TEU ID GTM
+        })(window,document,'script','dataLayer','
+GTM-5NQ24B9H'); // SUBSTITUI PELO TEU ID GTM
       `,
     }}
   />
@@ -69,7 +70,8 @@ import Script from "next/script";
   {/* Google Tag Manager (noscript) */}
   <noscript>
     <iframe
-      src="https://www.googletagmanager.com/ns.html?id=GTM-XXXXXXX" // SUBSTITUI PELO TEU ID GTM
+      src="https://www.googletagmanager.com/ns.html?id=
+GTM-5NQ24B9H" // SUBSTITUI PELO TEU ID GTM
       height="0"
       width="0"
       style={{ display: 'none', visibility: 'hidden' }}
